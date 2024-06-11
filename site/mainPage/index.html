@@ -20,50 +20,57 @@
     </header>
     <nav> 
         <ul>
-            <li><a href="">Formula E</a></li>
-            <li><a href=""><span style="color: red; font-size: 20px;">•</span>LIVE</a></li>
-            <li><a href="">Recompensas</a></li>
+            <li><a href="#secao1">Formula E</a></li>
+            <li><a href="#secao2"><img src="../../images/liveDot.png" alt="ponto" class="livePonto">LIVE</a></li>
+            <li><a href="#secao3">Recompensas</a></li>
         </ul> 
     </nav>
-    <div class="secao1">
+    <div class="secao1" id="secao1">
         <h1>FÓRMULA E <span style="color: rgb(255, 217, 0);">X</span> FÓRMULA 1</h1>
         <h2>Afinal, existe diferença?</h2>
         <button class="descobrirBtn">Descobrir!</button>
-        <h3>RECOMPENSA:<span style="color: rgb(255, 217, 0); font-weight: bold;">2000</span></h3>
+        <h3>RECOMPENSA: <img src="../../images/blitz.png" alt="blitz" class="blitz"><span style="color: rgb(255, 217, 0); font-weight: bold;">2000</span></h3>
     </div>
-    <div class="secao2">
-        <h2>•LIVE</h2>
-        <h1>E-PRIX <br>SÃO PAULO</h1>
-        <div class="watchBtn">
-            <img src="" alt="Icone Play">
-            <button>Assitir transmissão</button>
+    <div class="secao2" id="secao2">
+        <div class="conteudoSecao2">
+            <h2><img src="../../images/liveDot.png" alt="ponto" class="livePonto">LIVE</h2>
+            <h1>E-PRIX <br><span style="font-weight: 400;">SÃO PAULO</span></h1>
         </div>
-        <h3>RECOMPENSA:</h3>
+        <div class="watchBtn">
+            <button><img src="../../images/playIcon.png" alt="Icone Play">Assitir transmissão</button>
+        </div>
+        <h3>RECOMPENSA:<img src="../../images/blitz.png" alt="blitz" class="blitz"><span style="color: rgb(255, 217, 0); font-weight: bold;">1000</span></h3>
     </div>
-    <div class="secao3">
-        <h1>TROQUE <span style="color: rgb(255, 217, 0);">BLITZ</span> POR RECOMPENSAS</h1>
+    <div class="secao3" id="secao3">
+        <div class="recompensaTitulo">
+            <h1>TROQUE  <span style="color: rgb(255, 217, 0);">BLITZ</span>  POR RECOMPENSAS</h1>
+        </div>
         <div class="sorteio">
-            <div class="ticket">
-                <div class="titulo">
-                    <h1>•LIVE</h1>
-                    <h1>SORTEIO</h1>
-                </div>
-                <div class="conteudo">
-                    <img src="" alt="transmissão">
-                    <h1>PROBALÍSTICO:</h1>
-                    <div class="ticketPontos">
-                        <button class="ticketBtn" id="menosBtn"></button>
-                        <h1 id="blitzQtd"></h1>
-                        <button class="ticketBtn" id="maisBtn"></button>
-                        <button class="participar">Participar</button>
+            <div class="conteudoSorteio">
+                <div class="ticket">
+                    <div class="titulo">
+                        <h1><img src="../../images/liveDot.png" alt="ponto" class="livePonto">LIVE</h1>
+                        <button class="sorteioInfoBtn">SORTEIO ⓘ</button>
+                    </div>
+                    <div class="liveETickets">
+                        <img class="liveExemplo" src="../../images/liveExample.png" alt="transmissão">
+                        <h1>PROBALÍSTICO:</h1>
+                        <div class="adquirir">
+                            <div class="ticketPontos">
+                                <button class="ticketBtn" id="menosBtn">-</button>
+                                <p id="blitzQtd"><img src="../../images/blitz.png" alt="blitz" class="blitz"><span style="color: rgb(255, 217, 0); font-weight: bold;">XXXX</span></p>
+                                <button class="ticketBtn" id="maisBtn">+</button>
+                            </div>
+                            <button class="participarBtn">Participar</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="ticketInfos">
-                <p><span style="font-weight: bold;">10x</span> TICKETS PARA:</p>
-                <h1>E-PRIX <br>SÃO PAULO</h1>
-                <p>+ PASSAGEM E ESTADIA</p>
-                <p>17/06/2024</p>
+                <div class="ticketInfos">
+                        <p class="yellowText"><img src="../../images/TICKETS.png" alt="tickets"><span style="font-weight: bold; color: rgb(255, 217, 0);">10x</span> TICKETS PARA:</p>
+                        <h1>E-PRIX <br><span style="font-weight: 400;">SÃO PAULO</span></h1>
+                        <p class="yellowText">+ PASSAGEM E ESTADIA</p>
+                        <p class="data">17/06/2024</p>
+                    </div>
             </div>
         </div>
         <div class="blitzShop">

@@ -7,6 +7,14 @@ body{
     background-color: rgb(27, 27, 27);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+/* Blitz */
+.blitz{
+    scale: 50%;
+}
 /* CSS HEADER */
 header{
     display: flex;
@@ -45,6 +53,9 @@ header{
 /* CSS HEADER FIM */
 
 nav{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,6 +71,11 @@ nav{
     border-color: #0000FF;
 }
 
+nav .livePonto{
+    width: 15px;
+    height: 15px;
+}
+
 nav ul{
     display: flex;
     align-items: center;
@@ -69,6 +85,8 @@ nav ul{
 }
 
 nav a{
+    display: flex;
+    align-items: center;
     color: white;
     text-decoration: none;
     cursor: pointer;
@@ -89,7 +107,7 @@ footer{
 .secao1{
     width: 100%;
     min-width: 700px;
-    font-family: "Michroma";
+    font-family: "Michroma", sans-serif;
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -116,6 +134,8 @@ footer{
 .secao1 h3{
     font-family: "Montserrat", sans-serif;
     font-size: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .secao1 .descobrirBtn{
@@ -131,4 +151,233 @@ footer{
     border: none;
     cursor: pointer;
 }
+/* CSS SEÇÃO  1 FIM*/
 
+/* CSS SEÇÃO  2*/
+.secao2{
+    background-image: url(../../images/Secao\ 2\ -\ Background.png);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    width: 100%;
+    min-width: 700px;
+    height: 700px;
+}
+
+.secao2 .watchBtn{
+    width: 500px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background: rgb(0,0,255);
+    background: linear-gradient(90deg, rgba(0,0,255,1) 48%, rgba(0,0,255,0) 99%);
+}
+
+.secao2 .watchBtn img{
+    height: 60px;
+    width: 60px;
+    padding-left: 30px;
+}
+
+.secao2 button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex ;
+    align-items: center;
+}
+
+.secao2 h1{
+    font-style: italic;
+    font-size: 100px;
+    text-shadow: 1px 1px 8px;
+    margin: 0;
+}
+
+.secao2 h2{
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+}
+
+.conteudoSecao2{
+    padding-top: 130px;
+    padding-left: 40px;
+}
+
+.conteudoSecao2 .livePonto{
+    height: 50px;
+    width: 50px;
+}
+
+.secao2 h3{
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+/* CSS SEÇÃO  2 FIM*/
+
+/* CSS SEÇÃO  3*/
+.secao3{
+    background-image: url(../../images/Secao\ 3\ -\ Background.png);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    min-width: 700px;
+} 
+
+.conteudoSorteio{
+    background-image: url(../../images/sorteio\ -\ Background.png);
+    display: flex;
+    justify-content: space-between;
+    min-width: 500px;
+}
+.recompensaTitulo{
+    display: flex;
+    justify-content: center;
+}
+
+.sorteio{
+    padding: 0 7%; 
+}
+
+.ticket{
+    padding-left: 65px;
+}
+
+.titulo{
+    display: flex;
+    justify-content: space-between;
+}
+.titulo h1{
+    font-family: "Michroma", sans-serif;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.titulo img{
+    height: 45px;
+    width: 45px;
+}
+
+.sorteioInfoBtn{
+    font-family: "Michroma", sans-serif;
+    font-size: 25px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.liveETickets .liveExemplo{
+    width: 720px;
+    height: 370px;
+}
+
+.liveETickets h1{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.ticketPontos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(0,0,255);
+    background: radial-gradient(circle, rgba(0,0,255,0.796189423034839) 48%, rgba(0,0,255,0) 99%);
+    width: 60%;
+    height: 100px;
+
+}
+
+.ticketPontos p{
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+}
+
+.ticketPontos .blitz{
+    width: 100px;
+    height: 100px;
+}
+
+.ticketBtn{
+    font-family: "Montserrat", sans-serif;
+    font-size: 100px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.ticketBtn:hover{
+    transition: 0.2s ease;
+    scale: 120%;
+}
+
+.adquirir{
+    display: flex;
+    justify-content: space-between;
+}
+
+.participarBtn{
+    font-family: "Montserrat", sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    background-color: #0000FF;
+    border: none;
+    width: 38%;
+}
+
+.ticketInfos{
+    display: flex;
+    flex-direction: column;
+    padding-top: 65px;
+    width: 42%;
+    gap: 35px;
+}
+
+.ticketInfos .yellowText{
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 217, 0);  
+    font-size: 42px;
+}
+
+.yellowText img{
+    width: 50px;
+    height: 45px;
+}
+
+.ticketInfos h1{
+    text-shadow: 1px 1px 8px;
+    font-size: 75px;   
+    font-style: italic;
+    margin: 0;
+}
+
+.data{
+    display: flex;
+    justify-content: center;
+    font-size: 82px;
+    background: rgb(0,0,255);
+    background: radial-gradient(circle, rgba(0,0,255,0.796189423034839) 48%, rgba(0,0,255,0) 99%);
+    margin: 0;
+}
+
+/* PISCAR LIVE */
+.livePonto{
+    animation: piscar 1.5s infinite;
+}
+
+@keyframes piscar {
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+/* PISCAR LIVE FIM*/
