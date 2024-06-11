@@ -368,6 +368,39 @@ footer{
     margin: 0;
 }
 
+.blitzShop{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 100px;
+  
+}
+
+.recompensa{
+    width: 330px;
+    height: 530px;
+    background-color: #201930;
+}
+
+.gradiente{
+    width: 10%;
+    height: 100%;
+}
+
+.incomum{
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,0,0,0) 100%);
+}
+
+.lendario{
+    background: rgb(255,192,0);
+    background: linear-gradient(90deg, rgba(255,192,0,1) 0%, rgba(255,192,0,0) 100%);
+}
+
+.especial{
+    background: rgb(255,0,104);
+    background: linear-gradient(90deg, rgba(255,0,104,1) 0%, rgba(255,0,104,0) 100%);
+}
+
 /* PISCAR LIVE */
 .livePonto{
     animation: piscar 1.5s infinite;
