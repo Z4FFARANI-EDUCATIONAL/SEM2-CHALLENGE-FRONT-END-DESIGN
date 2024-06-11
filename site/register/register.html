@@ -3,10 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro - E•mmersive</title>
+    <title>Cadastrar - E•mmersive</title>
     <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="../../fonts/fonts.css">
 </head>
 <body>
     <script src="register.js"></script>
+
+    <header><img src="../../images/login/logo.png" alt="Formula E•mmersive"></header>
+    <section>
+        <div class="caixa">
+            <h1>Cadastre-se</h1>
+            <h2 id="emailCheck">Digite um E-mail:</h2>
+            <input type="text" id="email">
+            <h2 id="senhaCheck">Digite uma senha:</h2>
+            <input type="password" id="senha">
+            <button class="first-button" id="registrar" onclick="armazenarDados()">Cadastrar</button>
+            <p>Ao criar uma conta, você está de acordo com nossa política de privacidade.</p>
+        </div>
+    </section>
 </body>
 </html>
