@@ -1,4 +1,134 @@
+*{
+    color: white;
+}
+
 body{
     margin: 0;
     background-color: rgb(27, 27, 27);
 }
+
+/* CSS HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #06001F;
+    min-width: 700px;
+}
+
+.logo{
+    width: 140px;
+    height: 60px;
+    padding-left: 15px;
+}
+
+.profileImg{
+    width: 50px;
+    height: 50px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.user button{
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+/* CSS HEADER FIM */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    min-width: 700px;
+    height: 50px;
+    background: #06001F;
+    border-style: solid;
+    border-left: 0;
+    border-right: 0;
+    border-width: 2px;
+    border-color: #0000FF;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    list-style-type: none;
+    gap: 70px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* CSS FOOTER */
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #06001F;
+    width: 100%;
+    height: 70px;
+    min-width: 700px;
+}
+/* CSS FOOTER FIM */
+
+/* CSS SEÇÃO  1*/
+.secao1{
+    width: 100%;
+    min-width: 700px;
+    font-family: "Michroma";
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../images/Secao\ 1\ -\ Background.png);
+}
+
+.secao1 h1, h2, h3{
+    margin: 0;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.secao1 h1{
+    font-size: 60px;
+}
+
+.secao1 h2{
+    font-size: 40px;
+    margin-bottom: 80px;
+}
+
+.secao1 h3{
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+}
+
+.secao1 .descobrirBtn{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(255, 217, 0);
+    background: rgb(14,10,40);
+    background: radial-gradient(circle, rgba(14,10,40,1) 50%, rgba(14,10,40,0.5889065098695728) 100%);
+    padding: 0;
+    height: 60px;
+    width: 180px;
+    border: none;
+    cursor: pointer;
+}
+
