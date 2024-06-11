@@ -328,13 +328,14 @@ footer{
     background-color: #0000FF;
     border: none;
     width: 38%;
+    cursor: pointer;
 }
 
 .ticketInfos{
     display: flex;
     flex-direction: column;
     padding-top: 65px;
-    width: 42%;
+    width: 48%;
     gap: 35px;
 }
 
