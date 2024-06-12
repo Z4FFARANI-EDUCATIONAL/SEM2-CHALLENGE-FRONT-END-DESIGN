@@ -11,10 +11,17 @@ html{
     scroll-behavior: smooth;
 }
 
+a{
+    cursor: pointer;
+}
+
+
 /* Blitz */
 .blitz{
     scale: 50%;
 }
+
+
 /* CSS HEADER */
 header{
     display: flex;
@@ -26,10 +33,19 @@ header{
     min-width: 700px;
 }
 
+
 .logo{
     width: 140px;
     height: 60px;
     padding-left: 15px;
+}
+
+header p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-shadow: 1px 1px 3px;
 }
 
 .profileImg{
@@ -63,12 +79,12 @@ nav{
     width: 100%;
     min-width: 700px;
     height: 50px;
-    background: #06001F;
+    background: #000040;
     border-style: solid;
     border-left: 0;
     border-right: 0;
-    border-width: 2px;
-    border-color: #0000FF;
+    border-width: 3px;
+    border-color: #06001F;
 }
 
 nav .livePonto{
@@ -100,6 +116,12 @@ footer{
     width: 100%;
     height: 70px;
     min-width: 700px;
+}
+
+.fiapLogo{
+    width: 150px;
+    height: 50px;
+    padding-top: 10px;
 }
 /* CSS FOOTER FIM */
 
@@ -288,14 +310,15 @@ footer{
     background: rgb(0,0,255);
     background: radial-gradient(circle, rgba(0,0,255,0.796189423034839) 48%, rgba(0,0,255,0) 99%);
     width: 60%;
-    height: 100px;
+    height: 90px;
+    margin-bottom: 10px;
 
 }
 
 .ticketPontos p{
     display: flex;
     align-items: center;
-    font-size: 45px;
+    font-size: 40px;
 }
 
 .ticketPontos .blitz{
@@ -329,12 +352,13 @@ footer{
     border: none;
     width: 38%;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .ticketInfos{
     display: flex;
     flex-direction: column;
-    padding-top: 65px;
+    padding-top: 55px;
     width: 48%;
     gap: 35px;
 }
@@ -365,11 +389,13 @@ footer{
     font-size: 82px;
     background: rgb(0,0,255);
     background: radial-gradient(circle, rgba(0,0,255,0.796189423034839) 48%, rgba(0,0,255,0) 99%);
-    margin: 0;
+    margin: 10px;
 }
 
+/*ITEM SHOP */
 .blitzShop{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 25px 100px;
   
@@ -402,12 +428,26 @@ footer{
     font-family: "Montserrat", sans-serif;
 }
 
+.conteudoRecompensa h2{
+    font-size: 35px;
+}
+
 .conteudoRecompensa .adquirirRecompensaBtn{
     height: 70px;
     width: 215px;
-
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    border: none;
 }
 
+.rosa{
+    background-color: #FF2F99;
+}
+
+.adquirido{
+    background-color: transparent;
+}
 .gradiente{
     width: 10%;
     height: 100%;
