@@ -1,0 +1,484 @@
+*{
+    color: white;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(27, 27, 27);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    cursor: pointer;
+}
+
+
+/* Blitz */
+.blitz{
+    scale: 50%;
+}
+
+
+/* CSS HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #06001F;
+    min-width: 700px;
+}
+
+
+.logo{
+    width: 140px;
+    height: 60px;
+    padding-left: 15px;
+}
+
+header p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-shadow: 1px 1px 3px;
+}
+
+.profileImg{
+    width: 50px;
+    height: 50px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.user button{
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+/* CSS HEADER FIM */
+
+nav{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    min-width: 700px;
+    height: 50px;
+    background: #000040;
+    border-style: solid;
+    border-left: 0;
+    border-right: 0;
+    border-width: 3px;
+    border-color: #06001F;
+}
+
+nav .livePonto{
+    width: 15px;
+    height: 15px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    list-style-type: none;
+    gap: 70px;
+}
+
+nav a{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* CSS FOOTER */
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #06001F;
+    width: 100%;
+    height: 70px;
+    min-width: 700px;
+}
+
+.fiapLogo{
+    width: 150px;
+    height: 50px;
+    padding-top: 10px;
+}
+/* CSS FOOTER FIM */
+
+/* CSS SEÇÃO  1*/
+.secao1{
+    width: 100%;
+    min-width: 700px;
+    font-family: "Michroma", sans-serif;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../images/Secao\ 1\ -\ Background.png);
+}
+
+.secao1 h1, h2, h3{
+    margin: 0;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.secao1 h1{
+    font-size: 60px;
+}
+
+.secao1 h2{
+    font-size: 40px;
+    margin-bottom: 80px;
+}
+
+.secao1 h3{
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.secao1 .descobrirBtn{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(255, 217, 0);
+    background: rgb(14,10,40);
+    background: radial-gradient(circle, rgba(14,10,40,1) 50%, rgba(14,10,40,0.5889065098695728) 100%);
+    padding: 0;
+    height: 60px;
+    width: 180px;
+    border: none;
+    cursor: pointer;
+}
+/* CSS SEÇÃO  1 FIM*/
+
+/* CSS SEÇÃO  2*/
+.secao2{
+    background-image: url(../../images/Secao\ 2\ -\ Background.png);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    width: 100%;
+    min-width: 700px;
+    height: 700px;
+}
+
+.secao2 .watchBtn{
+    width: 500px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background: rgb(0,0,255);
+    background: linear-gradient(90deg, rgba(0,0,255,1) 48%, rgba(0,0,255,0) 99%);
+}
+
+.secao2 .watchBtn img{
+    height: 60px;
+    width: 60px;
+    padding-left: 30px;
+}
+
+.secao2 button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex ;
+    align-items: center;
+}
+
+.secao2 h1{
+    font-style: italic;
+    font-size: 100px;
+    text-shadow: 1px 1px 8px;
+    margin: 0;
+}
+
+.secao2 h2{
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+}
+
+.conteudoSecao2{
+    padding-top: 130px;
+    padding-left: 40px;
+}
+
+.conteudoSecao2 .livePonto{
+    height: 50px;
+    width: 50px;
+}
+
+.secao2 h3{
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+/* CSS SEÇÃO  2 FIM*/
+
+/* CSS SEÇÃO  3*/
+.secao3{
+    background-image: url(../../images/Secao\ 3\ -\ Background.png);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    min-width: 700px;
+} 
+
+.conteudoSorteio{
+    background-image: url(../../images/sorteio\ -\ Background.png);
+    display: flex;
+    justify-content: space-between;
+    min-width: 500px;
+}
+.recompensaTitulo{
+    display: flex;
+    justify-content: center;
+}
+
+.sorteio{
+    padding: 0 7%; 
+}
+
+.ticket{
+    padding-left: 65px;
+}
+
+.titulo{
+    display: flex;
+    justify-content: space-between;
+}
+.titulo h1{
+    font-family: "Michroma", sans-serif;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.titulo img{
+    height: 45px;
+    width: 45px;
+}
+
+.sorteioInfoBtn{
+    font-family: "Michroma", sans-serif;
+    font-size: 25px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.liveETickets .liveExemplo{
+    width: 720px;
+    height: 370px;
+}
+
+.liveETickets h1{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.ticketPontos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(0,0,255);
+    background: radial-gradient(circle, rgba(0,0,255,0.796189423034839) 48%, rgba(0,0,255,0) 99%);
+    width: 60%;
+    height: 90px;
+    margin-bottom: 10px;
+
+}
+
+.ticketPontos p{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+}
+
+.ticketPontos .blitz{
+    width: 100px;
+    height: 100px;
+}
+
+.ticketBtn{
+    font-family: "Montserrat", sans-serif;
+    font-size: 100px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.ticketBtn:hover{
+    transition: 0.2s ease;
+    scale: 120%;
+}
+
+.adquirir{
+    display: flex;
+    justify-content: space-between;
+}
+
+.participarBtn{
+    font-family: "Montserrat", sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    background-color: #0000FF;
+    border: none;
+    width: 38%;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.ticketInfos{
+    display: flex;
+    flex-direction: column;
+    padding-top: 55px;
+    width: 48%;
+    gap: 35px;
+}
+
+.ticketInfos .yellowText{
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 217, 0);  
+    font-size: 42px;
+}
+
+.yellowText img{
+    width: 50px;
+    height: 45px;
+}
+
+.ticketInfos h1{
+    text-shadow: 1px 1px 8px;
+    font-size: 75px;   
+    font-style: italic;
+    margin: 0;
+}
+
+.data{
+    display: flex;
+    justify-content: center;
+    font-size: 82px;
+    background: rgb(0,0,255);
+    background: radial-gradient(circle, rgba(0,0,255,0.796189423034839) 48%, rgba(0,0,255,0) 99%);
+    margin: 10px;
+}
+
+/*ITEM SHOP */
+.blitzShop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 25px 100px;
+  
+}
+
+.recompensa{
+    display: flex;
+    width: 330px;
+    height: 530px;
+    background-color: #201930;
+}
+
+.recompensa .item{
+    width: 200px;
+    height: 200px;
+}
+
+.conteudoRecompensa{
+    font-family: "Michroma", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.conteudoRecompensa h1, h2{
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.conteudoRecompensa h2{
+    font-size: 35px;
+}
+
+.conteudoRecompensa .adquirirRecompensaBtn{
+    height: 70px;
+    width: 215px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    border: none;
+}
+
+.rosa{
+    background-color: #FF2F99;
+}
+
+.adquirido{
+    background-color: transparent;
+}
+.gradiente{
+    width: 10%;
+    height: 100%;
+}
+
+.incomum{
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,0,0,0) 100%);
+}
+
+.lendario{
+    background: rgb(255,192,0);
+    background: linear-gradient(90deg, rgba(255,192,0,1) 0%, rgba(255,192,0,0) 100%);
+}
+
+.especial{
+    background: rgb(255,0,104);
+    background: linear-gradient(90deg, rgba(255,0,104,1) 0%, rgba(255,0,104,0) 100%);
+}
+
+/* PISCAR LIVE */
+.livePonto{
+    animation: piscar 1.5s infinite;
+}
+
+@keyframes piscar {
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+/* PISCAR LIVE FIM*/
