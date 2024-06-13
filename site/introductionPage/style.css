@@ -1,0 +1,463 @@
+*{
+    color: white;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(27, 27, 27);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+/* Blitz */
+.blitz{
+    scale: 50%;
+}
+
+
+/* CSS HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #06001F;
+    min-width: 700px;
+}
+
+header .iniciarSessao{
+    font-family: "Montserrat", sans-serif;
+    width: 165px;
+    height: 100%;
+    background: rgb(0,0,255);
+    background: linear-gradient(270deg, rgba(0,0,255,1) 0%, rgba(0,0,255,0) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iniciarSessao a{
+    padding-left: 15px;
+}
+
+.logo{
+    padding-left: 100px;
+    width: 140px;
+    height: 60px;
+}
+
+/* CSS FOOTER */
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #06001F;
+    width: 100%;
+    height: 70px;
+    min-width: 700px;
+}
+
+.fiapLogo{
+    width: 150px;
+    height: 50px;
+    padding-top: 10px;
+}
+/* CSS FOOTER FIM */
+
+/* SEÇÃO 1 */
+.secao1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-width: 700px;
+    height: 910px;
+    background-image: url(../../images/saudacoes.png);
+}
+
+.textoSecao1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.secao1 h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 100px;
+    margin-top: 0;
+}
+
+.secao1 p{
+    font-family: "Michroma", sans-serif;
+    font-size: 45px;
+    margin: 0;
+    text-align: center;
+}
+
+.secao1 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    width: 300px;
+    height: 60px;
+    background: rgb(0,0,255);
+    background: linear-gradient(90deg, rgba(0,0,255,0) 0%, rgba(0,0,255,1) 20%, rgba(0,0,255,1) 80%, rgba(0,0,255,0) 100%);
+    margin-bottom: 200px;
+}
+/* FIM SEÇÃO 1 */
+
+/* SEÇÃO 2 */
+.secao2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-width: 700px;
+    height: 720px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,255,1) 10%, rgba(0,0,189,1) 90%, rgba(0,0,0,1) 100%);
+}
+
+.secao2 .intLeft{
+    font-family: "Michroma", sans-serif;
+    font-size: 52px;
+    margin-right: 10px;
+    color: rgb(193, 163, 228);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    width: 16%;
+}
+
+.secao2 .intRight{
+    font-family: "Michroma", sans-serif;
+    font-size: 52px;
+    margin-left: 10px;
+    color: rgb(193, 163, 228);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    writing-mode: vertical-rl;
+    width: 16%;
+}
+
+.video{
+    display: flex;
+    width: 68%;
+    height: 95%;
+    background-color: black;
+    max-width: 1000px;
+}
+/* FIM SEÇÃO 2 */
+
+/* SEÇÃO 3 */
+.secao3{
+    background-image: url(../../images/ApresentandoBlitz.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 800px;
+    min-width: 700px;
+}
+
+.secao3 h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 64px;
+    margin-bottom: 0;
+}
+
+.secao3 h2{
+    font-family: "Michroma", sans-serif;
+    color:  rgb(255, 217, 0);
+    font-weight: lighter;
+    font-size: 100px;
+    margin: 0;
+}
+
+.secao3Conteudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 700px;
+}
+
+.standBlitz{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;    
+    padding-left: 100px;
+}
+
+.standBlitz img{
+    height: 95%;
+    width: 400px;
+}
+
+.blitzDescricao{
+    width: 50%;
+    font-family: "Michroma", sans-serif;
+    padding-right: 100px;
+}
+
+.blitzDescricao a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat" , sans-serif;
+    background-color: #0C0C36;
+    font-weight: 600;
+    font-size: 30px;
+    width: 200px;
+    height: 50px;
+}
+/* FIM SECAO  3*/
+
+/* SECAO 4 */
+.secao4{
+    background-image: url(../../images/ApresentandoFaBoost.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 800px;
+    min-width: 700px;
+}
+
+.secao4 h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 64px;
+    margin-bottom: 0;
+}
+
+.secao4 h2{
+    font-family: "Michroma", sans-serif;
+    color:  rgb(9, 255, 0);
+    font-weight: lighter;
+    font-size: 100px;
+    margin: 0;
+}
+
+.secao4Conteudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 700px;
+    
+}
+
+
+.standFaboost{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;    
+    padding-right: 100px;
+}
+
+.standFaboost img{
+    height: 95%;
+    width: 400px;
+}
+
+.faboostDescricao{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 50%;
+    font-family: "Michroma", sans-serif;
+    text-align: right;
+    padding-left: 100px;
+} 
+
+.faboostDescricao a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat" , sans-serif;
+    background-color: #0C0C36;
+    font-weight: 600;
+    font-size: 30px;
+    width: 200px;
+    height: 50px;
+}
+/* FIM SECAO 4 */
+
+.secao5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 700px;
+    height: 800px;
+    background-color: #06001F;
+}
+
+.sobreNos{
+    font-family: "Montserrat";
+    font-size: 72px;
+}
+
+.funcionalidades{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    gap: 30px;
+    
+}
+
+.funcGeral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    height: 95%;
+    background: rgb(18,2,114);
+    background: linear-gradient(180deg, rgba(18,2,114,1) 0%, rgba(7,1,35,1) 100%);
+    border: solid 8px;
+    border-color: #0000FF;
+
+}
+
+.funcGeral h1{
+    font-family: "Michroma", sans-serif;
+    font-size: 45px;
+}
+
+.funcGeral p{
+    font-family: "Michroma", sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.funcGeral img{
+    width: 100%;
+}
+
+/* FIM SECAO 5 */
+
+/* SECAO 6 */
+.secao6{
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0000FF;
+    width: 100%;
+    min-width: 700px;
+    height: 900px;
+}
+
+.secao6 h1{
+    font-size: 100px;
+}
+
+.secao6Conteudo{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    gap: 80px;
+}
+
+.patrocinioBanner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    height: 100%;
+    background-color: #0000FF;
+    
+}
+
+.patrocinioBanner img{
+    width: 700px;
+    height: 100%;
+    margin-left: 130px;
+}
+
+.patrocinioConteudo{
+    width: 45%;
+    height: 100%;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.patrocinioConteudo h2{
+    font-weight: 400;
+}
+
+.patrocinioConteudo ul{
+    line-height: 80px;
+}
+.patrocinioConteudo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#0C0C36;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+}
+
+/* FIM SECAO 6 */
+
+/* SECAO 7 */
+.secao7{
+    background-image: url(../../images/tudoProntoSecao7.png);
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 700px;
+    min-width: 700px;
+}
+
+.secao7Conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secao7 h1{
+    font-size: 90px;
+    margin: 0;
+}
+
+.secao7 p{
+    font-size: 40px;
+    margin: 0;
+}
+
+.secao7 a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+    width: 600px;
+    height: 60px;
+    background: rgb(0,0,255);
+    background: linear-gradient(90deg, rgba(0,0,255,0) 0%, rgba(0,0,255,1) 20%, rgba(0,0,255,1) 80%, rgba(0,0,255,0) 100%);
+}
