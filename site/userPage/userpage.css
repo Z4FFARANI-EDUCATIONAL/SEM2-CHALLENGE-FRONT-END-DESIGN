@@ -1,5 +1,7 @@
 *{
     color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 body{
@@ -33,6 +35,11 @@ header{
     min-width: 700px;
 }
 
+.logoBtn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
 
 .logo{
     width: 140px;
@@ -40,12 +47,19 @@ header{
     padding-left: 15px;
 }
 
-header p{
+.userBlitz p{
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
+    font-weight: bold;
     display: flex;
     align-items: center;
-    text-shadow: 1px 1px 3px;
+    text-shadow:  rgb(255, 217, 0) 1px 1px 3px;
+    color: rgb(255, 217, 0)
+}
+
+.userBlitz{
+    display: flex;
+    align-items: center;
 }
 
 .profileImg{
@@ -107,6 +121,10 @@ nav a{
     cursor: pointer;
 }
 
+nav a:hover{
+    transition: 0.2s ease;
+    color: rgb(255,217,0);
+}
 /* CSS FOOTER */
 footer{
     display: flex;
@@ -172,6 +190,21 @@ footer{
     border: none;
     cursor: pointer;
 }
+
+.descobrirBtn a{
+    text-decoration: none;
+    color: rgb(255, 217, 0);
+}
+
+.descobrirBtn:hover{
+    transition: 0.2s ease;
+    scale: 110%;
+}
+
+.descobrirBtn a:hover{
+    color: white;
+}
+
 /* CSS SEÇÃO  1 FIM*/
 
 /* CSS SEÇÃO  2*/
@@ -314,10 +347,16 @@ footer{
 
 }
 
-.ticketPontos p{
+.gastoBlitz{
     display: flex;
     align-items: center;
+}
+
+.gastoBlitz p{
+    font-weight: bold;
+    align-items: center;
     font-size: 40px;
+    color: rgb(255, 217, 0)
 }
 
 .ticketPontos .blitz{
@@ -438,10 +477,35 @@ footer{
     font-size: 35px;
     font-weight: bold;
     border: none;
+    
+}
+
+.gold{
+    background-color:rgb(175, 132, 3);
+    cursor: pointer;
+}
+
+.gold:hover{
+    color:rgb(255,192,0);
+    transition: 0.1s ease;
+    box-shadow: 0px 0px 5px;
 }
 
 .rosa{
     background-color: #FF2F99;
+    cursor: pointer;
+}
+
+.rosa:hover{
+    color:rgb(255,192,0);
+    transition: 0.1s ease;
+    box-shadow: 0px 0px 5px;
+}
+
+.itemAdquirido{
+    background-color: transparent;
+    transition: 0.2s ease;
+    pointer-events: none;
 }
 
 .adquirido{
@@ -467,6 +531,64 @@ footer{
     background: linear-gradient(90deg, rgba(255,0,104,1) 0%, rgba(255,0,104,0) 100%);
 }
 
+/* POPUP CONFIRMAÇÃO */
+.popUp{
+    position: fixed;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25 ease-in-out;
+}
+
+.popUpContent{
+    font-family: "Michroma", sans-serif;
+    font-size: 10px;
+    background: rgb(0,0,161);
+    background: radial-gradient(circle, rgba(0,0,161,1) 9%, rgba(0,0,64,1) 98%);
+    border: solid 5px #06001F;
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.popUpBtn{
+    display: flex;
+    justify-content: space-around;
+}
+
+.popUpBtn button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    width: 150px;
+    height: 35px;
+    background-color: #06001F;
+    border: none;
+    cursor: pointer;
+}
+
+.popUpBtn button:hover{
+    color:rgb(255,192,0);
+    transition: 0.1s ease;
+    box-shadow: 0px 0px 5px;
+}
+
+.mostrarPopUp{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
 /* PISCAR LIVE */
 .livePonto{
     animation: piscar 1.5s infinite;
@@ -481,3 +603,12 @@ footer{
     }
 }
 /* PISCAR LIVE FIM*/
+
+
+/* TEMPORAZIDAOR DA LOJA */
+.timer{
+    font-family: "Michroma", sans-serif;
+    display: flex;
+    justify-content: center;
+    color: #2fceff;
+}
