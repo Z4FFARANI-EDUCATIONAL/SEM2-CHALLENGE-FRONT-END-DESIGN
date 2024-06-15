@@ -45,7 +45,11 @@ document.addEventListener("DOMContentLoaded", function(){
                 userBlitzTotal.textContent = `${userBlitz-2000}`
 
                 var img = document.getElementById("profileImg")
-                img.src = '../../images/lendario item.png'               
+                img.src = '../../images/lendario item.png'
+                
+                setTimeout(function(){
+                    alert(`Parabéns você acaba de adquirir uma moldura Gold para seu perfil!`)
+                }, 300);
             }
             
         
@@ -67,6 +71,10 @@ document.addEventListener("DOMContentLoaded", function(){
             botaoPlayStore.textContent = 'Adquirido'
             userBlitzTotal = document.getElementById("userBlitz")
             userBlitzTotal.textContent = `${userBlitz-20000}`
+
+            setTimeout(function(){
+                alert(`Parabéns você acaba de adquirir um giftcard de R$15,00 para ser utilizado na PlayStore`)
+            }, 300);
         }
         
        
@@ -87,6 +95,9 @@ document.addEventListener("DOMContentLoaded", function(){
             botaoNetflix.textContent = 'Adquirido'
             userBlitzTotal = document.getElementById("userBlitz")
             userBlitzTotal.textContent = `${userBlitz-40000}`
+            setTimeout(function(){
+                alert(`Parabéns você acaba de adquirir um mês de Netflix!`)
+            }, 300);
         }
     })
 
@@ -169,7 +180,7 @@ function confirmar(){
 
     var qtdIngressos = valorAtual / 1000
     setTimeout(function(){
-        alert(`Parabens você acaba de adquirir ${qtdIngressos} chances de sorteado!\nBoa Sorte! Resultado disponivel em: xx/xx/xxxx`)
+        alert(`Parabéns você acaba de adquirir ${qtdIngressos} chances de ser sorteado!\nBoa Sorte! Resultado disponivel em: xx/xx/xxxx`)
     }, 300);
     
     var userBlitzTotal = document.getElementById("userBlitz")
