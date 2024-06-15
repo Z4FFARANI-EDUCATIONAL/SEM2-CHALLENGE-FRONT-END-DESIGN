@@ -121,6 +121,10 @@ nav a{
     cursor: pointer;
 }
 
+nav a:hover{
+    transition: 0.2s ease;
+    color: rgb(255,217,0);
+}
 /* CSS FOOTER */
 footer{
     display: flex;
@@ -186,6 +190,21 @@ footer{
     border: none;
     cursor: pointer;
 }
+
+.descobrirBtn a{
+    text-decoration: none;
+    color: rgb(255, 217, 0);
+}
+
+.descobrirBtn:hover{
+    transition: 0.2s ease;
+    scale: 110%;
+}
+
+.descobrirBtn a:hover{
+    color: white;
+}
+
 /* CSS SEÇÃO  1 FIM*/
 
 /* CSS SEÇÃO  2*/

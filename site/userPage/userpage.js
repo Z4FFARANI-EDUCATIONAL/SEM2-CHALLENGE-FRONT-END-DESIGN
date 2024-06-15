@@ -25,6 +25,20 @@ document.addEventListener("DOMContentLoaded", function(){
         qtdAtual.textContent = `${novoValor}`
     })
 
+     // BLITZ POR ASSISTIR //
+     assistir = document.getElementById("transmitBtn")
+     assistir.addEventListener("click", function(){
+         var userBlitz = document.getElementById("userBlitz").textContent
+         userBlitz = parseInt(userBlitz)
+
+         var userBlitzTotal = document.getElementById("userBlitz")
+         userBlitzTotal.textContent = `${userBlitz + 1000}`
+
+         setTimeout(function(){
+            alert("Área ainda em desenvolvimento\nReceba 1000 Blitz!\nAgradecemos a compreensão <3")
+        }, 1000);
+     })
+
     // ADQUIRIR ITENS //
     // MOLDURA //
         moldura = document.getElementById("compraMoldura")
@@ -51,8 +65,6 @@ document.addEventListener("DOMContentLoaded", function(){
                     alert(`Parabéns você acaba de adquirir uma moldura Gold para seu perfil!`)
                 }, 300);
             }
-            
-        
         })
     // PLAY STORE //
     playStore = document.getElementById("compraPlayStore")
