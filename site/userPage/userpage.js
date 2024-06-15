@@ -1,8 +1,17 @@
 document.addEventListener("DOMContentLoaded", function(){
-    // GANHE BLITZ PARA TESTAR A FERRAMENTA
-    setTimeout(function(){
-        alert("Você pode testar nossa plataforma normalmente\nPorém caso queira testar a funcionalidade das ferramentas, ao clicar na nossa logo na lateral esquerda do header, 100mil blitz serão creditados <3\n\nExistem eventos que ocorrem caso faltem blitz para adquirir algo, teste também :)")
-    }, 3000);
+
+    var totalBlitz = sessionStorage.getItem('saldoBlitz');
+    if (totalBlitz === null) {
+        // Se não houver saldoBlitz no sessionStorage, inicialize com um valor padrão
+        totalBlitz = 500;
+        sessionStorage.setItem('saldoBlitz', totalBlitz.toString());
+    } else {
+        totalBlitz = parseInt(totalBlitz);
+    }
+    document.getElementById("saldoBlitz").textContent = totalBlitz.toString();
+
+    var nome = sessionStorage.getItem('nome')
+    document.getElementById('username').textContent = nome
 
     // SISTEMA PARA PARTICIPAÇÃO DE SORTEIO //
     const addBtn = document.getElementById("maisBtn")
@@ -28,11 +37,11 @@ document.addEventListener("DOMContentLoaded", function(){
      // BLITZ POR ASSISTIR //
      assistir = document.getElementById("transmitBtn")
      assistir.addEventListener("click", function(){
-         var userBlitz = document.getElementById("userBlitz").textContent
-         userBlitz = parseInt(userBlitz)
+         var saldoBlitz = document.getElementById("saldoBlitz").textContent
+         saldoBlitz = parseInt(saldoBlitz)
 
-         var userBlitzTotal = document.getElementById("userBlitz")
-         userBlitzTotal.textContent = `${userBlitz + 1000}`
+         var saldoBlitzTotal = document.getElementById("saldoBlitz")
+         saldoBlitzTotal.textContent = `${saldoBlitz + 1000}`
 
          setTimeout(function(){
             alert("Área ainda em desenvolvimento\nReceba 1000 Blitz!\nAgradecemos a compreensão <3")
@@ -45,18 +54,18 @@ document.addEventListener("DOMContentLoaded", function(){
         moldura.addEventListener("click", function(){
         var botãoMoldura = document.getElementById("compraMoldura")
 
-        var userBlitz = document.getElementById("userBlitz").textContent
-        userBlitz = parseInt(userBlitz)
+        var saldoBlitz = document.getElementById("saldoBlitz").textContent
+        saldoBlitz = parseInt(saldoBlitz)
         
-            if(userBlitz < 2000){
+            if(saldoBlitz < 2000){
                 alert("Você não possui Blitz suficientes\nUtilize nossas ferramentas para obter mais!")
             }
             else{
                 botãoMoldura.classList.add("itemAdquirido")
                 botãoMoldura.classList.remove("gold")
                 botãoMoldura.textContent = 'Adquirido'
-                userBlitzTotal = document.getElementById("userBlitz")
-                userBlitzTotal.textContent = `${userBlitz-2000}`
+                saldoBlitzTotal = document.getElementById("saldoBlitz")
+                saldoBlitzTotal.textContent = `${saldoBlitz-2000}`
 
                 var img = document.getElementById("profileImg")
                 img.src = '../../images/lendario item.png'
@@ -71,18 +80,18 @@ document.addEventListener("DOMContentLoaded", function(){
     playStore.addEventListener("click", function(){
     var botaoPlayStore = document.getElementById("compraPlayStore")
 
-    var userBlitz = document.getElementById("userBlitz").textContent
-    userBlitz = parseInt(userBlitz)
+    var saldoBlitz = document.getElementById("saldoBlitz").textContent
+    saldoBlitz = parseInt(saldoBlitz)
     
-        if(userBlitz < 20000){
+        if(saldoBlitz < 20000){
             alert("Você não possui Blitz suficientes\nUtilize nossas ferramentas para obter mais!")
         }
         else{
             botaoPlayStore.classList.add("itemAdquirido")
             botaoPlayStore.classList.remove("rosa")
             botaoPlayStore.textContent = 'Adquirido'
-            userBlitzTotal = document.getElementById("userBlitz")
-            userBlitzTotal.textContent = `${userBlitz-20000}`
+            saldoBlitzTotal = document.getElementById("saldoBlitz")
+            saldoBlitzTotal.textContent = `${saldoBlitz-20000}`
 
             setTimeout(function(){
                 alert(`Parabéns você acaba de adquirir um giftcard de R$15,00 para ser utilizado na PlayStore`)
@@ -96,17 +105,17 @@ document.addEventListener("DOMContentLoaded", function(){
     netflix.addEventListener("click", function(){
     var botaoNetflix = document.getElementById("compraNetflix")
 
-    var userBlitz = document.getElementById("userBlitz").textContent
-    userBlitz = parseInt(userBlitz)
-        if(userBlitz < 40000){
+    var saldoBlitz = document.getElementById("saldoBlitz").textContent
+    saldoBlitz = parseInt(saldoBlitz)
+        if(saldoBlitz < 40000){
             alert("Você não possui Blitz suficientes\nUtilize nossas ferramentas para obter mais!")
         }
          else{
             botaoNetflix.classList.add("itemAdquirido")
             botaoNetflix.classList.remove("rosa")
             botaoNetflix.textContent = 'Adquirido'
-            userBlitzTotal = document.getElementById("userBlitz")
-            userBlitzTotal.textContent = `${userBlitz-40000}`
+            saldoBlitzTotal = document.getElementById("saldoBlitz")
+            saldoBlitzTotal.textContent = `${saldoBlitz-40000}`
             setTimeout(function(){
                 alert(`Parabéns você acaba de adquirir um mês de Netflix!`)
             }, 300);
@@ -145,29 +154,40 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 })
 
-
-
 // GANHAR 100MIL BLITZ //
-function adicionarBlitz(){
-    var userBlitz = document.getElementById("userBlitz").textContent
-    var userBlitzTotal = document.getElementById("userBlitz")
-    var blitz = parseInt(userBlitz)
-    blitz = blitz + 100000
-    userBlitzTotal.textContent = `${blitz}`
+function adicionarBlitz() {
+    var ganhouAdicionarBlitz = sessionStorage.getItem('ganhouAdicionarBlitz');
+    if (ganhouAdicionarBlitz === null) {
+        var saldoBlitz = parseInt(document.getElementById("saldoBlitz").textContent);
+        saldoBlitz += 100000;
+        document.getElementById("saldoBlitz").textContent = saldoBlitz;
+        sessionStorage.setItem('saldoBlitz', saldoBlitz.toString());
+        sessionStorage.setItem('ganhouAdicionarBlitz', 'true');
+    }
 }
 
+function botaoDescobrir(){
+    var ganhouBotaoDescobrir = sessionStorage.getItem('ganhouBotaoDescobrir');
+    if (ganhouBotaoDescobrir === null) {
+        var saldoBlitz = parseInt(document.getElementById("saldoBlitz").textContent);
+        saldoBlitz += 2000;
+        document.getElementById("saldoBlitz").textContent = saldoBlitz;
+        sessionStorage.setItem('saldoBlitz', saldoBlitz.toString());
+        sessionStorage.setItem('ganhouBotaoDescobrir', 'true');
+    }
+}
 
 // SISTEMA DE CONFIRMAÇÃO DE COMPRA DE INGRESSOS PARA SORTEIO//
 function participar(){
-    var userBlitz = document.getElementById("userBlitz").textContent
-    userBlitz = parseInt(userBlitz)
+    var saldoBlitz = document.getElementById("saldoBlitz").textContent
+    saldoBlitz = parseInt(saldoBlitz)
 
     var valorAtual = document.getElementById("blitzQtd").textContent
     valorAtual = parseInt(valorAtual)
 
     var popUp = document.getElementById("popUpCompra")
 
-    if (userBlitz < valorAtual){
+    if (saldoBlitz < valorAtual){
         alert("Você não possui Blitz suficientes\nUtilize nossas ferramentas para obter mais!")
     }
     else{
@@ -181,8 +201,8 @@ function cancelar(){
 }
 
 function confirmar(){
-    var userBlitz = document.getElementById("userBlitz").textContent
-    userBlitz = parseInt(userBlitz)
+    var saldoBlitz = document.getElementById("saldoBlitz").textContent
+    saldoBlitz = parseInt(saldoBlitz)
 
     var popUp = document.getElementById("popUpCompra")
     popUp.classList.remove("mostrarPopUp")
@@ -195,7 +215,7 @@ function confirmar(){
         alert(`Parabéns você acaba de adquirir ${qtdIngressos} chances de ser sorteado!\nBoa Sorte! Resultado disponivel em: xx/xx/xxxx`)
     }, 300);
     
-    var userBlitzTotal = document.getElementById("userBlitz")
-    userBlitzTotal.textContent = `${userBlitz-valorAtual}`
+    var saldoBlitzTotal = document.getElementById("saldoBlitz")
+    saldoBlitzTotal.textContent = `${saldoBlitz-valorAtual}`
 }
 

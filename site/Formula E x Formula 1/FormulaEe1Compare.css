@@ -24,6 +24,14 @@ a{
     scale: 50%;
 }
 
+h1 {
+user-select: none;
+}
+
+h2 {
+font-weight: 400;
+}
+
 
 /* CSS HEADER */
 header{
@@ -31,7 +39,7 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 70px;
+    height: 80px;
     background-color: #06001F;
     min-width: 700px;
 }
@@ -40,27 +48,29 @@ header{
     background-color: transparent;
     border: none;
     cursor: pointer;
+    padding: 0px;
 }
 
 .logo{
     width: 140px;
     height: 60px;
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
 .userBlitz p{
+    user-select: none;
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     font-weight: bold;
     display: flex;
     align-items: center;
-    text-shadow:  rgb(255, 217, 0) 1px 1px 3px;
     color: rgb(255, 217, 0)
 }
 
 .userBlitz{
     display: flex;
     align-items: center;
+    padding-left: 6px;
 }
 
 .profileImg{
@@ -86,17 +96,17 @@ header{
 /* CSS FOOTER */
 footer{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: #06001F;
     width: 100%;
-    height: 70px;
+    height: 80px;
     min-width: 700px;
 }
 
 .fiapLogo{
     width: 150px;
     height: 50px;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 /* CSS FOOTER FIM */
 

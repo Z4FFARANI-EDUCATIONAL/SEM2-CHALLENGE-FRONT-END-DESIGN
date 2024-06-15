@@ -8,15 +8,18 @@
     <link rel="stylesheet" href="../../fonts/fonts.css">
 </head>
 <body>
+    <script src="../userPage/userpage.js"></script>
     <script src="FormulaEe1Compare.js"></script>
+    <script src="../register/register.js"></script>
+
     <header>
-        <img class="logo" src="../../images/Formula E•mmersive (BRANCO).png" alt="Logo Formula Emmersive">
+        <a href="../userPage/userpage.html"><img class="logo" src="../../images/Formula E•mmersive (BRANCO).png" alt="Logo Formula Emmersive"></a>
         <div class="userBlitz">
             <img src="../../images/blitz.png" alt="blitz" class="blitz">
-            <p id="userBlitz">500</p>
+            <p id="saldoBlitz"></p>
         </div>
         <div class="user">
-            <button id="userBtn" class="userBtn">Usuário</button>
+            <button id="userBtn" class="userBtn"><h2 id="username"></button>
             <img id="profileImg" src="../../images/profileImg.png" alt="Icone de Perfil" class="profileImg">
         </div>
     </header>
@@ -35,7 +38,7 @@
             </div>
             <div class="botoes-carrossel">
                 <button id="voltBtn"><img src="../../images/anterior.png" alt="anterior"></button>
-                <button id="proxBtn"><img src="../../images/proximo.png" alt="proximo"></button> 
+                <button id="proxBtn" onclick="proximoSlideFormula1()"><img src="../../images/proximo.png" alt="proximo"></button> 
             </div>
         </div>
     </div>

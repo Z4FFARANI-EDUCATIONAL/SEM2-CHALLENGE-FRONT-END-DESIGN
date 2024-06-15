@@ -30,7 +30,7 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 70px;
+    height: 80px;
     background-color: #06001F;
     min-width: 700px;
 }
@@ -53,7 +53,6 @@ header{
     font-weight: bold;
     display: flex;
     align-items: center;
-    text-shadow:  rgb(255, 217, 0) 1px 1px 3px;
     color: rgb(255, 217, 0)
 }
 
@@ -126,19 +125,19 @@ nav a:hover{
     color: rgb(255,217,0);
 }
 /* CSS FOOTER */
-footer{
+footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: #06001F;
     width: 100%;
-    height: 70px;
+    height: 80px;
     min-width: 700px;
 }
 
 .fiapLogo{
     width: 150px;
     height: 50px;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 /* CSS FOOTER FIM */
 
@@ -161,6 +160,11 @@ footer{
     font-style: normal;
 }
 
+h1, h2, h3, p {
+    user-select: none;
+}
+
+
 .secao1 h1{
     font-size: 60px;
 }
@@ -172,33 +176,29 @@ footer{
 
 .secao1 h3{
     font-family: "Montserrat", sans-serif;
-    font-size: 30px;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
+    user-select: none;
 }
 
-.secao1 .descobrirBtn{
+.secao1 .descobrirBtn {
     font-family: "Montserrat", sans-serif;
-    font-weight: bold;
+    font-weight: 650;
     font-size: 30px;
     color: rgb(255, 217, 0);
-    background: rgb(14,10,40);
-    background: radial-gradient(circle, rgba(14,10,40,1) 50%, rgba(14,10,40,0.5889065098695728) 100%);
+    background: linear-gradient(90deg, transparent, #000040, #000040, transparent);
     padding: 0;
     height: 60px;
-    width: 180px;
+    width: 280px;
     border: none;
     cursor: pointer;
 }
 
 .descobrirBtn a{
     text-decoration: none;
+    transition: 200ms ease-in-out;
     color: rgb(255, 217, 0);
-}
-
-.descobrirBtn:hover{
-    transition: 0.2s ease;
-    scale: 110%;
 }
 
 .descobrirBtn a:hover{
@@ -234,7 +234,7 @@ footer{
 
 .secao2 button{
     font-family: "Montserrat", sans-serif;
-    font-weight: bold;
+    font-weight: 650;
     font-size: 35px;
     background-color: transparent;
     border: none;
@@ -259,6 +259,7 @@ footer{
 .conteudoSecao2{
     padding-top: 130px;
     padding-left: 40px;
+    padding-bottom: 20px;
 }
 
 .conteudoSecao2 .livePonto{
@@ -270,6 +271,7 @@ footer{
     display: flex;
     align-items: center;
     padding-left: 40px;
+    font-size: 1.5rem;
 }
 /* CSS SEÇÃO  2 FIM*/
 
@@ -303,6 +305,8 @@ footer{
 .titulo{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 .titulo h1{
     font-family: "Michroma", sans-serif;
@@ -332,7 +336,8 @@ footer{
 .liveETickets h1{
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin: 10px;
+    font-size: 2.5rem;
 }
 
 .ticketPontos{
@@ -343,8 +348,6 @@ footer{
     background: radial-gradient(circle, rgba(0,0,255,0.796189423034839) 48%, rgba(0,0,255,0) 99%);
     width: 60%;
     height: 90px;
-    margin-bottom: 10px;
-
 }
 
 .gastoBlitz{
@@ -370,11 +373,11 @@ footer{
     background-color: transparent;
     border: none;
     cursor: pointer;
+    transition: 200ms ease;
 }
 
 .ticketBtn:hover{
-    transition: 0.2s ease;
-    scale: 120%;
+    scale: 110%;
 }
 
 .adquirir{
@@ -385,20 +388,19 @@ footer{
 .participarBtn{
     font-family: "Montserrat", sans-serif;
     font-size: 45px;
-    font-weight: bold;
+    font-weight: 650;
     background-color: #0000FF;
     border: none;
     width: 38%;
     cursor: pointer;
-    margin-bottom: 10px;
 }
 
 .ticketInfos{
     display: flex;
     flex-direction: column;
-    padding-top: 55px;
+    justify-content: space-between;
+    padding-top: 40px;
     width: 48%;
-    gap: 35px;
 }
 
 .ticketInfos .yellowText{
@@ -427,7 +429,7 @@ footer{
     font-size: 82px;
     background: rgb(0,0,255);
     background: radial-gradient(circle, rgba(0,0,255,0.796189423034839) 48%, rgba(0,0,255,0) 99%);
-    margin: 10px;
+    margin: 0px;
 }
 
 /*ITEM SHOP */
@@ -611,4 +613,5 @@ footer{
     display: flex;
     justify-content: center;
     color: #2fceff;
+    padding: 25px;
 }

@@ -1,6 +1,7 @@
 function checarDados(){
     var email = sessionStorage.getItem('email')
-    var senha = sessionStorage.getItem('senha') 
+    var senha = sessionStorage.getItem('senha')
+    var nome = sessionStorage.getItem('nome')
     var loginEmail = document.getElementById('loginEmail').value
     var loginSenha = document.getElementById('loginSenha').value
 
@@ -15,7 +16,7 @@ function checarDados(){
         senhaLog.style.color = "green"
         emailLog.style.color = "green"
         setTimeout(function(){
-            alert(`Sessão iniciada com sucesso!\n Clique em "OK" para ser redirecionado.`)
+            alert(`Bom te ver de novo, ${nome}!\nClique em "OK" para ser redirecionado.`)
             window.location.href = "../userPage/userpage.html";
         },500)
     }
