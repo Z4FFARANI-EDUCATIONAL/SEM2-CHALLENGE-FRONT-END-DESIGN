@@ -16,7 +16,7 @@ function checarDados(){
         emailLog.style.color = "green"
         setTimeout(function(){
             alert(`Sessão iniciada com sucesso!\n Clique em "OK" para ser redirecionado.`)
-            window.location.href = "../mainPage/index.html";
+            window.location.href = "../userPage/userpage.html";
         },500)
     }
 }
