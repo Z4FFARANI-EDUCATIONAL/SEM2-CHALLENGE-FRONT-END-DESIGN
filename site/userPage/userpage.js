@@ -64,9 +64,11 @@ document.addEventListener("DOMContentLoaded", function(){
                 botãoMoldura.classList.add("itemAdquirido")
                 botãoMoldura.classList.remove("gold")
                 botãoMoldura.textContent = 'Adquirido'
-                saldoBlitzTotal = document.getElementById("saldoBlitz")
-                saldoBlitzTotal.textContent = `${saldoBlitz-2000}`
-
+                var saldoBlitz = parseInt(document.getElementById("saldoBlitz").textContent);
+                saldoBlitz -= 2000;
+                document.getElementById("saldoBlitz").textContent = saldoBlitz;
+                sessionStorage.setItem('saldoBlitz', saldoBlitz.toString());
+                sessionStorage.setItem('ganhouAdicionarBlitz', 'true');
                 var img = document.getElementById("profileImg")
                 img.src = '../../images/lendario item.png'
                 
@@ -90,8 +92,11 @@ document.addEventListener("DOMContentLoaded", function(){
             botaoPlayStore.classList.add("itemAdquirido")
             botaoPlayStore.classList.remove("rosa")
             botaoPlayStore.textContent = 'Adquirido'
-            saldoBlitzTotal = document.getElementById("saldoBlitz")
-            saldoBlitzTotal.textContent = `${saldoBlitz-20000}`
+            var saldoBlitz = parseInt(document.getElementById("saldoBlitz").textContent);
+            saldoBlitz += 20000;
+            document.getElementById("saldoBlitz").textContent = saldoBlitz;
+            sessionStorage.setItem('saldoBlitz', saldoBlitz.toString());
+            sessionStorage.setItem('ganhouAdicionarBlitz', 'true');
 
             setTimeout(function(){
                 alert(`Parabéns você acaba de adquirir um giftcard de R$15,00 para ser utilizado na PlayStore`)
@@ -114,8 +119,11 @@ document.addEventListener("DOMContentLoaded", function(){
             botaoNetflix.classList.add("itemAdquirido")
             botaoNetflix.classList.remove("rosa")
             botaoNetflix.textContent = 'Adquirido'
-            saldoBlitzTotal = document.getElementById("saldoBlitz")
-            saldoBlitzTotal.textContent = `${saldoBlitz-40000}`
+            var saldoBlitz = parseInt(document.getElementById("saldoBlitz").textContent);
+            saldoBlitz -= 40000;
+            document.getElementById("saldoBlitz").textContent = saldoBlitz;
+            sessionStorage.setItem('saldoBlitz', saldoBlitz.toString());
+            sessionStorage.setItem('ganhouAdicionarBlitz', 'true');
             setTimeout(function(){
                 alert(`Parabéns você acaba de adquirir um mês de Netflix!`)
             }, 300);
