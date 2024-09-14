@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Formula1';
+    src: url('../../../css/fonts/F1/Formula1-Regular.otf') format('opentype'),
+         url('../../../css/fonts/F1/Formula1-Bold.otf') format('opentype'),
+         url('../../../css/fonts/F1/Formula1-Wide.otf') format('opentype');
+}
+
+h1{
+    font-family: 'Formula1';
+}
