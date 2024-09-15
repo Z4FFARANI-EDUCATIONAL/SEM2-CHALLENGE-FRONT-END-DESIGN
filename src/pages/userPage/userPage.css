@@ -1,0 +1,340 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #101010;
+    color: white;
+}
+
+/* HEADER */
+header{
+    margin: 0 auto;
+    max-width: 1115px;
+    height: 80px;
+    background-color: #101010;
+}
+
+.header-content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-emmersive{
+    width: 150px;
+    height: 60px;
+}
+
+.header.EsmallLogo{
+    width: 10px;
+    height: 10px;
+}
+
+.EsmallLogo{
+    background: transparent;
+}
+
+.profile{
+    position: inherit;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.header-deco{
+    height: 80px;
+    position: absolute;
+    background-color: transparent;
+    z-index: -1;
+    margin-left: 15px;
+}
+
+.name-blitz{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    background-color: transparent;
+    font-size: 18px;
+}
+
+.blitz-qtd{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: transparent;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(251,226,1);
+}
+
+.blitz-icon{
+    width: 15px;
+    height: 20px;
+    
+}
+
+.user-btn{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+
+/* NAV */
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #2210F4;
+}
+
+.nav-cont{
+    display: flex;
+    max-width: 1115px;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    background-color: #2210F4;
+    margin: 5px;
+}
+
+.nav-cont a{
+    background: transparent;
+    text-decoration: none;
+}
+
+/* SECTION  1 */
+.section{
+    max-width: 1115px;
+    margin: 35px auto;
+    display: flex;
+    flex-direction: column; 
+}
+
+.section-title-card{
+    width: 100%;
+    display: flex;
+    flex-direction: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.section-title-card h2{
+    font-weight: 600;
+}
+
+.share.EsmallLogo{
+    height: 30px;
+    width: 30px;
+}
+
+.share-btns{
+    display: flex;
+    gap: 15px;
+    height: 60px;
+    justify-content: center;
+}
+
+.share-btns button{
+    background-color: #2210F4;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.share-btns button:hover{
+    filter: brightness(90%);
+}
+
+.section-title-card.one{
+    align-items: center;
+}
+
+/* BORDAS DE SEÇÃO PERSONALIZADAS */
+.blue-frame-one-sec1{
+    max-width: 1115px;
+    background: rgb(34,16,244);
+    background: linear-gradient(335deg, rgba(34,16,244,1) 0%, rgba(16,16,16,1) 50%);
+    padding-right: 5px; /* largura da borda */
+    padding-bottom: 5px; /* largura da borda */
+}
+
+.blue-frame-inner-one-sec1{
+    background-color: #101010; /* Fundo interno */
+    padding-right: 15px; /* Conteúdo interno */
+    padding-bottom: 12px; /* Conteúdo interno */
+}
+
+.blue-frame-two-sec1{
+    max-width: 1115px;
+    background: rgb(34,16,244);
+    background: linear-gradient(335deg, rgba(34,16,244,1) 0%, rgba(16,16,16,1) 50%);
+    padding-right: 6px; 
+    padding-bottom: 6px; 
+}
+
+.blue-frame-inner-two-sec1{
+    background-color: #101010;
+    padding-right: 12px; 
+    padding-bottom: 12px;
+}
+/* BORDAS DE SEÇÃO PERSONALIZADAS FIM*/
+
+
+.section-card{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-btns{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.big-blue-btn{
+    background-color: #2210F4;
+    height: 80%;
+    width: 230px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.big-blue-btn:hover{
+    filter: brightness(90%);
+}
+
+.blitz-gain{
+    position: absolute;
+    top: 0;
+    background-color: #ffffff;
+    border: 10px solid #101010;
+    border-left: none;
+    border-top: none;
+    border-bottom-right-radius: 60px;
+    height: 12%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 28px;
+    color: rgb(251,226,1);
+    gap: 5px;
+    animation: shiny 1s ease-in-out infinite alternate;
+    
+}
+
+@keyframes shiny {
+    0% {
+        text-shadow: 0 0 0px rgb(251,226,1 0);
+    }
+    100% {
+        text-shadow: 0 0 10px rgb(252, 232, 82);
+    }
+}
+
+.blitz-gain img{
+    width: 20px;
+    margin-top: 5px;
+}
+
+.blitz-shop{
+    height: 17%;
+    border: none;
+    border-radius: 5px;
+    color:#2210F4;
+    text-shadow: 0px 3px 4px gray;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.blitz-shop:hover{
+    filter: brightness(90%);
+}
+
+.card1{
+    width: 76%;
+}
+.card1 img{
+    width: 100%;
+}
+
+.card1 img:hover{
+    transition: 0.2s;
+    filter: brightness(110%);
+}
+
+
+/* SEÇÃO 2 */
+.section.two{
+    margin-top: 70px;
+}
+
+.section-title-card.two{
+    align-items: center;
+}
+
+.title.two h2{
+    display: flex;
+    justify-content: end;
+}
+
+.card2 img{
+    width: 100%;
+    max-width: 1115px;
+    cursor: pointer;
+}
+
+.card2 img:hover{
+    transition: 0.2s;
+    filter: brightness(110%);
+}
+
+/* BORDAR PERSONALIZADA */
+.blue-frame-one-sec1{
+    max-width: 1115px;
+    background: rgb(34,16,244);
+    background: linear-gradient(335deg, rgba(34,16,244,1) 0%, rgba(16,16,16,1) 50%);
+    padding-right: 5px; /* largura da borda */
+    padding-bottom: 5px; /* largura da borda */
+}
+
+.blue-frame-inner-one-sec1{
+    background-color: #101010; /* Fundo interno */
+    padding-right: 15px; /* Conteúdo interno */
+    padding-bottom: 12px; /* Conteúdo interno */
+}
+
+.blue-frame-two-sec1{
+    max-width: 1115px;
+    background: rgb(34,16,244);
+    background: linear-gradient(335deg, rgba(34,16,244,1) 0%, rgba(16,16,16,1) 50%);
+    padding-right: 6px; 
+    padding-bottom: 6px; 
+}
+
+.blue-frame-inner-two-sec1{
+    background-color: #101010;
+    padding-right: 12px; 
+    padding-bottom: 12px;
+}
+/* BORDAR PERSONALIZADA */
