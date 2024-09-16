@@ -399,6 +399,7 @@ button.big-share.sec1{
 
 }
 
+/* LIVE PONTINHO PISCANTE */
 .live-corner img{
     width: 35px;
     height: 35px;
@@ -516,14 +517,14 @@ h1.aposte-blitz{
     max-width: 1115px;
     background: rgb(34,16,244);
     background: linear-gradient(205deg, rgba(34,16,244,1) 0%, rgba(16,16,16,1) 35%);
-    padding-right: 4px; /* largura da borda */
-    padding-top: 4px; /* largura da borda */
+    padding-right: 4px;
+    padding-top: 4px;
 }
 
 .blue-frame-inner-one-sec3{
-    background-color: #101010; /* Fundo interno */
-    padding-right: 15px; /* Conteúdo interno */
-    padding-top: 12px; /* Conteúdo interno */
+    background-color: #101010; 
+    padding-right: 15px; 
+    padding-top: 12px; 
 }
 
 .blue-frame-two-sec3{
@@ -554,6 +555,7 @@ h1.aposte-blitz{
 
 /* BORDA PERSONALIZADA FIM */
 
+/* AREA DE SORTEIO(SEÇÃO 3) */
 .sorteio-card{
     width: 100%;
     height: 100%;
@@ -698,8 +700,8 @@ h1.aposte-blitz{
 /* SECTION 4 */
 .section-four{
     max-width: 1115px;
-    margin: 0 auto;
-    height: 700px;
+    margin: 0 auto 60px auto;
+    
 }
 
 /* BORDA PERSONALIZADA */
@@ -933,7 +935,7 @@ h1.aposte-blitz{
     filter: blur(10px);
 }
 
-/* CARD RARO */
+/* CARD RARO ANIMAÇÃO */
 .borda-animada-item.raro::before, .borda-animada-item.raro:after{
     content: '';
     position: absolute;
@@ -946,7 +948,7 @@ h1.aposte-blitz{
     border-radius: 5px;
 }
 
-/* CARD ESPECIAL */
+/* CARD ESPECIAL ANIMAÇÃO*/
 .borda-animada-item.especial::before, .borda-animada-item.especial:after{
     content: '';
     position: absolute;
@@ -959,7 +961,7 @@ h1.aposte-blitz{
     border-radius: 5px;
 }
 
-/* CARD COMUM */
+/* CARD COMUM ANIMAÇÃO*/
 .borda-animada-item.comum::before, .borda-animada-item.comum:after{
     content: '';
     position: absolute;
@@ -972,9 +974,35 @@ h1.aposte-blitz{
     border-radius: 5px;
 }
 
+/* GRID SHOP */
 .gridShop{
     display: grid;
     max-width: 1115px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 50px;
+}
+
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: #2210F4;
+
+}
+
+.footer-content{
+    max-width: 1115px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.footer-content h1{
+    font-size: 18px;
+}
+
+.footer-logo{
+    width: 150px;
+    height: 70px;
 }
