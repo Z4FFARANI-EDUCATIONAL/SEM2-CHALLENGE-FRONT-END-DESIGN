@@ -707,7 +707,7 @@ h1.aposte-blitz{
 .blue-frame-one-sec4{
     max-width: 1115px;
     background: rgb(216,216,216);
-    background: linear-gradient(30deg, rgba(216,216,216,1) 0%, rgba(16,16,16,1) 50%);
+    background: linear-gradient(23deg, rgba(216,216,216,1) 0%, rgba(16,16,16,1) 50%);
     padding-left: 4px; /* largura da borda */
     padding-bottom: 4px; /* largura da borda */
 }
@@ -722,7 +722,7 @@ h1.aposte-blitz{
 .blue-frame-two-sec4{
     max-width: 1115px;
     background: rgb(255,47,153);
-    background: linear-gradient(30deg, rgba(255,47,153,1) 0%, rgba(16,16,16,1) 50%);
+    background: linear-gradient(23deg, rgba(255,47,153,1) 0%, rgba(16,16,16,1) 50%);
     padding-left: 4px; 
     padding-bottom: 4px; 
 }
@@ -737,7 +737,7 @@ h1.aposte-blitz{
 .blue-frame-three-sec4{
     max-width: 1115px;
     background: rgb(255,31,31);
-    background: linear-gradient(30deg, rgba(255,31,31,1) 0%, rgba(16,16,16,1) 50%);
+    background: linear-gradient(23deg, rgba(255,31,31,1) 0%, rgba(16,16,16,1) 50%);
     padding-left: 4px; 
     padding-bottom: 4px; 
 }
@@ -752,7 +752,7 @@ h1.aposte-blitz{
 .blue-frame-four-sec4{
     max-width: 1115px;
     background: rgb(201,155,38);
-    background: linear-gradient(30deg, rgba(201,155,38,1) 0%, rgba(16,16,16,1) 50%);
+    background: linear-gradient(23deg, rgba(201,155,38,1) 0%, rgba(16,16,16,1) 50%);
     padding-left: 4px; 
     padding-bottom: 4px; 
 }
@@ -790,8 +790,85 @@ h1.aposte-blitz{
     width: 180PX;
     height: 370px;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
+.item-card p{
+    font-family: 'Michroma', sans-serif;
+    font-weight: 600;
+}
+
+.item-description.lendario{
+    color: #C99B26;
+}
+
+.item-description.raro{
+    color: #FF1F1F;
+}
+
+.item-description.especial{
+    color: #FF2F99;
+}
+
+.item-description.comum{
+    color: black;
+}
+
+.item-name{
+    color: black;
+    font-size: 16px;
+}
+
+.item{
+    max-width: 150px;
+}
+
+.item.comum{
+    width: 133px;
+}
+
+.blitz-qtd.price{
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.adquirir{
+    width: 125px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #D9D9D9;
+    cursor: pointer;
+}
+
+.adquirir.lendario{
+    background-color: #C99B26;
+}
+
+.adquirir.raro{
+    background-color: #FF1F1F;
+}
+
+.adquirir.especial{
+    background-color: #f71156;
+}
+
+.adquirir.comum{
+    background-color: #000000;
+}
+
+.raridade{
+    font-size: 24px;
+    color: #101010;
+}
 
 .fundo-item-card{
     display: flex;
@@ -893,4 +970,11 @@ h1.aposte-blitz{
     background-size: 600%;
     animation: AnimarBorda 30s linear infinite;
     border-radius: 5px;
+}
+
+.gridShop{
+    display: grid;
+    max-width: 1115px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
 }
