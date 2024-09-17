@@ -1,10 +1,304 @@
 @font-face {
-    font-family: 'Formula1';
-    src: url('../../../css/fonts/F1/Formula1-Regular.otf') format('opentype'),
-         url('../../../css/fonts/F1/Formula1-Bold.otf') format('opentype'),
-         url('../../../css/fonts/F1/Formula1-Wide.otf') format('opentype');
+    font-family: 'Formula';
+    src: url('../../../public/css/fonts/Formula1-Regular.otf') format('opentype');
+         
 }
 
-h1{
-    font-family: 'Formula1';
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #101010;
+    color: white;
+}
+
+/* HEADER */
+header{
+    margin: 0 auto;
+    max-width: 1115px;
+    height: 80px;
+    background-color: #101010;
+}
+
+.header-content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-emmersive{
+    width: 150px;
+    height: 60px;
+}
+
+.profile{
+    position: inherit;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.header-deco{
+    height: 80px;
+    position: absolute;
+    background-color: transparent;
+    z-index: -1;
+    margin-left: 15px;
+}
+
+.name-blitz{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    background-color: transparent;
+    font-size: 18px;
+}
+
+.blitz-qtd{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: transparent;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(251,226,1);
+}
+
+.blitz-icon{
+    width: 15px;
+    height: 20px;
+    
+}
+
+.user-btn{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+/* HEADER BAR */
+.header-bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #ff0000;
+    height: 20px;
+}
+
+/* MAIN */
+main{
+    width: 100%;
+    position: relative;
+
+}
+
+.top-deco{
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+.middlePageF1-deco{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    
+}
+
+.bottomPageF1-deco{
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.F1-content{
+    max-width: 1115px;
+    margin: 0 auto;
+    padding-top: 80px;
+    background-image: url("../../../public/assets/images/middlePageF1-deco.png");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 900px 900px;
+    background-repeat: no-repeat;
+}
+
+.F1-logo{
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+
+.carrossel-btns{
+    max-width: 470px;
+    width: 470px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.carrossel-btns a{
+    color: white;
+    font-size: 14px;
+    padding: 0;
+}
+
+.slide-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-btns button{
+    color: white;
+    background-color: #ff0000;
+    border: none;
+    width: 60px;
+    height: 30px;
+    font-size: 32px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.slide-btns .left{
+    font-family: "Formula", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+
+.slide-btns .right{
+    font-family: "Formula", sans-serif;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-left: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+
+.carrossel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.slide-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    height: 300px;
+    padding: 10px;
+    position: relative;
+}
+
+.slide-container img{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.F1-content p{
+    font-family: "Numans", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 80px;
+    max-width: 600px;
+    padding-bottom: 50px;
+}
+
+
+
+/* BORDA CARROSSEL */
+.slide-container:before, .slide-container:after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #101010,#ff4242, #ff0000, #0f0101, #101010, #0f0101,  #ff0000, #ff4242, #101010);
+    background-size: 600%;
+    animation: AnimarBorda 30s linear infinite;
+}
+
+.slide-container:after{
+    position: absolute;
+    top: 0;
+    filter: blur(10px);
+}
+
+@keyframes AnimarBorda {
+    0%{
+        background-position: 600%;
+    }
+    100%{
+        background-position: 0;
+    }    
+} 
+
+.redirect{
+    max-width: 1115px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+    padding: 0 0 40px 0;
+}
+
+.redirect img{
+    padding: 8px 0 0 0 ;
+}
+
+
+.redirect a{
+    color: white;
+    font-family: 'Michroma', sans-serif;
+}
+
+
+/* FOOTER */
+footer{
+    width: 100;
+    height: 80px;
+    background-color: #ff0000;
+
+}
+
+.footer-content{
+    max-width: 1115px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.footer-content h1{
+    font-size: 18px;
+}
+
+.footer-logo{
+    width: 150px;
+    height: 70px;
 }
