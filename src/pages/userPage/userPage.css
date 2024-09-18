@@ -3,14 +3,16 @@
 }
 
 body{
+    width: 100%;
+    margin: 0 auto;
     background-color: #101010;
     color: white;
 }
 
 /* HEADER */
+
 header{
-    margin: 0 auto;
-    max-width: 1115px;
+    width: 100%;
     height: 80px;
     background-color: #101010;
 }
@@ -20,6 +22,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1115px;
+    margin: 0 auto;
 }
 
 .logo-emmersive{
@@ -136,6 +140,7 @@ nav{
     position: sticky;
     z-index: 3;
     width: 100%;
+    min-width: 1024px;
     display: flex;
     justify-content: center;
     background-color: #2210F4;
@@ -147,7 +152,6 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 70px;
-    background-color: #2210F4;
     margin: 5px;
 }
 
@@ -980,10 +984,11 @@ h1.aposte-blitz{
 .gridShop{
     display: grid;
     max-width: 1115px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 50px;
+    grid-template-columns: repeat(auto-fill,  minmax(200px,1fr));
+    grid-gap: 50px;
 }
 
+/* FOOTER */
 footer{
     width: 100%;
     height: 80px;
