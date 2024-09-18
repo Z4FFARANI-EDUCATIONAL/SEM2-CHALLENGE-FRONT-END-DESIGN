@@ -5,25 +5,43 @@
 body{
     background-color: #101010;
     color: white;
+    overflow-x: hidden;    
 }
 
 /* HEADER */
 header{
     margin: 0 auto;
-    max-width: 1115px;
     height: 80px;
     background-color: #101010;
 }
+
+/* ------------------------------------------------------- */
 
 .header-content{
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* ATENÇÃO! Como ficaria os itens do menu no formato responsivo? */
+
 }
 
+/* ------------------------------------------------------- */
+
+@media (min-width:1000px) and (max-width: 1280px){
+    .header-content{
+        width: 1240px;
+    }
+    .nav-cont{
+        width: 1240px;
+    }
+    /* Adicionar todos os elementos no quadro acima para responsividade desktop */
+}
+
+
+/* ------------------------------------------------------- */
+
 .logo-emmersive{
-    width: 150px;
     height: 60px;
 }
 
@@ -141,11 +159,11 @@ nav{
 
 .nav-cont{
     display: flex;
-    max-width: 1115px;
     justify-content: center;
     align-items: center;
     gap: 70px;
     background-color: #2210F4;
+    /* Sugestão: Não acha melhor retirar esse background? O nav de cima já preenche todo o espaço que você queria.  */
     margin: 5px;
 }
 
