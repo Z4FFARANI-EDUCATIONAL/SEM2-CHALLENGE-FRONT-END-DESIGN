@@ -15,34 +15,16 @@ header{
     background-color: #101010;
 }
 
-/* ------------------------------------------------------- */
-
 .header-content{
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* ATENÇÃO! Como ficaria os itens do menu no formato responsivo? */
-    /* A */
+
 }
-
-/* ------------------------------------------------------- */
-
-@media (min-width:1000px) and (max-width: 1280px){
-    .header-content{
-        width: 1240px;
-    }
-    .nav-cont{
-        width: 1240px;
-    }
-    /* Adicionar todos os elementos no quadro acima para responsividade desktop */
-}
-
-
-/* ------------------------------------------------------- */
 
 .logo-emmersive{
-    height: 60px;
+    width: 140px;
 }
 
 .headerBtns{
@@ -75,6 +57,7 @@ header{
     font-family: 'Michroma', sans-serif;
     font-size: 12px;
 }
+
 .headerBtns button{
     cursor: pointer;
     background: transparent;
@@ -83,6 +66,7 @@ header{
     font-size: 12px;
     height: 100%;
     width: 100%;
+    color: black;
 }
 
 
@@ -151,9 +135,6 @@ header{
 
 /* NAV */
 nav{
-    position: sticky;
-    top: 0px;
-    z-index: 1;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -165,8 +146,6 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 70px;
-    background-color: #2210F4;
-    /* Sugestão: Não acha melhor retirar esse background? O nav de cima já preenche todo o espaço que você queria.  */
     margin: 5px;
 }
 
@@ -1026,4 +1005,29 @@ footer{
 .footer-logo{
     width: 150px;
     height: 70px;
+}
+
+/* Reponsividade */
+
+/* Smartphones até os tablets */
+
+@media (min-width:320px) and (max-width: 768px){
+    .headerBtns{
+        background-color: #101010;
+    }
+
+    /* Utilizar o exemplo guardado no notion referente a imagem conter dentro de si, as opções de navegação */
+
+    .logo-emmersive:nth-child(1){
+        order: 1;
+    }
+
+    .profile:nth-child(3){
+        order: 3;
+    }
+
+    .headerBtns button{
+        color: white;
+    }
+
 }
