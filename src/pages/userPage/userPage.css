@@ -134,8 +134,7 @@ header{
 /* NAV */
 nav{
     position: sticky;
-    top: 0px;
-    z-index: 1;
+    z-index: 3;
     width: 100%;
     display: flex;
     justify-content: center;

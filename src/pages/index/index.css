@@ -1,0 +1,312 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #101010;
+    color: white;
+}
+
+/* HEADER */
+header{
+    margin: 0 auto;
+    max-width: 1115px;
+    height: 80px;
+    background-color: #101010;
+}
+
+.header-content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-emmersive{
+    width: 150px;
+    height: 60px;
+    margin-left: 120px;
+}
+
+.profile{
+    position: inherit;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.header-deco{
+    height: 80px;
+    position: absolute;
+    background-color: transparent;
+    z-index: -1;
+    margin-left: 15px;
+}
+
+.gradientBar{
+    width: 100%;
+    height: 16px;
+    background: rgb(201,155,38);
+    background: linear-gradient(90deg, rgba(201,155,38,1) 0%, rgba(255,31,31,1) 36%, rgba(255,47,153,1) 69%, rgba(216,216,216,1) 100%);
+}
+
+.init-section{
+    margin-top: 35px;
+    font-family: "Numans", sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+/* MAIN */
+main{
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* section one */
+.section-one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1115%;
+}
+
+.welcome-img{
+    width: 100%;
+}
+
+.blue-frame-one-sec1{
+    max-width: 800px;
+    background: rgb(34,16,244);
+    background: linear-gradient(225deg, rgba(34,16,244,1) 0%, rgba(16,16,16,1) 33%, rgba(16,16,16,1) 66%, rgba(34,16,244,1) 100%);
+    padding: 4px; /* largura da borda */ /* largura da borda */
+}
+
+.blue-frame-inner-one-sec1{
+    background-color: #101010; /* Fundo interno */
+    padding: 15px; /* Conteúdo interno */
+   
+}
+
+.blue-frame-two-sec1{
+    max-width: 800px;
+    background: rgb(34,16,244);
+    background: linear-gradient(225deg, rgba(34,16,244,1) 0%, rgba(16,16,16,1) 33%, rgba(16,16,16,1) 66%, rgba(34,16,244,1) 100%);
+    padding: 4px; 
+
+}
+
+.blue-frame-inner-two-sec1{
+    background-color: #101010;
+    padding: 15px; 
+}   
+
+/* section 2 */
+.section-two{
+    width: 100%;
+    background-color: #2210f4;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px auto;
+}
+
+.section-two-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    margin: 0 auto;
+    max-width: 1115px;
+
+}
+
+.video{
+    width: 100%;
+}
+
+.introdução-card{
+    max-width: 320px;
+    max-height: 290px;
+    margin-bottom: 35px;
+}
+
+.blue-frame-one-sec2{
+    max-width: 450px;
+    background: rgb(34,16,244);
+    background: linear-gradient(330deg, rgb(255, 255, 255) 0%, #2210f4 50%);
+    padding-right: 4px; /* largura da borda */
+    padding-bottom: 4px; /* largura da borda */
+}
+
+.blue-frame-inner-one-sec2{
+    background-color: #2210f4; /* Fundo interno */
+    padding-right: 15px; /* Conteúdo interno */
+    padding-bottom: 12px; /* Conteúdo interno */
+}
+
+.blue-frame-two-sec2{
+    max-width: 600px;
+    background: rgb(34,16,244);
+    background: linear-gradient(330deg, rgb(255, 255, 255) 0%, #2210f4 50%);
+    padding-right: 4px; 
+    padding-bottom: 4px; 
+}
+
+.blue-frame-inner-two-sec2{
+    background-color: #2210f4;
+    padding-right: 12px; 
+    padding-bottom: 12px;
+}
+
+/* section 3 */
+.section-three{
+    max-width: 1115px;
+    width: 1115px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.division-bars{
+    width: 100%;
+    font-size: 0px;
+    
+}
+
+.section-three-div{
+    width: 100%;
+    height: 8px;
+    margin: 8px 0;
+    
+}
+
+.section-three-div.gold{
+    background: rgb(16,16,16);
+    background: linear-gradient(90deg, rgba(16,16,16,1) 0%, rgba(201,155,38,1) 50%, rgba(16,16,16,1) 100%);
+}
+
+.section-three-div.red{
+    background: rgb(16,16,16);
+    background: linear-gradient(90deg, rgba(16,16,16,1) 0%, rgba(255,31,31,1) 50%, rgba(16,16,16,1) 100%);
+}
+
+.section-three-div.pink{
+    background: rgb(16,16,16);
+    background: linear-gradient(90deg, rgba(16,16,16,1) 0%, rgba(255,47,153,1) 50%, rgba(16,16,16,1) 100%);
+}
+
+.section-three-div.white{
+    background: rgb(16,16,16);
+    background: linear-gradient(90deg, rgba(16,16,16,1) 0%, rgba(216,216,216,1) 50%, rgba(16,16,16,1) 100%);
+}
+
+.section-three-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section-three-content p{
+    font-family: "Numans", sans-serif;
+    font-size: 18px;
+    max-width: 800px;
+    text-align: center;
+    margin: 30px 0 70px 0;
+}
+
+.blitz-e-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 80px;
+}
+
+.emmersive{
+    max-width: 600px;
+}
+
+.blitz-logo{
+    max-width: 200px;
+}
+
+/* section-four */
+.section-four{
+    max-width: 1115px;
+    width: 1115px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.section-four-div{
+    width: 100%;
+    height: 8px;
+    margin: 8px 0;
+    background: rgb(16,16,16);
+    background: linear-gradient(90deg, rgba(16,16,16,1) 0%, rgba(1,253,71,1) 50%, rgba(16,16,16,1) 100%);
+    
+}
+
+.container-text-shadow{
+    display: flex;
+    justify-content: center;
+}
+
+.conheca{
+    font-size: 72px;
+    text-shadow: #2210f4;
+
+}
+
+.atras{
+    position: absolute;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    position: absolute;
+    margin-top: 7px;
+
+}
+
+.frente{
+    position: relative;
+    
+}
+
+.fanboost{
+    font-family: 'Michroma', sans-serif;
+    font-size: 82px;
+    color: rgba(1,253,71,1);
+    font-weight: 200;
+}
+
+.attack-description{
+    margin: 30px 0;
+    display: flex;
+    gap: 15px;
+    margin: 60px 0;
+}
+
+.attack-description p{
+    font-family: 'Numans', sans-serif;
+    text-align: start;
+    max-width: 500px;
+    font-size: 18px;
+
+}
+
+.attack-description img{
+    width: 150px;
+}
