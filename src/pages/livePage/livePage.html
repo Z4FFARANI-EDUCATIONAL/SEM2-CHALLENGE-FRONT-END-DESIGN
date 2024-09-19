@@ -7,9 +7,136 @@
     
     <link rel="stylesheet" href="livePage.css">
     <link rel="stylesheet" href="../../../public/css/fonts/fonts.css">
-    <link rel="stylesheet" href="../../../public/css/global.css">>
+    <link rel="stylesheet" href="../../../public/css/global.css">
 </head>
 <body>
+    <header>
+        <div class="header-content">
+            <div class="headerBtn-768w">
+                <button><img class="menu-svg" src="../../../public/assets/images/menu.svg" alt="mini botão"></button>
+            </div>
+            <img class="logo-emmersive" src="../../../public/assets/images/logo.png" alt="Logo Formula Emmersive">
+            <div class="headerBtns">
+                <button class="scoreBtn">Score</button>
+                <span class="texto_Header" style="color: #101010">|</span>
+                <button class="challengesBtn">Desafios</button>
+                <span class="texto_Header" style="color: #101010">|</span>
+                <button class="newsBtn">
+                    <p class="texto_Header">News</p>
+                    <img class="header-minilogo" src="../../../public/assets/images/EsmallLogo.svg" alt="E logo">
+                </button>
+            </div>
+            <div class="profile">
+                <div class="name-blitz">
+                    <p class="username">Usuário</p>
+                    <p class="blitz-qtd"><img class="blitz-icon" src="../../../public/assets/images/blitz.png" alt="Blitz Icon">500</p>
+                </div>
+                <button class="user-btn"></button>
+                <img class='header-deco' src="../../../public/assets/images/header-decoration.png" alt="decoração header">
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="nav-cont">
+            <a href="#"><span><img class="navLiveDot" src="../../../public/assets/images/liveDot.png" alt="live dot"></span>LIVE</a>
+            <a href="#">Placar</a>
+            <a href="#">Mapas</a>
+            <a href="#">Destaques</a>
+        </div>
+    </nav> 
+<!-- section 1 -->
+    <div class="section-one">
+        <!-- GRID LIVE -->
+        <div class="livestream">
+            <div class="live">
+                <img class="live-video" src="../../../public/assets/images/live.png" alt="live-video">
+                <div class="video-icons">
+                    <img  src="../../../public/assets/images/pause.png" alt="pause button">
+                    <div class="volume-fullscreen">
+                        <img  src="../../../public/assets/images/Audio.png" alt="audio bar">
+                        <img  src="../../../public/assets/images/Expand.png" alt="fullscreen">
+                    </div>
+                </div>
+                <div class="live-on">
+                    <h1><img class="live-dot" src="../../../public/assets/images/liveDot.png" alt="ponto live">LIVE</h1>
+                </div>
+            </div>
+            <div class="live-title">
+                <div class="competition-name">
+                    <img class="fia" src="../../../public/assets/images/fia.png" alt="FIA logo">
+                    <h1>E-PRIX - <span style="font-weight: 300;">SÃO PAULO</span></h1>
+                    <span style="font-size: 42px; color: blue; font-weight: bold; font-style: normal;">|</span>
+                    <h1>SEASON <span style="color: aqua;">10</span></h1>
+                </div>
+                <p>Who do you think it’s going to win this race?! Vote now on the chat! Don’t forget to answer our quizzes during the intervals to get more blitz and change them for better prizes!</p>
+                <p>Don’t forget to follow us on social media! Live is happening on Formula E’s official channel too.</p>
+            </div>
+            
+            <div class="live-comments">
+                <div class="comments-live-bar item-0">
+                    <h1><img class="live-dot-bar" src="../../../public/assets/images/liveDot.png" alt="ponto live">LIVE</h1>
+                </div>
+                <div class="comentario item-1">
+                    <div>
+                        <img class="pfp" src="../../../public/assets/images/comment-pfp-1.png" alt="comment-pfp-1">
+                        <h1>Hep</h1>
+                    </div>
+                    <p>I was here since the beginning! Good Luck my team!</p>
+                </div>
+
+                <div class="comentario item-2">
+                    <div>
+                        <img class="pfp" src="../../../public/assets/images/comment-pfp-2.png" alt="comment-pfp-2">
+                        <h1>Jeff</h1>
+                    </div>
+                    <p>I will bet De Vries. Definitely he is going to win. Otherwise, the most popular in this season.</p>
+                </div>
+
+                <div class="comentario item-3">
+                    <div>
+                        <img class="pfp" src="../../../public/assets/images/comment-pfp-3.png" alt="comment-pfp-3">
+                        <h1>Alex</h1>
+                    </div>
+                    <p>OMG, SÃO PAULO!! VAMOS BRASIL</p>
+                </div>
+
+                <div class="comentario item-4">
+                    <div>
+                        <img class="pfp" src="../../../public/assets/images/comment-pfp-4.png" alt="comment-pfp-4">
+                        <h1>Zanery</h1>
+                    </div>
+                    <p>I’ve got 1.000 Blitz just for entering here. How cool is that?</p>
+                </div>
+
+                <div class="comentario item-5">
+                    <div>
+                        <img class="pfp" src="../../../public/assets/images/comment-pfp-5.png" alt="comment-pfp-5">
+                        <h1>User_5879</h1>
+                    </div>
+                    <p>Loving see eletric cars in competitions like that. Let’s save our nature with style!!</p>
+                </div>
+            </div>
+
+            <div class="live-message-box">
+                <div class="write-message">
+                    <input type="text" placeholder="Envie uma mensagem">
+                </div>
+                <div class="fanboost-choose">
+                    <h1>FANBOOST</h1>
+                    <h2>PILOTO ESCOLHIDO</h2>
+                    <div class="position-racer">
+                        <img class="attack-mini" src="../../../public/assets/images/attack-mini.png" alt="fannboost icon">
+                        <img src="../../../public/assets/images/Number.png" alt="1st Place">
+                        <img src="../../../public/assets/images/mahindra-racing.png" alt="scuderia: Mahindra Racing">
+                        <div>
+                            <h3>MAHINDRA RACE</h3>
+                            <p>DE VRIES</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="livePage.js"></script>
 </body>
 </html>

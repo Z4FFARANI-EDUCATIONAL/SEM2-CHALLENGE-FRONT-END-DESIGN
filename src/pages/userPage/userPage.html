@@ -13,6 +13,9 @@
 <body>
    <header>
         <div class="header-content">
+            <div class="headerBtn-768w">
+                <button><img class="menu-svg" src="../../../public/assets/images/menu.svg" alt="mini botão"></button>
+            </div>
             <img class="logo-emmersive" src="../../../public/assets/images/logo.png" alt="Logo Formula Emmersive">
             <div class="headerBtns">
                 <button class="scoreBtn">Score</button>
@@ -139,7 +142,9 @@
                                 <div class="sorteio-card">
                                 <!-- FRAME SORTEIO PERSONALIZADO -->
                                     <div class="sorteio-content">
-                                        <img class="anounce-img" src="../../../public/assets/images/Sorteio Img.png" alt="imagem promocional de sorteio">
+                                        <div class="anounce-img-container">
+                                            <img class="anounce-img" src="../../../public/assets/images/Sorteio Img.png" alt="imagem promocional de sorteio">
+                                        </div>
                                         <div class="card-interactions">
                                             <h1 class="tickets-txt"><span><img src="../../../public/assets/images/TICKETS.png" alt="Icone Ticket"></span>10x TICKETS PARA:</h1>
                                             <h1 class="eprix">E-PRIX <span style="font-weight: 300;">SÃO PAULO</span></h1>
@@ -174,71 +179,55 @@
                     <h1>NOVAS RECOMPENSAS CHEGAM EM: <span style="color:rgb(127, 255, 170)">19Hr : 47Min : 17Seg</span></h1>
                 </div>
                 <!-- BORDA PERSONALIZADA -->
-                <div class="blue-frame-four-sec4">
-                    <div class="blue-frame-inner-four-sec4">
-                        <div class="blue-frame-three-sec4">
-                            <div class="blue-frame-inner-three-sec4">
-                                <div class="blue-frame-two-sec4">
-                                    <div class="blue-frame-inner-two-sec4">
-                                        <div class="blue-frame-one-sec4">
-                                            <div class="blue-frame-inner-one-sec4">
-                                                <div class="item-cards-display">
-                                                    <div class="gridShop">
-                                                        <div class="borda-animada-item lendario">
-                                                            <div class="fundo-item-card">
-                                                                <div class="item-card lendario">
-                                                                    <p class="item-description lendario">MOLDURA</p>
-                                                                    <img class="item lendario" src="../../../public/assets/images/lendario item.png" alt="moldura gold">
-                                                                    <p class="item-name">GOLD</p>
-                                                                    <p class="blitz-qtd price"><img src="../../../public/assets/images/blitz.png" alt="Blitz Icon">2000</p>
-                                                                    <button class="adquirir lendario">adquirir</button>
-                                                                    <p class="raridade">lendário</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="borda-animada-item raro">
-                                                            <div class="fundo-item-card">
-                                                                <div class="item-card raro">
-                                                                    <p class="item-description raro">SAMPLE</p>
-                                                                    <img class="item" src="../../../public/assets/images/item raro.png" alt="E-tron">
-                                                                    <p class="item-name">E-TRON</p>
-                                                                    <p class="blitz-qtd price"><img src="../../../public/assets/images/blitz.png" alt="Blitz Icon">1000</p>
-                                                                    <button class="adquirir raro">adquirir</button>
-                                                                    <p class="raridade">raro</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="borda-animada-item especial">
-                                                            <div class="fundo-item-card">
-                                                                <div class="item-card especial">
-                                                                    <p class="item-description especial">GIFT CARD</p>
-                                                                    <img class="item" src="../../../public/assets/images/playstore.png" alt="GooglePlay giftcard">
-                                                                    <p class="item-name">GOOGLE PLAY</p>
-                                                                    <p class="blitz-qtd price"><img src="../../../public/assets/images/blitz.png" alt="Blitz Icon">20.000</p>
-                                                                    <button class="adquirir especial">adquirir</button>
-                                                                    <p class="raridade">especial</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="borda-animada-item comum">
-                                                            <div class="fundo-item-card">
-                                                                <div class="item-card comum">
-                                                                    <p class="item-description comum">EXEMPLO</p>
-                                                                    <img class="item comum" src="../../../public/assets/images/moldura comum.png" alt="EXEMPLO">
-                                                                    <p class="item-name">EXEMPLO</p>
-                                                                    <p class="blitz-qtd price"><img src="../../../public/assets/images/blitz.png" alt="Blitz Icon">1000</p>
-                                                                    <button class="adquirir comum">adquirir</button>
-                                                                    <p class="raridade">comum</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>   
-                                            </div>
-                                        </div>
-                                    </div>    
+                <div class="item-cards-display">
+                    <div class="areaShop">
+                        <div class="borda-animada-item lendario">
+                            <div class="fundo-item-card">
+                                <div class="item-card lendario">
+                                    <p class="item-description lendario">MOLDURA</p>
+                                    <img class="item lendario" src="../../../public/assets/images/lendario item.png" alt="moldura gold">
+                                    <p class="item-name">GOLD</p>
+                                    <p class="blitz-qtd price"><img src="../../../public/assets/images/blitz.png" alt="Blitz Icon">2000</p>
+                                    <button class="adquirir lendario">adquirir</button>
+                                    <p class="raridade">lendário</p>
                                 </div>
-                            </div>    
+                            </div>
+                        </div>
+                        <div class="borda-animada-item raro">
+                            <div class="fundo-item-card">
+                                <div class="item-card raro">
+                                    <p class="item-description raro">SAMPLE</p>
+                                    <img class="item" src="../../../public/assets/images/item raro.png" alt="E-tron">
+                                    <p class="item-name">E-TRON</p>
+                                    <p class="blitz-qtd price"><img src="../../../public/assets/images/blitz.png" alt="Blitz Icon">1000</p>
+                                    <button class="adquirir raro">adquirir</button>
+                                    <p class="raridade">raro</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="borda-animada-item especial">
+                            <div class="fundo-item-card">
+                                <div class="item-card especial">
+                                    <p class="item-description especial">GIFT CARD</p>
+                                    <img class="item" src="../../../public/assets/images/playstore.png" alt="GooglePlay giftcard">
+                                    <p class="item-name">GOOGLE PLAY</p>
+                                    <p class="blitz-qtd price"><img src="../../../public/assets/images/blitz.png" alt="Blitz Icon">20.000</p>
+                                    <button class="adquirir especial">adquirir</button>
+                                    <p class="raridade">especial</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="borda-animada-item comum">
+                            <div class="fundo-item-card">
+                                <div class="item-card comum">
+                                    <p class="item-description comum">EXEMPLO</p>
+                                    <img class="item comum" src="../../../public/assets/images/moldura comum.png" alt="EXEMPLO">
+                                    <p class="item-name">EXEMPLO</p>
+                                    <p class="blitz-qtd price"><img src="../../../public/assets/images/blitz.png" alt="Blitz Icon">1000</p>
+                                    <button class="adquirir comum">adquirir</button>
+                                    <p class="raridade">comum</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

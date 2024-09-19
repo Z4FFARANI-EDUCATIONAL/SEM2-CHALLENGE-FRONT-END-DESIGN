@@ -1,0 +1,460 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body{
+    margin: 0 auto;
+    background-color: #101010;
+    color: white;
+}
+
+header{
+    max-width: 100%;
+    height: 80px;
+    background-color: #101010;
+}
+
+.header-content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1115px;
+    margin: 0 auto;
+}
+
+.headerBtn-768w{
+    display: none;
+}
+
+.logo-emmersive{
+    width: 140px;
+}
+
+.headerBtns{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    max-width: 310px;
+    width: 310px;
+    height: 40px;
+    border-radius: 15px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.scoreBtn{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.newsBtn{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.newsBtn p{
+    font-family: 'Michroma', sans-serif;
+    font-size: 12px;
+}
+
+.headerBtns button{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    font-family: 'Michroma', sans-serif;
+    font-size: 12px;
+    height: 100%;
+    width: 100%;
+    color: black;
+}
+
+
+.headerBtns button:hover{
+   background-color: rgb(243, 243, 243);
+
+}
+
+.header-minilogo{
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    background-color: #2210F4;
+    border-radius: 5px;
+}
+
+.profile{
+    position: inherit;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.header-deco{
+    height: 80px;
+    position: absolute;
+    background-color: transparent;
+    z-index: -1;
+} 
+
+.name-blitz{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    background-color: transparent;
+    font-size: 18px;
+}
+
+.blitz-qtd{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: transparent;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(251,226,1);
+}
+
+.blitz-icon{
+    width: 15px;
+    height: 20px;
+    
+}
+
+.user-btn{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+/* NAV */
+nav{
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #2210F4;
+}
+
+.nav-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin: 5px;
+}
+
+.nav-cont a{
+    background: transparent;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navLiveDot{
+    width: 10px;
+    height: 10px;
+    margin: 0 5px 0 0;
+    animation: pisca 1s ease-in-out infinite alternate;
+}
+
+@keyframes pisca {
+    0%{
+        opacity: 0;  
+    }
+    100%{
+        opacity: 1;
+    }    
+}
+
+/* MEDIA QUERY */
+@media (min-width:320px) and (max-width: 768px){
+   
+    .headerBtns{
+        display: none;
+    }
+
+    .headerBtn-768w{
+        display: flex;
+    }
+
+    .headerBtn-768w button{
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+    
+    .headerBtn-768w img{
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+/* section 1 */
+.section-one{
+    max-width: 1115px;
+    margin: 0 auto;
+}
+
+.livestream{
+    max-width: 1115px;
+    display: grid;
+        
+    grid-template-columns: 3fr 300px ;
+    grid-template-rows: 500px 200px;
+}
+
+/* GRID ITENS */
+.live{   
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #2210F4;
+    position: relative;
+
+}
+
+.live-title{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: #1D1A28;
+}
+
+.live-comments{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: #1D1A28;
+}
+
+.live-message-box{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+/* ITENS */
+
+
+/* ITENS CSS */
+/* LIVE */
+.live-video{
+    width: 100%;
+    height: 100%;
+}
+
+.video-icons{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    gap: 60%;
+    align-items: center;
+    bottom: 0;
+}
+
+.volume-fullscreen{
+    display: flex;
+    gap: 15px;
+}
+
+.volume-fullscreen{
+    height: 25px;
+}
+
+.live-on{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 15px;
+
+}
+
+.live-on h1{
+    font-size: 18px;
+    font-family: 'Michroma', sans-serif;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.live-dot{
+    width: 15px;
+    height: 15px;
+    animation: pisca 1s ease-in infinite alternate;
+}
+
+/* LIVE-TITLE */
+.live-title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.competition-name{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 12px;
+    font-style: italic;
+    margin: 5px;
+}
+
+.live-title p{
+    font-family: 'Numans', sans-serif;
+    font-size: 16px;
+    gap: 10px;
+    margin: 5px;
+
+}
+
+/* LIVE MESSAGE BOX */
+.live-message-box{
+    background-color: #191927;
+    border: 1px solid black;
+
+}
+
+.write-message{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.write-message input{
+    height: 30px;
+    border-radius: 8px;
+    width: 80%;
+    border: 2px solid #3c3c3c;
+    background: #101010;
+    color: #ffffff;
+}
+
+.fanboost-choose{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    background: rgb(25,25,39);
+    background: linear-gradient(90deg, rgba(25,25,39,1) 44%, rgba(55,255,79,0.47181259245562135) 66%, rgba(39,134,58,0.7025818232248521) 100%);
+}
+
+.position-racer{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.position-racer img{
+    width: 50px;
+    height: 50px;
+}
+
+.position-racer .attack-mini{
+    width: 40px;
+}
+
+.position-racer h3{
+    font-size: 12px;
+}
+
+.fanboost-choose h1{
+    font-style: italic;
+    margin-top: 5px;
+    color: #37FF4F;
+}
+
+.fanboost-choose h2{
+    font-family: 'Michroma', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* COMMENTS BOX */
+.live-comments{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  50px repeat(5, minmax(70px, 1fr));
+    grid-template-areas:  
+        'live-bar'
+        'comment1'
+        'comment2'
+        'comment3'
+        'comment4'
+        'comment5'
+    ;
+}
+
+.comments-live-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom:  2px solid #101010;
+}
+
+.comments-live-bar h1{
+    font-family: 'Michroma', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.live-dot-bar{
+    width: 20px;
+    height: 20px;
+    animation: pisca 1s ease-in-out infinite alternate;
+}
+
+.comentario{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.comentario  div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.comentario h1{
+    font-family: 'Numans', sans-serif;
+    font-size: 18px;
+}
+
+.comentario p{
+    margin: 5px 0;
+    font-size: 14px;
+    font-family: 'Numans', sans-serif;
+}
+
+.item-0{
+    grid-area: live-bar;
+}
+
+.item-1{
+    grid-area: comment1;
+}
+.item-2{
+    grid-area: comment2;
+}
+.item-3{
+    grid-area: comment3;
+}
+.item-4{
+    grid-area: comment4;
+}
+.item-5{
+    grid-area: comment5;
+}
