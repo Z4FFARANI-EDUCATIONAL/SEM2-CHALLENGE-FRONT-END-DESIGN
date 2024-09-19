@@ -151,7 +151,7 @@ nav{
 
 .nav-cont{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     gap: 70px;
     margin: 5px;
@@ -976,9 +976,9 @@ footer{
 
 /* Reponsividade */
 
-/* Smartphones até os tablets */
+/* Smartphones */
 
-@media (min-width:320px) and (max-width: 768px){
+@media (min-width:320px) and (max-width: 425px){
    
     .headerBtns{
         display: none;
@@ -986,6 +986,13 @@ footer{
 
     .headerBtn-768w{
         display: flex;
+    }
+
+    .nav-cont{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 8px;
     }
 
     .headerBtn-768w button{
@@ -1008,20 +1015,82 @@ footer{
         margin: 0 30px;
     }
     
+    /* Continuação - Kairo */
 
-
-    /* Utilizar o exemplo guardado no notion referente a imagem conter dentro de si, as opções de navegação */
-
-    /* .logo-emmersive:nth-child(1){
-        order: 1;
+    .nav-cont{
+        font-size: 10px;
     }
 
-    .profile:nth-child(3){
-        order: 3;
+    .title-responsive{
+        font-size: 12px;
     }
 
-    .headerBtns button{
-        color: white;
-    } */
+    img.share-Logo{
+        width: 18px;
+    }
+
+    button.share-btns{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: 2px;
+        height: 50px;
+    }
+
+    /* Definindo o tamanho da div principal */
+
+    .section-card{
+        width: 100%;
+        height: auto;
+        /* Espaçamento das div principais */
+        gap: 10px;
+
+    }
+
+    /* GIF DA LOJA */
+
+    button.big-blue-btn{
+        background-size: 100px;
+        background-position-y: 25px;
+        background-position-x: center;
+        width: 100px;
+        height: 140px;
+
+        /* Terminar e ajustar imagem (se possível) */
+    }
+
+    /* Ajustando a borda do conteiner com gif e blitz */
+
+    .blitz-gain{
+        border: 4px solid #101010;
+        height: 24px;
+        border-left: none;
+        border-top: none;
+        
+    }
+
+    /* Ajutanto o valor de blitz adquirido */
+
+    .p-responsive{
+        /* padding para centralizar */
+        padding-right: 14px; 
+        font-size: 10px;
+    }
+
+    /* Imagem da blitz */
+
+    img.blitz-responsive{
+        margin: 0;
+        height: 16px;
+        width: auto;
+        object-fit: cover;
+    }
+
+    /* Botão Blitz Shop */
+
+    button.blitz-shop{
+        height: 20px;
+        width: 100px;
+    }
 
 }
