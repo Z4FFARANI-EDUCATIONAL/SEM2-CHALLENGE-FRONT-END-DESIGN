@@ -15,21 +15,22 @@
         <div class="input-and-title">
             <h1>Boas vindas</h1>
             <div class="campo-preencher">
-                <div class="email">
-                    <label for="email">E-mail:</label>
-                    <input class='email' type="text">
+                <div class="emailUser">
+                    <label id="emailLog" for="email">E-mail:</label>
+                    <input class='email' type="text" id="loginEmail">
                 </div>
-                <div class="senha">
-                    <label for="senha">Senha:</label>
-                    <input class='senha' type="text">
-                    <a href="#">Esqueci minha senha</a>
+                <div class="senhaUser">
+                    <label id="senhaLog" for="senha">Senha:</label>
+                    <input class='senha' type="password" id="loginSenha">
+                    <a href="../registerPage/registerPage.html">Esqueci minha senha</a>
                 </div>
             </div>
         </div>
         <div class="btn-agreement">
-            <button class="acessar">Acessar</button>
+            <button class="acessar" onclick="checarDados()">Acessar</button>
+            <button class="primeiro-acesso"><a class="first-access" href="../register/register.html">Primeiro acesso</a></button>
         </div>
-    </div>
+        </div>
     <script src="loginPage.js"></script>
 </body>
 </html>

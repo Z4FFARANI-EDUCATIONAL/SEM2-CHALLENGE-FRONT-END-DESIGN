@@ -8,6 +8,14 @@ body{
     color: white;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
 /* HEADER */
 
 header{
@@ -31,6 +39,7 @@ header{
 
 .logo-emmersive{
     width: 140px;
+    cursor: pointer;
 }
 
 .headerBtns{
@@ -129,12 +138,14 @@ header{
     
 }
 
-.user-btn{
+.moldura-user{
     width: 50px;
     height: 50px;
-    background-color: white;
-    border: none;
-    border-radius: 3px;
+}
+
+.userSaldo{
+    display: flex;
+    gap: 5px;
 }
 
 
@@ -335,7 +346,12 @@ button.big-share.sec1{
     font-style: italic;
     font-size: 32px;
     cursor: pointer;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 .blitz-shop:hover{
     filter: brightness(90%);
@@ -516,8 +532,87 @@ h1.aposte-blitz{
 .sorteio{
     margin: 50px auto;
     max-width: 1115px;
-    background-color: aqua;
 }
+
+.blitz-tickets{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.blitz-tickets img{
+    width: 20px;
+}
+
+/* POPUP CONFIRMAÇÃO */
+.pop-up{
+    position: fixed;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25 ease-in-out;
+}
+
+.pop-up-content{
+    font-family: "Michroma", sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    background: #2210F4;
+    border-radius: 15px;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.pop-up-btn{
+    display: flex;
+    justify-content: space-around;
+}
+
+.pop-up-btn button{
+    width: 130px;
+    height: 35px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+.option-confirm{
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: #2210F4;
+}
+
+.option-cancel{
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+.pop-up-btn button:hover{
+    color:#fcbc1a;
+    transition: 0.1s ease;
+    box-shadow: 0px 0px 5px;
+}
+
+.mostrar-pop-up{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
 
 
 /* BORDA PERSONALIZADA */
@@ -733,19 +828,23 @@ h1.aposte-blitz{
 /* FIM BORDA PERSONALIZADA */
 
 /* SEÇÃO 4 */
-.shop-time{
-    margin: 0 auto;
-    max-width: 1115px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* temporizador */
+.timer{
+    font-family: "Numans", sans-serif;
+    color: #01FD47;
+    z-index: 1;
+
 }
 
-.shop-time h1{
-    font-family: 'Michroma', sans-serif;
-    font-weight: 400;
+.temporizador{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    font-family: "Numans", sans-serif;
     font-size: 20px;
 }
+
 .item-cards-display{
     max-width: 1115px;
     margin: 30px;
@@ -817,12 +916,18 @@ h1.aposte-blitz{
     cursor: pointer;
 }
 
+.adquirir:hover{
+    filter: brightness(120%);
+}
+
 .adquirir.lendario{
     background-color: #C99B26;
 }
 
 .adquirir.raro{
-    background-color: #FF1F1F;
+    /* background-color: #FF1F1F; */
+    background-color: transparent;
+    color: #000000;
 }
 
 .adquirir.especial{
@@ -940,13 +1045,20 @@ h1.aposte-blitz{
     border-radius: 5px;
 }
 
-/* GRID SHOP */
 .areaShop{
     display: flex;
     max-width: 1115px;
     flex-wrap: wrap;
     gap: 50px;
 }
+
+.item-adquirido{
+    background-color: transparent;
+    transition: 0.2s ease;
+    pointer-events: none;
+    color: #000000;
+}
+
 
 /* FOOTER */
 footer{
@@ -973,6 +1085,7 @@ footer{
     width: 150px;
     height: 70px;
 }
+
 
 /* Reponsividade */
 

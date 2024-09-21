@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function(){
         if(saldoBlitz < 40000){
             alert("Você não possui Blitz suficientes\nUtilize nossas ferramentas para obter mais!")
         }
-         else{
+        else{
             botaoNetflix.classList.add("itemAdquirido")
             botaoNetflix.classList.remove("rosa")
             botaoNetflix.textContent = 'Adquirido'

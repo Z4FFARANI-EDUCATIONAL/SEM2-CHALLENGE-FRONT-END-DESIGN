@@ -15,20 +15,24 @@
         <div class="input-and-title">
             <h1>Cadastre-se</h1>
             <div class="campo-preencher">
+                <div class="nome">
+                    <label for="nome">Nome de usuário:</label>
+                    <input class="nome" type="text" id="nome">
+                </div>
                 <div class="email">
-                    <label for="email">Digite um E-mail:</label>
-                    <input class='email' type="text">
+                    <label for="email" id="emailCheck">Digite um E-mail:</label>
+                    <input class='email' type="text" id="email">
                 </div>
                 <div class="senha">
-                    <label for="senha">Digite uma senha:</label>
-                    <input class='senha' type="text">
+                    <label for="senha" id="senhaCheck">Digite uma senha:</label>
+                    <input class='senha' type="text" id="senha">
                 </div>
             </div>
         </div>
         <div class="btn-agreement">
-            <button class="cadastrar">Cadastrar</button>
+            <button class="cadastrar" id="registrar" onclick="armazenarDados()">Cadastrar</button>
         </div>
-        <p>Ao criar uma conta, você está de acordo com nossa <span style="text-decoration: underline; text-decoration-color: red; text-decoration-thickness: 2px;">política de privacidade.</span></p>
+        <p style="font-size: 12px;">Ao criar uma conta, você está de acordo com nossa <span style="text-decoration: underline; text-decoration-color: red; text-decoration-thickness: 2px;">política de privacidade.</span></p>
     </div>
     <script src="registerPage.js"></script>
 </body>

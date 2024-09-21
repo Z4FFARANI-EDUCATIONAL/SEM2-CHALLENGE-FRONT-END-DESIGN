@@ -136,6 +136,11 @@ header{
     border-radius: 3px;
 }
 
+.userSaldo{
+    display: flex;
+    gap: 5px;
+}
+
 /* NAV */
 nav{
     position: sticky;

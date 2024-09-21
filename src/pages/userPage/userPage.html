@@ -11,13 +11,19 @@
 </head>
 
 <body>
+    <script>
+        setTimeout(function(){
+        alert("Você pode testar nossa plataforma normalmente\nPorém caso queira testar a funcionalidade das ferramentas, ao clicar na nossa logo na lateral esquerda do header, 100mil blitz serão creditados <3\n\nExistem eventos que ocorrem caso faltem blitz para adquirir algo, teste também :)")
+        }, 3000);
+    </script>
+
    <header>
         <div class="header-content">
             <div class="headerBtn-768w">
                 <button><img class="menu-svg" src="../../../public/assets/images/menu.svg" alt="mini botão"></button>
             </div>
-            <img class="logo-emmersive" src="../../../public/assets/images/logo.png" alt="Logo Formula Emmersive">
-            <div class="headerBtns">
+            <img class="logo-emmersive" onclick="adicionarBlitz()" src="../../../public/assets/images/logo.png" alt="Logo Formula Emmersive">
+            <div class="headerBtns" onclick="underConstruction()">
                 <button class="scoreBtn">Score</button>
                 <span class="texto_Header" style="color: #101010">|</span>
                 <button class="challengesBtn">Desafios</button>
@@ -29,24 +35,27 @@
             </div>
             <div class="profile">
                 <div class="name-blitz">
-                    <p class="username">Usuário</p>
-                    <p class="blitz-qtd"><img class="blitz-icon" src="../../../public/assets/images/blitz.png" alt="Blitz Icon">500</p>
+                    <p class="username" id="username">Usuário</p>
+                    <div class="userSaldo">
+                        <img class="blitz-icon" src="../../../public/assets/images/blitz.png" alt="Blitz Icon">
+                        <p class="blitz-qtd" id="saldo-blitz"></p>
+                    </div>
                 </div>
-                <button class="user-btn"></button>
+                <img id="moldura-user" class="moldura-user" src="../../../public/assets/images/blank-profile.png" alt="user-box">
                 <img class='header-deco' src="../../../public/assets/images/header-decoration.png" alt="decoração header">
             </div>
         </div>
     </header>
     <nav>
         <div class="nav-cont">
-            <a href="#">Formula E</a>
-            <a href="#"><span><img class="navLiveDot" src="../../../public/assets/images/liveDot.png" alt="live dot"></span>LIVE</a>
-            <a href="#">Recompensas</a>
+            <a href="#FE-area">Formula E</a>
+            <a href="#LIVE-banner"><span><img class="navLiveDot" src="../../../public/assets/images/liveDot.png" alt="live dot"></span>LIVE</a>
+            <a href="#Blitz-shop">Recompensas</a>
         </div>
     </nav> 
     <main>
         <!-- SEÇÃO  1-->
-        <div class="section-one">
+        <div class="section-one" id="FE-area">
             <div class="section-title-card one">
                 <div class="title-one">
                     <h1 class="title-responsive">FORMULA E <span style="color: yellow">X</span> FORMULA 1</h1>
@@ -74,10 +83,10 @@
                                             <p class="p-responsive">2000</p>
                                         </div>
                                     </button>
-                                    <button class="blitz-shop">BLITZ SHOP</button>
+                                    <a class="blitz-shop" href="#Blitz-shop" style="color: #2210F4;">BLITZ SHOP</a>
                                 </div>
                                 <div class="card1">
-                                    <img src="../../../public/assets/images/Section 1.png" alt="Seção 1 Card">
+                                   <a href="../FExF1/formulaE.html"><img src="../../../public/assets/images/Section 1.png" alt="Seção 1 Card"></a>
                                 </div>
                             </div>
                         </div>
@@ -88,7 +97,7 @@
         </div>
         
         <!-- SEÇÃO 2 -->
-         <div class="section-two">
+         <div class="section-two" id="LIVE-banner">
             <div class="section-title-card two">
                 <div class="share-btns">
                     <button class="big-share sec2">
@@ -109,7 +118,7 @@
                     <div class="blue-frame-one-sec2">
                         <div class="blue-frame-inner-one-sec2">
                             <div class="card2">
-                                <img src="../../../public/assets/images/Section 2.png" alt="Seção 2 Card">
+                                <a href="../livePage/livePage.html"><img src="../../../public/assets/images/Section 2.png" alt="Seção 2 Card"></a>
                                 <div class="live-corner">
                                     <img src="../../../public/assets/images/liveDot.png" alt="ponto vermelho live">
                                     LIVE
@@ -123,7 +132,7 @@
             <h1 class="aposte-blitz">APOSTE SEUS <span style="color: #FAE101">BLITZ</span>, OS GANHOS ESTÃO <span style="color: #FAE101">TRIPLICADOS</span> POR TEMPO LIMITADO! </h1> 
          </div>
          <!-- SEÇÃO 3 -->
-         <div class="section-three">
+         <div class="section-three" id="Blitz-shop">
             <div class="shop-banner-background">
                 <div class="banner-decoration-spot">
                     <div class="title-box">
@@ -153,13 +162,27 @@
                                                 <p>PROBABILISTICO:</p>
                                                 <div class="prob-btns">
                                                     <div class="more-minus-btns">
-                                                        <button class="more-btn">+</button>
-                                                        <p><img src="../../../public/assets/images/blitz.png" alt="blitz icon">500</p>
-                                                        <button class="minus-btn">-</button>
+                                                        <button class="more-btn" id="maisBtn">+</button>
+                                                        <div class="blitz-tickets">
+                                                            <img src="../../../public/assets/images/blitz.png" alt="blitz icon">
+                                                            <p id="blitz-qtd">0</p>
+                                                        </div>
+                                                        <button class="minus-btn" id="menosBtn">-</button>
                                                     </div>
-                                                    <button class="participar-btn">Participar</button>
+                                                    <button class="participar-btn" onclick="participar()">Participar</button>
                                                     <img class="corner-logo" src="../../../public/assets/images/EsmallLogo.svg" alt="Formula E mini Logo">
                                                 </div>
+                                                 <!-- POPUP DE CONFIRMAÇÃO -->
+                                                    <div class="pop-up compra" id="pop-up-compra">
+                                                        <div class="pop-up-content">
+                                                            <h1>Confirmar troca de Blitz?</h1>
+                                                            <div class="pop-up-btn">
+                                                                <button class="option-cofirm" onclick="confirmar()">Confirmar</button>
+                                                                <button class="option-cancel" onclick="cancelar()">Cancelar</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                <!-- POPUP DE CONFIRMAÇÃO -->
                                             </div>
                                         </div>
                                     </div>
@@ -175,8 +198,10 @@
          </div>
          <div class="section-four">
             <div class="item-shop">
-                <div class="shop-time">
-                    <h1>NOVAS RECOMPENSAS CHEGAM EM: <span style="color:rgb(127, 255, 170)">19Hr : 47Min : 17Seg</span></h1>
+                <div class="temporizador">
+                    <p>NOVAS RECOMPENSAS CHEGAM EM:</p>
+                    <div id="timer" class="timer">
+                    </div>
                 </div>
                 <!-- BORDA PERSONALIZADA -->
                 <div class="item-cards-display">
@@ -188,7 +213,7 @@
                                     <img class="item lendario" src="../../../public/assets/images/lendario item.png" alt="moldura gold">
                                     <p class="item-name">GOLD</p>
                                     <p class="blitz-qtd price"><img src="../../../public/assets/images/blitz.png" alt="Blitz Icon">2000</p>
-                                    <button class="adquirir lendario">adquirir</button>
+                                    <button id="compra-moldura" class="adquirir lendario">adquirir</button>
                                     <p class="raridade">lendário</p>
                                 </div>
                             </div>
@@ -212,7 +237,7 @@
                                     <img class="item" src="../../../public/assets/images/playstore.png" alt="GooglePlay giftcard">
                                     <p class="item-name">GOOGLE PLAY</p>
                                     <p class="blitz-qtd price"><img src="../../../public/assets/images/blitz.png" alt="Blitz Icon">20.000</p>
-                                    <button class="adquirir especial">adquirir</button>
+                                    <button id="compra-especial" class="adquirir especial">adquirir</button>
                                     <p class="raridade">especial</p>
                                 </div>
                             </div>
@@ -224,7 +249,7 @@
                                     <img class="item comum" src="../../../public/assets/images/moldura comum.png" alt="EXEMPLO">
                                     <p class="item-name">EXEMPLO</p>
                                     <p class="blitz-qtd price"><img src="../../../public/assets/images/blitz.png" alt="Blitz Icon">1000</p>
-                                    <button class="adquirir comum">adquirir</button>
+                                    <button id="compra-exemplo" class="adquirir comum">adquirir</button>
                                     <p class="raridade">comum</p>
                                 </div>
                             </div>
@@ -244,6 +269,7 @@
             <img src="../../../public/assets/images/LOGOBLACK.png" alt="Formula Emmersive BLACK LOGO" class="footer-logo">
         </div>
     </footer>
+    <script src="../registerPage/registerPage.js"></script>
     <script src="userPage.js"></script>
 </body>
 </html>

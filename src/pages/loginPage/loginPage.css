@@ -15,6 +15,7 @@ body{
     gap: 80px;
     background-image: url("../../../public/assets/images/loginPageBackgroung.png");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .logo{
@@ -79,16 +80,22 @@ label{
 }
 
 .btn-agreement{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     width: 280px;
+    height: 75px;
     margin-bottom: 30px;
 }
+
+
 
 .acessar{
     width: 100%;
     height: 55px;
     background-color: white;
     color: #2210F4;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: bold;
     border: none;
     border-radius: 10px;
@@ -112,4 +119,37 @@ a{
     display: flex;
     padding: 5px;
     font-size: 12px;
+}
+
+.primeiro-acesso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 7px;
+    width: 100%;
+    height: 30px;
+}
+
+.primeiro-acesso a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+}
+
+.primeiro-acesso:hover{
+    background-color: white;
+    color: #2210F4;
+}
+
+.primeiro-acesso a:hover{
+    color: #2210F4;
 }
