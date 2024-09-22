@@ -7,6 +7,10 @@ body{
     color: white;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* HEADER */
 header{
     margin: 0 auto;
@@ -54,9 +58,12 @@ header{
 
 .init-section{
     margin-top: 35px;
+    padding: 6px;
     font-family: "Numans", sans-serif;
     color: white;
     text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid white;
 }
 
 /* MAIN */
@@ -104,7 +111,7 @@ main{
     font-size: 24px;
 }
 
-.text-saudacoes button{
+.text-saudacoes .saudacoes-anchor{
     height: 50px;
     width: 180px;
     font-family: 'Montserrat', sans-serif;
@@ -116,9 +123,12 @@ main{
     border-radius: 10px;
     padding: 0 10px 0 10px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.text-saudacoes button:hover{
+.text-saudacoes .saudacoes-anchor:hover{
     background-color: #ffffff;
     color: #2210F4;
     transition: 0.3s;
@@ -505,8 +515,9 @@ main{
     margin: 0 0 0 10px;
 }
 
-.plataform-functions button{
+.plataform-functions .continue{
     max-width: 200px;
+    padding: 10px;
     width: 200px;
     height: 50px;
     border-radius: 10px;
@@ -516,9 +527,11 @@ main{
     font-size: 24px;
     border: none;
     cursor: pointer;
+    text-decoration: none;
+    margin: 0 0 0 20px;
 }
 
-.plataform-functions button:hover{
+.plataform-functions .continue:hover{
     background-color: #ffffff;
     color: #2210f4;
     transition: 0.3s;
@@ -546,7 +559,7 @@ main{
 }
 
 
-.section-seven button{
+.section-seven a{
     position: absolute;
     top: 65%;
     left: 50%;
@@ -559,10 +572,13 @@ main{
     font-size: 16px;
     color: #ffffff;
     font-weight: bold;
-    padding: 10px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
-.section-seven button:hover{
+.section-seven a:hover{
     background-color: #ffffff;
     color: #2210f4;
 }

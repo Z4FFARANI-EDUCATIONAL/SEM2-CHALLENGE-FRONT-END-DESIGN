@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function(){
     // MOLDURA //
         moldura = document.getElementById("compra-moldura")
         moldura.addEventListener("click", function(){
-        var botãoMoldura = document.getElementById("compra-moldura")
+        var botaoMoldura = document.getElementById("compra-moldura")
 
         var saldoBlitz = document.getElementById("saldo-blitz").textContent
         saldoBlitz = parseInt(saldoBlitz)
@@ -49,9 +49,9 @@ document.addEventListener("DOMContentLoaded", function(){
                 alert("Você não possui Blitz suficientes\nUtilize nossas ferramentas para obter mais!")
             }
             else{
-                botãoMoldura.classList.add("item-adquirido")
-                botãoMoldura.classList.remove("lendario")
-                botãoMoldura.textContent = 'adquirido'
+                botaoMoldura.classList.add("item-adquirido")
+                botaoMoldura.classList.remove("lendario")
+                botaoMoldura.textContent = 'adquirido'
                 var saldoBlitz = parseInt(document.getElementById("saldo-blitz").textContent);
                 saldoBlitz -= 2000;
                 document.getElementById('saldo-blitz').textContent = saldoBlitz;
@@ -59,7 +59,8 @@ document.addEventListener("DOMContentLoaded", function(){
                 sessionStorage.setItem('ganhouAdicionarBlitz', 'true');
                 var img = document.getElementById("moldura-user")
                 img.src = '../../../public/assets/images/gold-profile.png' 
-                
+                sessionStorage.setItem("moldura-adquirida", "true")
+
                 setTimeout(function(){
                     alert(`Parabéns você acaba de adquirir uma moldura Gold para seu perfil!`)
                 }, 300);
@@ -85,6 +86,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 document.getElementById("saldo-blitz").textContent = saldoBlitz;
                 sessionStorage.setItem('saldo-blitz', saldoBlitz.toString());
                 sessionStorage.setItem('ganhouAdicionarBlitz', 'true');
+                sessionStorage.setItem("giftcard-adquirido", "true")
 
                 setTimeout(function(){
                     alert(`Parabéns você acaba de adquirir um giftcard de R$15,00 para ser utilizado na PlayStore`)
@@ -113,11 +115,41 @@ document.addEventListener("DOMContentLoaded", function(){
             document.getElementById("saldo-blitz").textContent = saldoBlitz;
             sessionStorage.setItem('saldo-blitz', saldoBlitz.toString());
             sessionStorage.setItem('ganhouAdicionarBlitz', 'true');
+            sessionStorage.setItem("exemplo-adquirido", "true")
             setTimeout(function(){
                 alert(`Parabéns você acaba de adquirir 'exemplo'!\nNão é muito util não é mesmo?`)
             }, 300);
         }
     })
+
+    // MANTER MOLDURA E MANTER ADQUIRIDO
+    var botaoMoldura = document.getElementById("compra-moldura")
+    var adquiriuMoldura = sessionStorage.getItem("moldura-adquirida")
+    if (adquiriuMoldura === "true"){
+        var img = document.getElementById("moldura-user")
+        img.src = '../../../public/assets/images/gold-profile.png'
+        botaoMoldura.classList.add("item-adquirido")
+        botaoMoldura.classList.remove("lendario")
+        botaoMoldura.textContent = 'adquirido'
+    }
+
+    // MANTER ADQUIRIDO ESPECIAL
+    var botaoPlayStore = document.getElementById("compra-especial")
+    var adquiriuGiftCard = sessionStorage.getItem("giftcard-adquirido")
+    if (adquiriuGiftCard === "true"){
+        botaoPlayStore.classList.add("item-adquirido")
+        botaoPlayStore.classList.remove("especial")
+        botaoPlayStore.textContent = 'adquirido'
+    }
+
+    // MANTER ADQUIRIDO COMUM
+    var botaoExemplo = document.getElementById("compra-exemplo")
+    var adquiriuExemplo = sessionStorage.getItem("exemplo-adquirido")
+    if (adquiriuExemplo === "true"){
+        botaoExemplo.classList.add("item-adquirido")
+        botaoExemplo.classList.remove("comum")
+        botaoExemplo.textContent = 'adquirido'
+    }
 
     // TEMPORIZADOR LOJA //
     const duracao = 62741 // tempo em Horas, minutos e segundos
@@ -173,6 +205,7 @@ function botaoDescobrir(){
         sessionStorage.setItem('ganhouBotaoDescobrir', 'true');
     }
 }
+
 
 // SISTEMA DE CONFIRMAÇÃO DE COMPRA DE INGRESSOS PARA SORTEIO//
 function participar(){

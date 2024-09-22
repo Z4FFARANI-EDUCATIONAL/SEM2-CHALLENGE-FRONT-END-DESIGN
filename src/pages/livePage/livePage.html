@@ -16,7 +16,7 @@
                 <button><img class="menu-svg" src="../../../public/assets/images/menu.svg" alt="mini botão"></button>
             </div>
             <img class="logo-emmersive" src="../../../public/assets/images/logo.png" alt="Logo Formula Emmersive">
-            <div class="headerBtns">
+            <div class="headerBtns" onclick="underConstruction()">
                 <button class="scoreBtn">Score</button>
                 <span class="texto_Header" style="color: #101010">|</span>
                 <button class="challengesBtn">Desafios</button>
@@ -34,26 +34,25 @@
                         <p class="blitz-qtd" id="saldo-blitz"></p>
                     </div>
                 </div>
-                <button class="user-btn"></button>
+                <img id="moldura-user" class="moldura-user" src="../../../public/assets/images/blank-profile.png" alt="user-box">
                 <img class='header-deco' src="../../../public/assets/images/header-decoration.png" alt="decoração header">
             </div>
         </div>
     </header>
     <nav>
         <div class="nav-cont">
-            <a href="#"><span><img class="navLiveDot" src="../../../public/assets/images/liveDot.png" alt="live dot"></span>LIVE</a>
-            <a href="#">Placar</a>
-            <a href="#">Mapas</a>
-            <a href="#">Destaques</a>
+            <a href="#live"><span><img class="navLiveDot" src="../../../public/assets/images/liveDot.png" alt="live dot"></span>LIVE</a>
+            <a href="#placar">Placar</a>
+            <a href="#mapas">Mapas</a>
+            <a href="#destaques">Destaques</a>
         </div>
     </nav>
     <main>
 <!-- section 1 -->
-        <div class="section-one">
+        <div class="section-one" id="live">
             <!-- GRID LIVE -->
             <div class="livestream">
                 <div class="live">
-                    <img class="live-video" src="../../../public/assets/images/live.png" alt="live-video">
                     <div class="video-icons">
                         <img  src="../../../public/assets/images/pause.png" alt="pause button">
                         <div class="volume-fullscreen">
@@ -142,7 +141,7 @@
             </div>
         </div>
         <!-- SECTION 2 -->
-        <div class="section-two">
+        <div class="section-two" id="placar">
             <div class="rank">
                 <h1><img class="live-dot-bar" src="../../../public/assets/images/liveDot.png" alt="ponto live">PLACAR</h1>
             </div>
@@ -307,8 +306,16 @@
                             </div>
                         </div>
                         <div class="camera-status">
-                            <div class="cam-bkg">
-                                <img src="../../../public/assets/images/devries.png" alt="DeVries-cam"> 
+                            <div class="cam-bkg ">
+                                <div class="gif-devriesbkg">
+                                    <div class="screen-icons">
+                                        <img class="pause" src="../../../public/assets/images/pause.png" alt="pausar">
+                                        <div class="audio-fullscreen">
+                                            <img class="audio" src="../../../public/assets/images/Audio.png" alt="audio bar">
+                                            <img class="fullscreen" src="../../../public/assets/images/Expand.png" alt="fullscreen">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="impulse">
                                 <h2>BATERIA</h2>
@@ -348,7 +355,15 @@
                         </div>
                         <div class="camera-status">
                             <div class="cam-bkg">
-                                <img src="../../../public/assets/images/vandoorne.png" alt="Vandoorne-Cam">
+                                <div class="gif-vandoornebkg">
+                                    <div class="screen-icons">
+                                        <img class="pause" src="../../../public/assets/images/pause.png" alt="pausar">
+                                        <div class="audio-fullscreen">
+                                            <img class="audio" src="../../../public/assets/images/Audio.png" alt="audio bar">
+                                            <img class="fullscreen" src="../../../public/assets/images/Expand.png" alt="fullscreen">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="impulse">
                                 <h2>BATERIA</h2>
@@ -405,21 +420,24 @@
                                     <p>MAHINDRA RACING</p>
                                     <h1>DE VRIES</h1>
                                 </div>
-                                <p class="qttBlitz-bet">275</p>
+                                <p class="qttBlitz-bet" id="blitz-bet">0</p>
                             </div>
                         </div>
                         <div class="add-guess">
                             <img class="blitz-guess" src="../../../public/assets/images/Blitz-letter.png" alt="Blitz">
                             <div class="more-minus-btns">
-                                <button class="more-btn">+</button>
-                                <button class="minus-btn">-</button>
+                                <button class="more-btn" id="maisBtn">+</button>
+                                <button class="minus-btn" id="menosBtn">-</button>
                                 <img src="../../../public/assets/images/blue blitz.png" alt="blitz blue">
                             </div>
                         </div>
                         <p style="font-weight: 400; font-family: 'Michroma', sans-serif; font-size: 7px; margin-bottom: 10px;">APOSTE SEUS BLITZ: ESCOLHA UM CORREDOR OU SCUDERIA</p>
                     </div>
                     <div class="bet-card right-side">
-                        <h1 class="big-blitz"><img src="../../../public/assets/images/blitz.png" alt="BLITZ-ICON">1.100</h1>
+                        <div class="big-blitz">
+                            <img src="../../../public/assets/images/blitz.png" alt="BLITZ-ICON">
+                            <h1 class="big-blitz" id="multiplicado">0</h1>
+                        </div>
                         <h2>MULTIPLICADORES</h2>
                         <div class="multiplicadores">
                             <div class="multi">
@@ -447,15 +465,15 @@
             </div>
         </div>
 <!-- SEÇÃO 3-->
-        <div class="section-three">
+        <div class="section-three" id="mapas">
             <div class="little-e-sec-three">
                 <img src="../../../public/assets/images/EsmallLogo.svg" alt="Formula E">
             </div>
             <div class="maps">
                 <div class="map-titles">
                     <div class="container-text-shadow">
-                        <h1 class="conheca atras">MAPAS</h1>
-                        <h1 class="conheca frente">MAPAS</h1>
+                        <h1 class="conheca atras">MAPA</h1>
+                        <h1 class="conheca frente">MAPA</h1>
                     </div>
                     <span style="font-size: 64px;">|</span>
                     <div class="container-text-shadow">
@@ -470,14 +488,12 @@
                     </div>
                 </div>
                 <div class="map-name">
-                    <img class="passar" src="../../../public/assets/images/passarLeft.png" alt="passador esquerda">
                     <p>SÃO PAULO - ANHEMBI</p>
-                    <img class="passar" src="../../../public/assets/images/passarRight.png" alt="passador direita">
                 </div>
             </div>
         </div> 
         <!-- Seção 4 -->
-        <div class="section-four">
+        <div class="section-four" id="destaques">
             <div class="little-e-sec-four">
                 <img src="../../../public/assets/images/EsmallLogo.svg" alt="Formula E">
             </div>

@@ -12,13 +12,16 @@
 <body>
     <header>
         <div class="header-content">
-            <img class="logo-emmersive" src="../../../public/assets/images/logo.png" alt="Logo Formula Emmersive">
+            <a href="../../pages/userPage/userPage.html"><img class="logo-emmersive" src="../../../public/assets/images/logo.png" alt="Logo Formula Emmersive"></a>
             <div class="profile">
                 <div class="name-blitz">
-                    <p class="username">Usuário</p>
-                    <p class="blitz-qtd"><img class="blitz-icon" src="../../../public/assets/images/blitz.png" alt="Blitz Icon">500</p>
+                    <p class="username" id="username">Usuário</p>
+                    <div class="userSaldo">
+                        <img class="blitz-icon" src="../../../public/assets/images/blitz.png" alt="Blitz Icon">
+                        <p class="blitz-qtd" id="saldo-blitz"></p>
+                    </div>
                 </div>
-                <button class="user-btn"></button>
+                <img id="moldura-user" class="moldura-user" src="../../../public/assets/images/blank-profile.png" alt="user-box">
                 <img class='header-deco' src="../../../public/assets/images/header-decoration.png" alt="decoração header">
             </div>
         </div>
@@ -46,9 +49,9 @@
             </div>
         </div>
         <div class="redirect">
-            <a href="#"> <img src="../../../public/assets/images/F1-MiniLogo.png" alt="F1 mini logo"></a>
+            <a href="../../pages/FExF1/formula1.html" onclick="proximaPagina()"> <img src="../../../public/assets/images/F1-MiniLogo.png" alt="F1 mini logo"></a>
             <span style="font-size: 48px; font-weight: 100;">|</span>
-            <a href="#">Sobre: Formula 1</a>
+            <a href="../../pages/FExF1/formula1.html" style="text-decoration: underline;" onclick="proximaPagina()">Sobre: Formula 1</a>
         </div>
     </main>
     <footer>

@@ -9,6 +9,10 @@ body{
     color: white;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     max-width: 100%;
     height: 80px;
@@ -72,6 +76,11 @@ header{
     height: 100%;
     width: 100%;
     color: black;
+}
+
+.moldura-user{
+    width: 50px;
+    height: 50px;
 }
 
 
@@ -209,13 +218,13 @@ nav{
 /* section 1 */
 .section-one{
     max-width: 1115px;
-    margin: 0 auto;
+    max-height: 640px;
+    margin: 30px auto;
 }
 
 .livestream{
     max-width: 1115px;
     display: grid;
-        
     grid-template-columns: 3fr 300px ;
     grid-template-rows: 500px 200px;
     border: 5px solid #101010;
@@ -225,8 +234,12 @@ nav{
 .live{   
     grid-column: 1/2;
     grid-row: 1/2;
-    background-color: #2210F4;
+    background-image: url("../../../public/assets/images/eprixlive.gif");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
     position: relative;
+    background-repeat: no-repeat;
 
 }
 
@@ -265,6 +278,11 @@ nav{
     gap: 60%;
     align-items: center;
     bottom: 0;
+
+}
+
+.video-icons img{
+    cursor: pointer;
 }
 
 .volume-fullscreen{
@@ -469,7 +487,7 @@ nav{
 /* SECTION 2 */
 .section-two{
     max-width: 1115px;
-    margin: 50px auto;
+    margin: 100px auto 50px auto ;
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-template-rows: 100px repeat(11 minmax(100px, 200px));
@@ -666,6 +684,56 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 48%;
+}
+
+.gif-devriesbkg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../public/assets/images/devriescam.gif');
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    
+}
+
+.gif-vandoornebkg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../public/assets/images/vandoornecam.gif');
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    
+}
+
+
+.screen-icons{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+}
+
+.screen-icons .pause{
+    width: 10px;
+    height: 10px;
+}
+
+.screen-icons .audio{
+    width: 20px;
+    height: 10px;
+}
+
+.screen-icons .fullscreen{
+    width: 10px;
+    height: 10px;
 }
 
 .cam-bkg img{
@@ -716,10 +784,10 @@ nav{
         font-size: 16px;
     }
     50%{
-        font-size: 32px;
+        font-size: 24px;
     }
     100%{
-        font-size: 24px;
+        font-size: 19px;
         
     }
 }
@@ -1405,9 +1473,8 @@ nav{
     margin: 30px 0;
 }
 
-.map-name img{
-    width: 35px;
-    height: 35px;
+.screen-icons img{
+    cursor: pointer;
 }
 
 /* section 4 */
@@ -1496,11 +1563,19 @@ nav{
     margin: 30px 0;
     margin-bottom: 60px;
     align-items: center;
+
 }
+
 
 .sample-chooser img{
     width: 35px;
     height: 35px;
+    cursor: pointer;
+}
+
+.sample-chooser img:hover{
+    transition: 0.3s;
+    filter: brightness(150%);
 }
 
 .samples{
