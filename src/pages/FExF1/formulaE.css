@@ -226,8 +226,10 @@ main{
     font-family: "Numans", sans-serif;
     text-align: center;
     margin-top: 80px;
-    max-width: 600px;
+    width: 100%;
+    padding-bottom: 50px;
 }
+
 
 .carrossel{
     display: flex;
@@ -244,6 +246,8 @@ main{
     max-width: 450px;
     height: 300px;
     padding: 10px;
+    overflow: hidden;
+    margin: auto;
 }
 
 .slide-container img{
@@ -251,6 +255,49 @@ main{
     height: 100%;
     z-index: 2;
 }
+
+.slides{
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 10px;
+}
+
+.slide{
+    min-width: 100%;
+    height: 100%;
+}
+
+.slide img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.slides{
+    position: relative;
+    z-index: 3;
+}
+
+.slide-text-container{
+    display: flex;
+    max-width: 600px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+.slides-textos{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide-text{
+    min-width: 100%;
+}
+
+
 
 @keyframes AnimarBorda {
     0%{

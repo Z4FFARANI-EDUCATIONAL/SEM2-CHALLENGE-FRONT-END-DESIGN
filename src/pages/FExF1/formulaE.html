@@ -38,14 +38,28 @@
                 <div class="carrossel-btns">
                     <a href="#">Compartilhar</a>
                     <div class="slide-btns">
-                        <button class="left">&lt;</button>
-                        <button class="right">></button>
+                        <button class="left" id="voltBtn">&lt;</button>
+                        <button class="right" id="proxBtn" onclick="proximoSlideFormulaE()">></button>
                     </div>
                 </div>
                 <div class="slide-container">
-                    <img src="../../../public/assets/images/carrosselFE-1.png" alt="slide 1(FE)">
+                    <div class="slides" id="carrossel">
+                        <div class="slide"><img src="../../../public/assets/images/carrosselFE-1.png" alt="slide1" id="slideImg"></div>
+                        <div class="slide"><img src="../../../public/assets/images/carrosselFE-2.png" alt="slide2" id="slideImg"></div>
+                        <div class="slide"><img src="../../../public/assets/images/carrosselFE-3.png" alt="slide3" id="slideImg"></div>
+                        <div class="slide"><img src="../../../public/assets/images/carrosselFE-4.png" alt="slide4" id="slideImg"></div>
+                        <div class="slide"><img src="../../../public/assets/images/carrosselFE-5.png" alt="slide5" id="slideImg"></div>
+                    </div>
                 </div>
-                <p>Você sabia que os carros da <span style="color: #2210F4;">Fórmula E</span> possuem uma opção que ativa um "boost" durante a corrida? Chama-se <span style="color: #2210F4;">Attack Mode</span>, e dá ao carro cerca de 25 kW de impulso, permitindo aos pilotos ultrapassar os adversários e obter posições melhores!</p>
+                <div class="slide-text-container">
+                    <div class="slides-textos" id="carrosselTexto">
+                        <div class="slide-text"><p>Você sabia que os carros da <span style="color: #2210F4;">Fórmula E</span> possuem uma opção que ativa um "boost" durante a corrida? Chama-se <span style="color: #2210F4;">Attack Mode</span>, e dá ao carro cerca de 25 kW de impulso, permitindo aos pilotos ultrapassar os adversários e obter posições melhores!</p></div>
+                        <div class="slide-text"><p>Lorem ipsum dolor, sit amet consectetur <span style="color: #2210F4;">adipisicing elit</span>. Vitae dolorum facere earum, libero, minima enim maiores provident nostrum, et est commodi laboriosam odio excepturi voluptate. Neque ullam autem dicta dolorum.</p></div>
+                        <div class="slide-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam <span style="color: #2210F4;">perferendis</span> eos unde optio perspiciatis mollitia hic. Consequuntur eaque blanditiis inventore, illo sed repellendus cum consectetur vel aperiam non tempore excepturi.</p></div>
+                        <div class="slide-text"><p>Lorem ipsum <span style="color: #2210F4;">dolor sit</span> amet consectetur adipisicing elit. Sint quidem libero nostrum dolorum eligendi velit magnam, iure hic placeat est ratione dolor, repudiandae eius quia eum cumque impedit, quod architecto.</p></div>
+                        <div class="slide-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat molestiae ex libero reiciendis hic <span style="color: #2210F4;">laudantium excepturi</span> ea iusto velit maiores reprehenderit nam, architecto adipisci facere in culpa est? Assumenda, consequatur!</p></div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="redirect">

@@ -21,6 +21,48 @@ document.addEventListener("DOMContentLoaded", function(){
          var img = document.getElementById("moldura-user")
          img.src = '../../../public/assets/images/gold-profile.png'
      }
+
+// programação carrossel //
+const carrossel = document.getElementById("carrossel")
+const slides = document.querySelectorAll(".slide")
+const totalSlides = slides.length;
+let slideAtual = 0
+
+const carrosselTexto = document.getElementById("carrosselTexto")
+let slideTextAtual = 0
+
+document.getElementById("proxBtn").addEventListener("click", function(){
+    if (slideAtual < totalSlides - 1){
+        slideAtual = slideAtual + 1;
+        slideTextAtual = slideTextAtual + 1
+        atualizarCarrossel()
+    }
+    else{
+        slideAtual = 0;
+        slideTextAtual = 0
+        atualizarCarrossel();
+    }
+});
+
+document.getElementById("voltBtn").addEventListener("click", function(){
+    if (slideAtual > 0 ){
+        slideAtual = slideAtual - 1;
+        slideTextAtual = slideTextAtual -1
+        atualizarCarrossel()
+    }
+    else{
+        slideAtual = totalSlides - 1;
+        slideTextAtual = totalSlides -1
+        atualizarCarrossel();
+    }
+});
+
+function atualizarCarrossel(){
+const troca = -slideAtual * 460;
+carrossel.style.transform='translateX(' + troca + 'px)';
+const trocaSlideTexto = -slideTextAtual * 600;
+carrosselTexto.style.transform='translateX(' + trocaSlideTexto + 'px)';
+}
 })
 
 function proximaPagina() {

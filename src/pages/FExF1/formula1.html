@@ -38,14 +38,28 @@
                 <div class="carrossel-btns">
                     <a href="#">Compartilhar</a>
                     <div class="slide-btns">
-                        <button class="left">&lt;</button>
-                        <button class="right">></button>
+                        <button class="left" id="voltBtn">&lt;</button>
+                        <button class="right" id="proxBtn" onclick="proximoSlideFormulaE()">></button>
                     </div>
                 </div>
                 <div class="slide-container">
-                    <img src="../../../public/assets/images/carrosselF1-1.png" alt="Slide 1(F1)">
+                    <div class="slides" id="carrossel">
+                        <div class="slide"><img src="../../../public/assets/images/carrosselF1-1.png" alt="slide1" id="slideImg"></div>
+                        <div class="slide"><img src="../../../public/assets/images/carrosselF1-2.png" alt="slide2" id="slideImg"></div>
+                        <div class="slide"><img src="../../../public/assets/images/carrosselF1-3.png" alt="slide3" id="slideImg"></div>
+                        <div class="slide"><img src="../../../public/assets/images/carrosselF1-4.png" alt="slide4" id="slideImg"></div>
+                        <div class="slide"><img src="../../../public/assets/images/carrosselF1-5.png" alt="slide5" id="slideImg"></div>
+                    </div>
                 </div>
-                <p>Os carros modernos de <span style="color: red;">F1</span> usam uma mistura de combustível de alta octanagem, semelhante à gasolina sem chumbo, mas otimizada para desempenho. Eles usam cerca de 100-110 kg de <span style="color: red;">combustível</span> por corrida, devido a regulamentos rígidos.</p>
+                <div class="slide-text-container">
+                    <div class="slides-textos" id="carrosselTexto">
+                        <div class="slide-text"><p>Os carros modernos de <span style="color: red;">F1</span> usam uma mistura de combustível de alta octanagem, semelhante à gasolina sem chumbo, mas otimizada para desempenho. Eles usam cerca de 100-110 kg de <span style="color: red;">combustível</span> por corrida, devido a regulamentos rígidos.</p></div>
+                        <div class="slide-text"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<span style="color: red;">Vitae dolorum</span> facere earum, libero, minima enim maiores provident  nostrum, et est commodi laboriosam odio excepturi voluptate. Neque ullam autem dicta dolorum.</p></div>
+                        <div class="slide-text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam <span style="color: red;">perferendis</span> eos unde optio perspiciatis mollitia hic. Consequuntur eaque blanditiis<span style="color: red;"> inventore</span>, illo sed repellendus cum consectetur vel aperiam non tempore excepturi.</p></div>
+                        <div class="slide-text"><p>Lorem ipsum dolor sit amet<span style="color: red;">consectetur adipisicing</span> elit. Sint quidem libero nostrum dolorum eligendi velit magnam, iure hic placeat est ratione <span style="color: red;">dolor</span>, repudiandae eius quia eum cumque impedit, quod architecto.</p></div>
+                        <div class="slide-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat molestiae ex libero reiciendis hic<span style="color: red;"> laudantium </span>excepturi ea iusto velit maiores reprehenderit nam, architecto adipisci facere in culpa est? Assumenda, consequatur!</p></div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="redirect">
