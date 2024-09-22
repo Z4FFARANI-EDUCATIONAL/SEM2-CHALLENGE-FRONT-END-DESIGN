@@ -1413,7 +1413,11 @@ footer{
 
     /* Cards da loja | Responisiviida */
 
-    
+    /* Centralizando os card usando margin (rever isso depois) */
+
+    .item-cards-display{
+            margin-left: 250px;
+    }
 
     
 }
