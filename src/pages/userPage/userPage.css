@@ -1280,6 +1280,11 @@ footer{
 
     h1.aposte-blitz{
         font-size: 14px;
+        margin-top: 30px;
+    }
+
+    h1.aposte-blitz1{
+        font-size: 14px;
     }
 
     /* Seção 3 */
@@ -1349,12 +1354,12 @@ footer{
     }
 
     img.imagem-SorteioTicket{
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 40px;
     }
 
     .tickets-txt{
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .eprix{
@@ -1362,7 +1367,7 @@ footer{
     }
 
     .passagem{
-        font-size: 16px;
+        font-size: 17px;
     }
 
     p.texto-Probabilistico{
@@ -1386,4 +1391,29 @@ footer{
         width: 260px;     
         margin-bottom: 50px; 
     }
+
+    /* Seção 4 - Temporizador da loja */
+     
+    p.p-responsive1{
+        font-size: 12px;
+    }
+
+    .temporizador{
+        padding: 5px;
+    }
+
+    .timer{
+        font-size: 12px;
+    }
+
+    /* Ajustes */
+    .areaShop{
+        width: 400px;
+    }
+
+    /* Cards da loja | Responisiviida */
+
+    
+
+    
 }
