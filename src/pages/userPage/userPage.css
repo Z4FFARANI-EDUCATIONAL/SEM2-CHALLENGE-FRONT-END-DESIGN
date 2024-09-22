@@ -85,6 +85,10 @@ header{
 }
 
 
+a.blitz-shop2{
+    display: none;
+}
+
 .headerBtns button:hover{
    background-color: rgb(243, 243, 243);
 
@@ -412,8 +416,8 @@ button.big-share.sec1{
     display: flex;
     justify-content: start;
     align-items: center;
-    min-width: 170px;
-    min-height: 60px;
+    width: 170px;
+    height: 60px;
     background-color: #101010;
     position: absolute;
     top: 0;
@@ -475,7 +479,7 @@ button.big-share.sec2{
 }
 
 h1.aposte-blitz{
-    margin: 15px auto 45px auto;
+    
     font-size: 22px;
 }
 
@@ -483,7 +487,7 @@ h1.aposte-blitz{
 .shop-banner-background{
     width: 100%;
     height: 150px;
-    background: rgb(34,16,244);
+
     background: linear-gradient(90deg, rgba(34,16,244,1) 60%, rgba(223,192,14,1) 100%);
 }
 
@@ -511,14 +515,15 @@ h1.aposte-blitz{
 .blitzshop-logo{
     height: 76px;
     width: 350px;
+    margin-top: 30px;
     z-index: 1;
 }
 
 .title-box{
     display: flex;
-    flex-direction: column;
     align-items: start;
-    justify-content: center;
+    flex-direction: column;
+    
     height: 100%;
     margin-left: 140px;
 }
@@ -1207,4 +1212,178 @@ footer{
         width: 100px;
     }
 
+    /* Sumindo com o gif */
+
+    .big-blue-btn{
+        display: none;
+    }
+
+    .section-card{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        
+    }
+
+    .blue-frame-one-sec1{
+        min-width: 325px;
+    }
+
+    .blue-frame-two-sec1{
+        min-width: 345px
+    }
+
+    a.blitz-shop2{
+        font-size: 14px;
+        font-weight: bold;
+        font-style: italic;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        width: 100%;
+        border-radius: 5px;
+        height: 36px;
+        
+    }
+
+    a.blitz-shop{
+        display: none;
+    }
+
+    img.imagem-CarrosLive{
+        min-width: 320px;
+ 
+        border-radius: 5px;
+        object-fit: cover;
+    }
+
+    /* Seção 2 */
+
+    .two{
+        font-size: 10px;
+    }
+
+    .live-corner{
+        font-size: 10px;
+        width: 100px;
+        height: 30px;
+    }
+    
+    img.imagem-Live{
+        width: 26px;
+        height: 26px;
+    }   
+
+    /* Frame personalizado */
+
+    h1.aposte-blitz{
+        font-size: 14px;
+    }
+
+    /* Seção 3 */
+
+    .banner-decoration-spot{
+        max-width: 420px;
+        max-height: 100px;
+        margin: 0px;
+    }
+
+    img.banner-deco{
+        width: 120px;
+        
+    }
+
+    img.blitzshop-logo{
+        width: 120px;
+        margin-top: 10px;
+        height: 40px;
+    }
+
+    .title-box{
+        display: flex;
+        justify-content: start;
+    }
+
+    .shop-banner-background{
+        height: 100px;
+    }
+
+    /* Seção 4 - Sorteio */
+
+    .sorteio-card{
+        min-width: 320px;
+    }
+
+    .card-interactions{
+        gap: 3px;
+    }
+
+    .sorteio-content{
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        min-width: 395px;
+    }
+
+    .blue-frame-inner-two-sec3{
+        min-width: 335px;
+    }
+
+    .blue-frame-two-sec3{
+        min-width: 365px
+    }
+
+    h1.sorteio-title{
+        font-size: 18px;
+    }
+
+    img.anounce-img{
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        margin-right: 80px;
+        padding: 0px;
+    }
+
+    img.imagem-SorteioTicket{
+        width: 60px;
+        height: 60px;
+    }
+
+    .tickets-txt{
+        font-size: 14px;
+    }
+
+    .eprix{
+        font-size: 18px;
+    }
+
+    .passagem{
+        font-size: 16px;
+    }
+
+    p.texto-Probabilistico{
+        font-size: 18px;
+    }
+
+    .more-minus-btns{
+        margin-right: 58px;
+        width: 260px;
+    }
+
+    .prob-btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 30px;
+    }
+
+    .participar-btn{
+        margin-right: 58px;
+        width: 260px;     
+        margin-bottom: 50px; 
+    }
 }
