@@ -216,7 +216,6 @@ function participar(){
     valorAtual = parseInt(valorAtual)
 
     var popUp = document.getElementById("pop-up-compra")
-    document.body.style.overflow = 'hidden';
 
     if (valorAtual == 0){
         alert("Determine a quantidade de blitz que quer utilizar!")
@@ -226,6 +225,7 @@ function participar(){
     }
     else{
         popUp.classList.add("mostrar-pop-up") //Ativar popUp Confirmação//
+        document.body.style.overflow = 'hidden';
     }
 }
 

@@ -103,7 +103,6 @@ a.blitz-shop2{
 }
 
 .profile{
-    position: inherit;
     display: flex;
     align-items: center;
     gap: 7px;
@@ -830,9 +829,6 @@ h1.aposte-blitz{
     
 }
 
-
-/* FIM BORDA PERSONALIZADA */
-
 /* SEÇÃO 4 */
 /* temporizador */
 .timer{
@@ -1097,9 +1093,721 @@ footer{
 
 /* Smartphones */
 
-@media (min-width:320px) and (max-width: 425px){
-   
+/* RESPONSIVIDADE SANNUNEZ */
+@media (max-width: 425px) {
+    /* HEADER */
+    header{
+        height: 60px;
+    }
+
+    
+    .header-content{
+        max-width: 320px;
+        display: flex;
+        justify-content: space-between;
+    }
+
     .headerBtns{
+        display: none;
+    }
+
+    .headerBtn-768w{
+        display: flex;
+        height: 35px;
+        width: 35px;
+    }
+
+    .headerBtn-768w button{
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+    }
+
+    .headerBtn-768w img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .logo-emmersive{
+        width: 80px;
+        margin-left: 50px;
+    }
+
+    .header-deco{
+        height: 60px;
+        width: 75px;
+    }
+
+    .name-blitz{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        background-color: transparent;
+        font-size: 12px;
+    }
+    
+    .blitz-qtd{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        background-color: transparent;
+        font-weight: bold;
+        font-style: italic;
+        color: rgb(251,226,1);
+    }
+    
+    .blitz-icon{
+        width: 10px;
+        height: 15px;
+        
+    }
+    
+    .moldura-user{
+        width: 35px;
+        height: 35px;
+    }
+
+    /* NAVBAR */
+    
+    .nav-cont{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        font-size: 10px;
+        max-width: 320px;
+    }
+    
+    .nav-cont a{
+        background: transparent;
+        text-decoration: none;
+        color: #ffffff;
+    }
+    
+    .navLiveDot{
+        width: 5px;
+        height: 5px;
+        margin: 0 2px 0 0;
+        animation: pisca 1s ease-in-out infinite alternate;
+    }
+    
+    /* SECTION  1 */
+    .section-one{
+        max-width: 320px;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .section-title-card{
+        width: 100%;
+        display: flex;
+        flex-direction: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .section-title-card h1{
+        font-size: 16px;
+    }
+
+    .section-title-card h2{
+        font-weight: 600;
+        font-size: 10px;
+    }
+
+    
+    .share-btns{
+        display: flex;
+        gap: 0px;
+        height: 30px;
+        justify-content: center;
+    }
+
+
+    .share-btns button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        width: 30px;
+    }
+
+    .tiny-share img {
+        height: 20px;
+        width: 20px;
+    }
+
+    /* OCULTA COMPARTILHAR GRANDE */
+    button.big-share{
+        display: none;
+    }
+
+
+    /* BORDAS DE SEÇÃO PERSONALIZADAS */
+    .blue-frame-one-sec1{
+        max-width: 320px;
+        background: rgb(34,16,244);
+        background: linear-gradient(335deg, rgba(34,16,244,1) 0%, rgba(16,16,16,1) 50%);
+        padding-right: 2px; /* largura da borda */
+        padding-bottom: 2px; /* largura da borda */
+    }
+
+    .blue-frame-inner-one-sec1{
+        background-color: #101010; /* Fundo interno */
+        padding-right: 7px; /* Conteúdo interno */
+        padding-bottom: 6px; /* Conteúdo interno */
+    }
+
+    .blue-frame-two-sec1{
+        max-width: 320px;
+        background: rgb(34,16,244);
+        background: linear-gradient(335deg, rgba(34,16,244,1) 0%, rgba(16,16,16,1) 50%);
+        padding-right: 2px; 
+        padding-bottom: 2px; 
+    }
+
+    .blue-frame-inner-two-sec1{
+        background-color: #101010;
+        padding-right: 6px; 
+        padding-bottom: 6px;
+    }
+    /* BORDAS DE SEÇÃO PERSONALIZADAS FIM*/
+
+
+    .section-card{
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card-btns{
+        display: none;
+    }
+    /* NOVOS CARD-BTNs */
+
+    .card1{
+        width: 100%;
+    }
+
+
+    /* SECTION 2 */
+    .section-two{
+        max-width: 320px;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column; 
+    }
+    
+    .section-two{
+        margin-top: 0px;
+    }
+    
+    .card2 img{
+        width: 100%;
+        max-width: 320px;
+    }
+    
+    .live-corner{
+        width: 75px;
+        height: 25px;
+        font-size: 10px;
+        border-bottom-right-radius: 50px;
+    
+    }
+    
+    /* LIVE PONTINHO PISCANTE */
+    .live-corner img{
+        width: 10px;
+        height: 10px;
+        margin: 0 2px 0 8px;
+    }
+     
+    
+    /* BORDA PERSONALIZADA */
+    .blue-frame-one-sec2{
+        max-width: 320px;
+        padding-left: 2px; /* largura da borda */
+        padding-bottom: 2px; /* largura da borda */
+    }
+    
+    .blue-frame-inner-one-sec2{
+        background-color: #101010; /* Fundo interno */
+        padding-left: 7px; /* Conteúdo interno */
+        padding-bottom: 6px; /* Conteúdo interno */
+    }
+    
+    .blue-frame-two-sec2{
+        max-width: 320px;
+        padding-left: 2px; 
+        padding-bottom: 2px; 
+    }
+    
+    .blue-frame-inner-two-sec2{
+        padding-left: 6px; 
+        padding-bottom: 6px;
+    }
+    /* BORDAPERSONALIZADA */
+    
+    h1.aposte-blitz{
+        font-size: 10px;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+
+    /* SECTION 3 */
+    .shop-banner-background{
+        height: 70px;
+    }
+    
+    .banner-decoration-spot{
+        max-width: 320px;
+        height: 100%;
+    
+    }
+    
+    
+    .blitz-title{
+        max-width: 320px;
+    }
+    
+    .blitzshop-logo{
+        height: 30px;
+        width: 120px;
+        margin-top: 15px;
+    }
+    
+    .title-box{
+        margin-left: 50px;
+    }
+    
+    .title-box h1{
+        font-size: 10px;
+    }
+    
+    .sorteio{
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        max-width: 320px;
+    }
+    
+    .blitz-tickets{
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+    
+    .blitz-tickets img{
+        width: 15px;
+    }
+    
+    /* POPUP CONFIRMAÇÃO */
+    .pop-up{
+        position: fixed;
+        padding: 0;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: rgba(0, 0, 0, 0.5);
+        transform: scale(1.1);
+        opacity: 0;
+        visibility: hidden;
+        transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25 ease-in-out;
+    }
+    
+    .pop-up-content{
+        font-family: "Michroma", sans-serif;
+        text-transform: uppercase;
+        font-size: 10px;
+        background: #2210F4;
+        border-radius: 15px;
+        padding: 50px 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .pop-up-btn{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .pop-up-btn button{
+        width: 130px;
+        height: 35px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .option-confirm{
+        background-color: #ffffff;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        color: #2210F4;
+    }
+    
+    .option-cancel{
+        background-color: transparent;
+        border: 3px solid white;
+        border-radius: 5px;
+        color: white;
+    }
+    
+    .pop-up-btn button:hover{
+        color:#fcbc1a;
+        transition: 0.1s ease;
+        box-shadow: 0px 0px 5px;
+    }
+    
+    .mostrar-pop-up{
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1.0);
+        z-index: 3;
+    }
+    
+    
+    
+    /* BORDA PERSONALIZADA */
+    .blue-frame-one-sec3{
+        max-width: 320px;
+        background: rgb(34,16,244);
+        background: linear-gradient(255deg, rgba(34,16,244,1) 0%, rgba(16,16,16,1) 35%);
+        padding-right: 2px;
+        padding-top: 2px;
+    }
+    
+    .blue-frame-inner-one-sec3{
+        background-color: #101010; 
+        padding-right: 7px; 
+        padding-top: 6px; 
+    }
+    
+    .blue-frame-two-sec3{
+        max-width: 320px;
+        background: rgb(34,16,244);
+        background: linear-gradient(255deg, rgba(34,16,244,1) 0%, rgba(16,16,16,1) 35%);
+        padding-right: 2px; 
+        padding-top: 2px; 
+        position: relative;
+    }
+    
+    .blue-frame-inner-two-sec3{
+        background-color: #101010;
+        padding-right: 6px; 
+        padding-top: 6px;
+    
+    }
+    
+    .sorteio-title{
+        font-size: 12px;
+    }
+    
+    
+    /* BORDA PERSONALIZADA FIM */
+    
+    /* AREA DE SORTEIO(SEÇÃO 3) */
+    .sorteio-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 320px;
+        height: 100%;
+        background-color:#2210F4;
+        border-radius: 15px;
+    }
+    
+    .sorteio-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    
+    }
+    
+    .anounce-img-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin-right: 0px;
+    }
+    
+    .anounce-img-container img{
+        width: 100%;
+        border-radius: 10px;
+        border: 8px solid #000053;
+        margin: 15px 15px 0 15px;
+    } 
+    
+    .card-interactions{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+
+    }
+    
+    .tickets-txt{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: #FAE101;
+        font-size: 20px;
+        animation: shiny 1s ease-in-out infinite alternate;
+    }
+    
+    .tickets-txt img{
+        margin-top: 0px;
+        width: 30px;
+        height: 25px;
+    }
+    
+    .eprix{
+        font-size: 24px;
+    }
+    
+    .passagem{
+        font-weight: 300;
+        font-size: 16px;
+    }
+    
+    .probabilistico{
+        margin: 15px 0 0 0;
+    }
+    
+    .probabilistico p{
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    
+    .prob-btns{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    
+    .more-minus-btns{
+        background: transparent;
+        max-width: 80%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 10px;
+        border: 5px solid white;
+    }
+    
+    .more-minus-btns button{
+        font-weight: bold;
+        color: #ffffff;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    
+    .more-btn{
+        font-size: 40px;
+    }
+    
+    .minus-btn{
+        font-size: 45px;
+    }
+    
+    .more-minus-btns button:hover{
+        scale: 110%;
+    }
+    
+    .more-minus-btns p{
+        display: flex;
+        font-size: 18px;
+        align-items: center;
+        padding-top: 5px;
+    }
+
+    
+    .participar-btn{
+        width: 85%;
+        color: blue;
+        font-size: 24px;
+        border: 5px solid white;
+    }
+    
+    .corner-logo{
+        width: 20px;
+        height: 30px;
+        margin-right: 20px;
+        margin-bottom: 0px;
+    
+    }
+
+    /* SECTION  4*/
+    .section-four{
+        max-width: 1115px;
+        margin: 0 auto 60px auto;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .temporizador{
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        font-size: 12px;
+    }
+
+    .item-cards-display{
+        max-width: 320px;
+        margin: 15 auto;
+
+    }
+
+    .item-card{
+        width: 100PX;
+        height: 210px;
+        border-radius: 10px;
+    }
+
+    .item-card p{
+        font-family: 'Michroma', sans-serif;
+        font-weight: 600;
+    }
+
+    .item-name{
+        color: black;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .item{
+        max-width: 75px;
+    }
+
+    p.item-description{
+        font-size: 10px;
+    }
+
+    .raridade{
+        font-size: 16px;
+        color: #101010;
+    }
+
+
+    .item.comum{
+        width: 70px;
+        height: 70px;
+    }
+
+    .blitz-qtd.price{
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .blitz-qtd.price img{
+        width: 15px;
+    }
+
+    .adquirir{
+        width: 65px;
+        height: 20px;
+        border-radius: 5px;
+        font-size: 10px;
+   
+    }
+
+    .fundo-item-card{
+        width: 110px;
+        height: 220px;
+        border-radius: 3px;
+    }
+
+
+    /* CARD LENDARIO */
+    .borda-animada-item.lendario::before, .borda-animada-item.lendario:after{
+        width: 120px;
+        height: 230px;
+    }
+
+    /* CARD RARO ANIMAÇÃO */
+    .borda-animada-item.raro::before, .borda-animada-item.raro:after{
+        width: 120px;
+        height: 230px;
+    }
+
+    /* CARD ESPECIAL ANIMAÇÃO*/
+    .borda-animada-item.especial::before, .borda-animada-item.especial:after{
+        width: 120px;
+        height: 230px;
+    }
+
+    /* CARD COMUM ANIMAÇÃO*/
+    .borda-animada-item.comum::before, .borda-animada-item.comum:after{
+        width: 120px;
+        height: 230px;
+    }
+
+    .areaShop{
+        display: flex;
+        justify-content: center;
+        max-width: 320px;
+        gap: 30px;
+    }
+
+    /* FOOTER */
+    footer{
+        width: 100%;
+        height: 60px;
+        background-color: #2210F4;
+    }
+
+    .footer-content{
+        max-width: 320px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 10px;
+
+    }
+
+    .footer-content h1{
+        font-size: 12px;
+    }
+
+    .footer-content p{
+        font-size: 10px;
+    }
+
+    .footer-logo{
+        width: 90px;
+        height: 40px;
+    }
+
+
+}
+
+
+/* KAIRO RESPONSIVIDADE */
+/* @media (min-width:320px) and (max-width: 425px){ */
+
+    /* .headerBtns{
         display: none;
     }
 
@@ -1133,10 +1841,10 @@ footer{
     button.tiny-share{
         margin: 0 30px;
     }
-    
+     */
     /* Continuação - Kairo */
 
-    .nav-cont{
+    /* .nav-cont{
         font-size: 10px;
     }
 
@@ -1154,67 +1862,67 @@ footer{
         cursor: pointer;
         padding: 2px;
         height: 50px;
-    }
+    } */
 
     /* Definindo o tamanho da div principal */
 
-    .section-card{
+    /* .section-card{
         width: 100%;
-        height: auto;
+        height: auto; */
         /* Espaçamento das div principais */
-        gap: 10px;
+        /* gap: 10px;
 
-    }
+    } */
 
     /* GIF DA LOJA */
 
-    button.big-blue-btn{
+    /* button.big-blue-btn{
         background-size: 100px;
         background-position-y: 25px;
         background-position-x: center;
         width: 100px;
-        height: 140px;
+        height: 140px; */
 
         /* Terminar e ajustar imagem (se possível) */
-    }
+    /* } */
 
     /* Ajustando a borda do conteiner com gif e blitz */
 
-    .blitz-gain{
+    /* .blitz-gain{
         border: 4px solid #101010;
         height: 24px;
         border-left: none;
         border-top: none;
         
-    }
+    } */
 
     /* Ajutanto o valor de blitz adquirido */
 
-    .p-responsive{
+    /* .p-responsive{ */
         /* padding para centralizar */
-        padding-right: 14px; 
+        /* padding-right: 14px; 
         font-size: 10px;
-    }
+    } */
 
     /* Imagem da blitz */
-
+/* 
     img.blitz-responsive{
         margin: 0;
         height: 16px;
         width: auto;
         object-fit: cover;
-    }
+    } */
 
     /* Botão Blitz Shop */
 
-    button.blitz-shop{
+    /* button.blitz-shop{
         height: 20px;
         width: 100px;
-    }
+    } */
 
     /* Sumindo com o gif */
 
-    .big-blue-btn{
+    /* .big-blue-btn{
         display: none;
     }
 
@@ -1257,11 +1965,11 @@ footer{
  
         border-radius: 5px;
         object-fit: cover;
-    }
+    } */
 
     /* Seção 2 */
 
-    .two{
+    /* .two{
         font-size: 10px;
     }
 
@@ -1274,22 +1982,22 @@ footer{
     img.imagem-Live{
         width: 26px;
         height: 26px;
-    }   
+    }    */
 
     /* Frame personalizado */
 
-    h1.aposte-blitz{
+    /* h1.aposte-blitz{
         font-size: 14px;
         margin-top: 30px;
     }
 
     h1.aposte-blitz1{
         font-size: 14px;
-    }
+    } */
 
     /* Seção 3 */
 
-    .banner-decoration-spot{
+    /* .banner-decoration-spot{
         max-width: 420px;
         max-height: 100px;
         margin: 0px;
@@ -1313,11 +2021,11 @@ footer{
 
     .shop-banner-background{
         height: 100px;
-    }
+    } */
 
     /* Seção 4 - Sorteio */
 
-    .sorteio-card{
+    /* .sorteio-card{
         min-width: 320px;
     }
 
@@ -1377,9 +2085,9 @@ footer{
     .more-minus-btns{
         margin-right: 58px;
         width: 260px;
-    }
+    } */
 
-    .prob-btns{
+    /* .prob-btns{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1390,11 +2098,11 @@ footer{
         margin-right: 58px;
         width: 260px;     
         margin-bottom: 50px; 
-    }
+    } */
 
     /* Seção 4 - Temporizador da loja */
      
-    p.p-responsive1{
+    /* p.p-responsive1{
         font-size: 12px;
     }
 
@@ -1407,17 +2115,17 @@ footer{
     }
 
     /* Ajustes */
-    .areaShop{
+    /* .areaShop{
         width: 400px;
-    }
+    }  */
 
     /* Cards da loja | Responisiviida */
 
     /* Centralizando os card usando margin (rever isso depois) */
 
-    .item-cards-display{
+    /* .item-cards-display{
             margin-left: 250px;
     }
 
     
-}
+} */
