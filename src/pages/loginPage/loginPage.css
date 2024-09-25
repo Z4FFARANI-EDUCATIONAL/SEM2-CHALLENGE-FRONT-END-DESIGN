@@ -4,28 +4,34 @@
     color: white;
 }
 
+html{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 body{
-    max-width: 1115px;
     margin: 30px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
     background-color: #101010;
-    gap: 80px;
-    background-image: url("../../../public/assets/images/loginPageBackgroung.png");
-    background-size: cover;
+    gap: 40px;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .logo{
-    max-width: 250px;
+    width: 250px;
 }
 
 .sign-in-box{
     background-color: #2210F4;
     height: 400px;
-    width: 370px;
+    width: 320px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -35,7 +41,7 @@ body{
 }
 
 .input-and-title{
-    width: 280px;
+    width: 80%px;
 }
 
 h1{
@@ -60,7 +66,6 @@ input.email{
     height: 30px;
     border-radius: 5px;
     border: 1px solid #0000FF;
-    font-size: 18px;
 }
 
 input.senha{
@@ -71,17 +76,17 @@ input.senha{
     height: 30px;
     border-radius: 5px;
     border: 1px solid #0000FF;
-    font-size: 18px;
 }
 
 label{
     font-family: "Michroma", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .btn-agreement{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
     width: 280px;
     height: 75px;
@@ -91,14 +96,14 @@ label{
 
 
 .acessar{
-    width: 100%;
+    width: 80%;
     height: 55px;
     background-color: white;
     color: #2210F4;
     font-size: 22px;
     font-weight: bold;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
     text-shadow: 0 2px 4px gray;
 }
@@ -108,8 +113,7 @@ label{
 }
 
 p{
-    font-size: 16px;
-    width: 350px;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 30px;
@@ -127,8 +131,8 @@ a{
     align-items: center;
     background-color: transparent;
     border: 3px solid white;
-    border-radius: 7px;
-    width: 100%;
+    border-radius: 5px;
+    width: 80%;
     height: 30px;
 }
 

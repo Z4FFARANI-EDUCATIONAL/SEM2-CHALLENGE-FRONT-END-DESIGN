@@ -4,8 +4,14 @@
     color: white;
 }
 
+html{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 body{
-    max-width: 1115px;
     margin: 30px auto;
     display: flex;
     flex-direction: column;
@@ -13,26 +19,28 @@ body{
     align-items: center; 
     background-color: #101010;
     gap: 40px;
+    position: relative;
 }
 
 .logo{
-    max-width: 250px;
+    width: 250px;
 }
 
 .sign-in-box{
     background-color: #2210F4;
     height: 500px;
-    width: 370px;
+    width: 320px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     border-radius: 10px;
-    
+    margin: 0 auto;
+
 }
 
 .input-and-title{
-    width: 280px;
+    width: 80%;
 }
 
 h1{
@@ -57,7 +65,6 @@ input.email{
     height: 30px;
     border-radius: 5px;
     border: 1px solid #0000FF;
-    font-size: 18px;
 }
 
 input.senha{
@@ -68,7 +75,6 @@ input.senha{
     height: 30px;
     border-radius: 5px;
     border: 1px solid #0000FF;
-    font-size: 18px;
 }
 
 input.nome{
@@ -79,12 +85,12 @@ input.nome{
     height: 30px;
     border-radius: 5px;
     border: 1px solid #0000FF;
-    font-size: 18px;
+
 }
 
 label{
     font-family: "Michroma", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .btn-agreement{
@@ -109,11 +115,9 @@ label{
 }
 
 p{
-    font-size: 16px;
-    width: 350px;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 30px;
+
 }
-
-
