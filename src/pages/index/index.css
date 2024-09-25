@@ -848,4 +848,108 @@ footer{
     .make-the-difference{
         font-size: 14px;
     }
+
+    /* section 5 */
+    .section-five-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin: 30px auto;
+    }
+
+    .about-container{
+        display: grid;
+        max-width: 320px;
+        overflow-x: hidden;
+        overflow: auto;
+        grid-template-columns: repeat(4, 196px);
+        grid-template-rows: 286px;
+        gap: 15px;
+        padding: 0 0 30px 0;
+    }
+
+    .about-container::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        min-height: 15px;
+    }
+
+
+    .mini-container-text h1{
+        text-align: center;
+        font-family: 'Michroma', sans-serif;    
+        font-weight: 400;
+        font-size: 18px;
+        margin: 30px 0;
+    }
+
+    .mini-container-text p{
+        text-align: center;
+        font-family: 'Numans', sans-serif;    
+        font-weight: 400;
+        font-size: 14px;
+        line-break: normal;
+        margin: 0px 0;
+    }
+
+    .mini-container-img img{
+        width: 100%;
+        height: 130px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+
+    }
+
+    .section-five .conheca{
+        font-size: 18px;    
+    }
+
+    /* section 6 */
+    .section-six{
+        margin: 40px auto;
+        padding: 0 10px 80px 10px;
+        border-bottom: 1px solid white;
+    }
+
+    .section-six-content{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 30px;
+        margin-top: 40px;
+        max-width: 320px;
+    }
+
+    .plataform-functions{
+        font-family: 'Numans', sans-serif;
+        font-size: 10px;
+        width: 50%;
+    }
+
+    .plataform-functions ul{
+        margin: auto 30px;
+    }
+
+    .plataform-functions li{
+        margin: 10px;
+    }
+
+    .plataform-functions li img{
+        margin: 0 0 0 10px;
+    }
+
+    .plataform-functions .continue{
+        padding: 10px;
+        width: 100px;
+        height: 30px;
+        border-radius: 8px;
+        font-size: 18px;
+        margin: 0 0 0 20px;
+    }
+    .section-six .patrocinador{
+        width: 40%;
+    }
+
+
+
 }
