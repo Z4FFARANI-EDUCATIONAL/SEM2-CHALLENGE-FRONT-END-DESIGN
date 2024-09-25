@@ -14,7 +14,7 @@ html{
 /* HEADER */
 header{
     margin: 0 auto;
-    max-width: 1115px;
+    width: 100%;
     height: 80px;
     background-color: #101010;
 }
@@ -28,7 +28,6 @@ header{
 
 .logo-emmersive{
     width: 150px;
-    height: 60px;
     margin-left: 120px;
 }
 
@@ -80,7 +79,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1115%;
+    max-width: 1024px;
 }
 
 
@@ -206,7 +205,7 @@ main{
     justify-content: center;
     gap: 35px;
     margin: 0 auto;
-    max-width: 1115px;
+    max-width: 1024px;
 
 }
 
@@ -251,8 +250,7 @@ main{
 
 /* section 3 */
 .section-three{
-    max-width: 1115px;
-    width: 1115px;
+    max-width: 1024px;
     margin: 30px auto;
     display: flex;
     flex-direction: column;
@@ -324,8 +322,7 @@ main{
 
 /* section-four */
 .section-four{
-    max-width: 1115px;
-    width: 1115px;
+    max-width: 1024px;
     margin: 30px auto;
     display: flex;
     flex-direction: column;
@@ -393,6 +390,12 @@ main{
 
 .attack-description img{
     width: 150px;
+}
+
+.make-the-difference{
+    font-style: italic;
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
 /* section 5 */
@@ -489,7 +492,7 @@ main{
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 80px;
-    max-width: 1115px;
+    max-width: 1024px;
 }
 
 .section-six-content img{
@@ -539,8 +542,7 @@ main{
 
 /* Section 7 */
 .section-seven{
-    max-width: 1115px;
-    width: 1115px;
+    max-width: 1024px;
     height: 500px;
     text-align: center;
     display: flex;
@@ -593,7 +595,7 @@ footer{
 }
 
 .footer-content{
-    max-width: 1115px;
+    max-width: 1024px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -608,4 +610,242 @@ footer{
 .footer-logo{
     width: 150px;
     height: 70px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 425px) {
+    /* HEADER */
+    header{
+        height: 60px;
+    }
+
+    .logo-emmersive{
+        width: 80px;
+        margin-left: 120px;
+    }
+
+    .header-deco{
+        height: 60px;
+        margin-left: 15px;
+    }
+
+    .gradientBar{
+        height: 10px;
+    }
+
+    .init-section{
+        margin-top: 15px;
+        padding: 4px;
+        font-size: 10px;
+        color: white;
+        border-radius: 7px;
+    }
+
+    /* MAIN */
+    main{
+        margin: 40px auto;
+    }
+
+    /* section one */
+    .section-one{
+        max-width: 320px;
+    }
+
+    .text-saudacoes{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 30px 0;
+        gap: 35px;
+        width: 100%;
+    }
+
+    .text-saudacoes h1{
+        font-size: 18px;
+    }
+
+    .text-saudacoes p{
+        font-family: 'Michroma';
+        font-size: 8px;
+    }
+
+    .text-saudacoes .saudacoes-anchor{
+        height: 30px;
+        width: 90px;
+        font-size: 10px;
+        border-radius: 7px;
+        padding: 0 10px 0 10px;
+    }
+
+    .welcome-img{
+        width: 100%;
+    }
+
+    .blue-frame-one-sec1{
+        max-width: 320px;
+        padding: 2px; /* largura da borda */ /* largura da borda */
+    }
+
+    .blue-frame-inner-one-sec1{
+        padding: 6px; /* Conteúdo interno */
+    
+    }
+
+    .blue-frame-two-sec1{
+        max-width: 320px;
+        padding: 2px; 
+
+    }
+
+    .blue-frame-inner-two-sec1{
+        padding: 6px; 
+    }   
+
+    /* section 2 */
+    .section-two{
+        min-height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px auto;
+    }
+
+    .section-two-content{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 0px;
+        margin: 0 auto;
+        max-width: 320px;
+
+    }
+
+    .video{
+        min-width: 300px;
+    }
+
+    .introdução-card{
+       display: none;
+    }
+
+    .blue-frame-one-sec2{
+        max-width: 320px;
+        padding-right: 2px; /* largura da borda */
+        padding-bottom: 2px; /* largura da borda */
+    }
+
+    .blue-frame-inner-one-sec2{
+        padding-right: 7px; /* Conteúdo interno */
+        padding-bottom: 6px; /* Conteúdo interno */
+    }
+
+    .blue-frame-two-sec2{
+        max-width: 320px;
+        padding-right: 2px; 
+        padding-bottom: 2px; 
+    }
+
+    .blue-frame-inner-two-sec2{
+        padding-right: 7px; 
+        padding-bottom: 6px;
+    }
+
+    /* section 3 */
+    .section-three{
+        max-width: 320px;
+        margin: 15px auto;
+    }
+
+    .division-bars{
+        width: 100%;
+        font-size: 0px;
+        
+    }
+
+    .section-three-div{
+        height: 3px;
+        margin: 3px 0;
+        
+    }
+
+    .section-three-content p{
+        font-family: "Numans", sans-serif;
+        font-size: 10px;
+        max-width: 280px;
+        text-align: center;
+        margin: 20px 0 30px 0;
+    }
+
+    .blitz-e-logo{
+        gap: 40px;
+    }
+
+    .emmersive{
+        max-width: 300px;
+    }
+
+    .blitz-logo{
+        max-width: 80px;
+    }
+
+    .blitz-letter{
+        max-width: 120px;
+    }
+
+    /* section-four */
+    .section-four{
+        max-width: 320px;
+        margin: 30px auto;
+        gap: 10px;
+    }
+
+    .section-four-div{
+        height: 3px;
+        margin: 3px 0;
+    }
+
+    .container-text-shadow{
+        display: flex;
+        justify-content: center;
+    }
+
+    .conheca{
+        font-size: 32px;
+        text-shadow: #2210f4;
+
+    }
+
+    .atras{
+        margin-top: 4px;
+
+    }
+
+    .fanboost{
+        font-family: 'Michroma', sans-serif;
+        font-size: 38px;
+    }
+
+    .attack-description{
+        margin: 30px 0;
+        display: flex;
+        gap: 15px;
+        margin: 30px 0;
+    }
+
+    .attack-description p{
+        font-family: 'Numans', sans-serif;
+        text-align: start;
+        max-width: 240px;
+        font-size: 8px;
+
+    }
+
+    .attack-description img{
+        width: 60px;
+        height: 80px;
+    }
+
+    .make-the-difference{
+        font-size: 14px;
+    }
 }
