@@ -46,7 +46,6 @@ header{
     position: absolute;
     background-color: transparent;
     z-index: -1;
-    margin-left: 15px;
 }
 
 .gradientBar{
@@ -619,6 +618,7 @@ footer{
 }
 
 /* RESPONSIVIDADE */
+/* RESPONSIVIDADE SMARTPHONES */
 @media (max-width: 425px) {
     /* HEADER */
     header{
@@ -1029,6 +1029,8 @@ footer{
     
 }
 
+
+/* RESPONSIVIDADE TABLETS */
 @media (min-width: 426px) and (max-width: 768px){
     /* HEADER */
     header{
@@ -1439,5 +1441,148 @@ footer{
     
     .footer-logo{
         width: 110px;
+    }
+}
+
+
+/* RESPONSIVIDADE LAPTOPS */
+@media (min-width: 769px) and (max-width: 1024px){
+    /* HEADER */
+    .header-deco{
+        height: 80px;
+        width: 125px;
+        margin-left: 0px;
+    }
+    
+    .gradientBar{
+        height: 16px;
+    }
+    
+    .init-section{
+        margin-top: 35px;
+        padding: 6px;
+    }
+    /* MAIN */
+    main{
+        margin: 60px auto;
+    }
+
+    /* section one */
+    .section-one{
+        max-width: 768px;
+    }
+
+    /* section 2 */
+    .section-two{
+        min-height: 400px;
+        margin: 60px auto;
+    }
+
+    .section-two-content{
+        gap: 10px;
+        margin: 0 auto;
+        max-width: 768px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .introdução-card{
+        max-width: 286px;
+        max-height: 286px;
+        margin-bottom: 35px;
+    }
+    
+    /* section 5 */
+    .section-five-content{
+        margin: 60px auto;
+    }
+
+    .about-container{
+        max-width: 768px;
+    }
+
+    .section-five .conheca{
+        font-size: 46px;
+    }
+
+    /* section 6 */
+    .section-six{
+        margin: 60px auto;
+        padding: 0 10px 60px 10px;
+    }
+
+    .section-six-content{
+        display: flex;
+        flex-wrap:nowrap;
+        gap: 15px;
+        margin-top: 50px;
+        max-width: 768px;
+    }
+
+    .section-six-content img{
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .section-six-content .patrocinador{
+        width: 350px;
+    }
+
+    .plataform-functions{
+        font-family: 'Numans', sans-serif;
+        font-size: 20px;
+        width: 60%;
+    }
+
+    .plataform-functions ul{
+        width: 100%;
+        margin: auto 30px;
+        padding-bottom: 15px;
+    }
+
+    .plataform-functions li{
+        width: 100%;
+        margin: 12px 0 12px 12px;
+        font-size: 18px;
+    }
+
+    .plataform-functions .continue{
+        margin: 0 0 0 20px;
+        font-size: 18px;
+        border-radius: 7px;
+    }
+
+    .section-six .conheca{
+        font-size: 54px;
+        
+    }
+
+    /* Section 7 */
+    .section-seven{
+        max-width: 768px;
+        height: 470px;
+        
+    }
+
+    .background-seven img{
+        width: 768px;
+        height: fit-content;
+    }
+
+    /* FOOTER */
+    footer{
+        width: 100%;
+        height: 80px;
+        background-color: #2210F4;
+
+    }
+
+    .footer-content{
+        max-width: 768px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
     }
 }
