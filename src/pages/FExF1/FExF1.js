@@ -58,10 +58,24 @@ document.getElementById("voltBtn").addEventListener("click", function(){
 });
 
 function atualizarCarrossel(){
-const troca = -slideAtual * 460;
-carrossel.style.transform='translateX(' + troca + 'px)';
-const trocaSlideTexto = -slideTextAtual * 600;
-carrosselTexto.style.transform='translateX(' + trocaSlideTexto + 'px)';
+    if (window.matchMedia("(max-width: 425px").matches){
+        const troca = -slideAtual * 320;
+        carrossel.style.transform='translateX(' + troca + 'px)';
+        const trocaSlideTexto = -slideTextAtual * 320;
+        carrosselTexto.style.transform='translateX(' + trocaSlideTexto + 'px)';
+    }
+    else if (window.matchMedia("(max-width: 768px)").matches){
+        const troca = -slideAtual * 425;
+        carrossel.style.transform='translateX(' + troca + 'px)';
+        const trocaSlideTexto = -slideTextAtual * 425;
+        carrosselTexto.style.transform='translateX(' + trocaSlideTexto + 'px)';
+    }
+    else{
+        const troca = -slideAtual * 460;
+        carrossel.style.transform='translateX(' + troca + 'px)';
+        const trocaSlideTexto = -slideTextAtual * 600;
+        carrosselTexto.style.transform='translateX(' + trocaSlideTexto + 'px)';
+      }
 }
 })
 

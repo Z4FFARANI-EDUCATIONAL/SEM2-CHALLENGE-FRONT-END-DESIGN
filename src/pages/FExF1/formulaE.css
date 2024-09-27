@@ -326,7 +326,7 @@ main{
     font-family: 'Formula', sans-serif;
 }
 
-/* BORDAR CARROSSEL */
+/* BORDA CARROSSEL */
 .slide-container:before, .slide-container:after{
     content: '';
     position: absolute;
@@ -501,7 +501,7 @@ footer{
     .slides{
         display: flex;
         transition: transform 0.5s ease;
-        gap: 10px;
+        gap: 20px;
     }
     
     .slide-text-container{
@@ -683,7 +683,7 @@ footer{
     .slides{
         display: flex;
         transition: transform 0.5s ease;
-        gap: 10px;
+        gap: 20px;
     }
 
     .slide-text-container{
