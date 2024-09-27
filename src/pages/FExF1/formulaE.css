@@ -769,4 +769,10 @@ footer{
     .bottomPageFE-deco{
         width: 280px;
     }
+
+    .slides{
+        display: flex;
+        transition: transform 0.5s ease;
+        gap: 10px;
+    }
 }
