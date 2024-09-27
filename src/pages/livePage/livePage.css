@@ -108,6 +108,7 @@ header{
 
 .header-deco{
     height: 80px;
+    width: 100px;
     position: absolute;
     background-color: transparent;
     z-index: -1;
@@ -331,6 +332,13 @@ nav{
     font-size: 12px;
     font-style: italic;
     margin: 5px;
+}
+
+.title-live-text{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
 }
 
 .live-title p{
@@ -1391,6 +1399,7 @@ nav{
     position: relative;
     border-radius: 15px;
     padding: 20px;
+    width: 1024px;
 }
 
 .map-titles{
@@ -1801,9 +1810,21 @@ footer{
     }
 
     .competition-name{
+        display: flex;
         gap: 15px;
         font-size: 8px;
         margin: 5px;
+    }
+
+    .title-live-division{
+        display: none;
+    }
+
+    .title-live-text{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 0px;
     }
 
     .live-title p{
@@ -1822,6 +1843,10 @@ footer{
     }
 
     /* COMMENTS BOX */
+    .comments-live-bar {
+        border-top: 2px solid #101010;
+    }
+
     .comments-live-bar h1{
         font-size: 24px;
     }
@@ -2022,7 +2047,7 @@ footer{
     /* LEFT SIDE */
 
     .bet-title{
-        margin: 10px 0 10px 0;
+        margin: 10px 0;
     }
 
     .bet-title h1{
@@ -2195,7 +2220,7 @@ footer{
     }
     
     .position p{
-        font-size: 48px;
+        font-size: 42px;
         font-weight: bold;
         width: 50%;
         text-align: center;

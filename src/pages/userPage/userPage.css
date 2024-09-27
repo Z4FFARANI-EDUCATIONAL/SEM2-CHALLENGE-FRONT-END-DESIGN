@@ -112,6 +112,7 @@ a.blitz-shop2{
 
 .header-deco{
     height: 80px;
+    width: 100px;
     position: absolute;
     background-color: transparent;
     z-index: -1;
@@ -2411,7 +2412,7 @@ footer{
     
     .header-deco{
         height: 80px;
-        width: 150px;
+        width: 100px;
     } 
 
     /* SECTION  1 */
