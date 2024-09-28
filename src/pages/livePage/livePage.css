@@ -108,7 +108,7 @@ header{
 
 .header-deco{
     height: 80px;
-    width: 100px;
+    width: 80px;
     position: absolute;
     background-color: transparent;
     z-index: -1;
@@ -1020,6 +1020,10 @@ nav{
     font-size: 18px;
 }
 
+.low-res-bet-p{
+    text-align: center;
+}
+
 .qttBlitz-bet{
     width: 80%;
     height: 100%;
@@ -1359,6 +1363,9 @@ nav{
     
 }
 
+.second .team-racer, .first .team-racer{
+    color: #37FF4F;
+}
 
 /* Seção 3 */
 .section-three{
