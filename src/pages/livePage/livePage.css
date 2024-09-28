@@ -1228,20 +1228,23 @@ nav{
     align-items: center;
     justify-content: space-between;
     border-radius: 5px;
+    gap: 5px;
+    text-align: center;
 }
 
 .position h2{
     font-family: 'Michroma', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    max-width: 200px;
+    width: 200px;
     text-overflow: ellipsis;
     overflow: hidden;
+    text-align: center;
     white-space: nowrap;
 }
 
 .position h1{
-    max-width: 200px;
+    width: 200px;
     font-size: 28px;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -1309,7 +1312,7 @@ nav{
     position: absolute;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 48%;
     height: 100%;
     background: linear-gradient(90deg, #E1CB00,#ffffff, #e99c0e, #ffffff, #E1CB00);
     background-size: 300%;
@@ -1323,7 +1326,7 @@ nav{
     position: absolute;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 48%;
     height: 100%;
     background: linear-gradient(90deg, #c9c9c9,#ffffff, #585858, #ffffff, #c9c9c9);
     background-size: 300%;
@@ -1337,7 +1340,7 @@ nav{
     position: absolute;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 48%;
     height: 100%;
     background: linear-gradient(90deg, #FF5C00,#ffffff, #863100, #ffffff, #FF5C00);
     background-size: 300%;
@@ -3835,5 +3838,116 @@ footer{
         width: 49%;
         height: 100%;
     }
-    
+
+    /* Seção 3 */
+    .section-three{
+        max-width: 768px;
+    }
+
+    .little-e-sec-three{
+        width: 80px;
+        height: 80px;
+        border-bottom-left-radius: 60px;
+    }
+
+    .little-e-sec-three img{
+        width: 50px;
+        height: 50px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+
+    .maps{
+        width: 768px;
+    }
+
+    .map-titles{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .container-text-shadow{
+        display: flex;
+        justify-content: center;
+        font-style: italic;
+    }
+
+    .conheca{
+        padding-top: 40px;
+        font-size: 64px;
+        text-shadow: #2210f4;
+
+    }
+
+    .atras{
+        position: absolute;
+        font-weight: bold;
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+        position: absolute;
+        margin-top: 7px;
+
+    }
+
+    .frente{
+        position: relative;
+        
+    }
+
+    .map-container{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .imgcontainer{
+        position: relative;
+        display: flex;
+        background-color: #101010;
+    }
+
+    .imgcontainer img{
+        width: 330px;
+    }
+
+    .map-name p{
+        font-size: 32px;
+        margin: 10px 0 45px 0;
+    }
+
+    /* section 4 */
+    .section-four{
+        margin-top: 30px;
+        max-width: 768px;
+    }
+
+    .little-e-sec-four{
+        width: 80px;
+        height: 80px;
+    }
+
+    .destaque-title img{
+        margin-right: 10px;
+        height: 40px;
+        width: 50px;
+    }
+
+    /* FOOTER */
+    .footer-content{
+        width: 768px;
+    }
+
+    .footer-content h1{
+        font-size: 18px;
+    }
+
+    .footer-logo{
+        width: 150px;
+    }
+
+   
 }
