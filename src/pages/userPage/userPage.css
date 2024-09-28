@@ -1131,7 +1131,7 @@ footer{
 
     .logo-emmersive{
         width: 80px;
-        margin-left: 50px;
+        margin-left: 65px;
     }
 
     .header-deco{
@@ -1166,6 +1166,10 @@ footer{
     .moldura-user{
         width: 35px;
         height: 35px;
+    }
+
+    .username{
+        font-size: 10px;
     }
 
     /* NAVBAR */
@@ -1743,7 +1747,7 @@ footer{
     
         .logo-emmersive{
             width: 100px;
-            margin-left: 60px;
+            margin-left: 80px;
         }
     
         .header-deco{

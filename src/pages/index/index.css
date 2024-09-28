@@ -29,7 +29,7 @@ header{
 
 .logo-emmersive{
     width: 150px;
-    margin-left: 120px;
+    margin-left: 200px;
 }
 
 .profile{
@@ -424,6 +424,10 @@ main{
     margin: 80px auto;
 }
 
+.section-five .conheca{
+    font-size: 54px;
+}
+
 .about-container{
     display: grid;
     max-width: 1000px;
@@ -627,7 +631,17 @@ footer{
 
     .logo-emmersive{
         width: 80px;
-        margin-right: 35px;
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    .space-fill{
+        display: none;
+    }
+    
+    .header-content{
+        max-width: 320px;
+        margin: 0 auto;
     }
 
     .header-deco{
@@ -927,7 +941,7 @@ footer{
     /* section 6 */
     .section-six{
         margin: 40px auto;
-        padding: 0 0 30 0px;
+        padding: 0 0 50px 0;
         border-bottom: 1px solid white;
     }
 
@@ -1039,6 +1053,7 @@ footer{
 
     .logo-emmersive{
         width: 110px;
+        margin: 0 0 0 120px;
     }
 
     .header-deco{
@@ -1054,7 +1069,7 @@ footer{
     .init-section{
         margin-top: 15px;
         padding: 4px;
-        font-size: 14px;
+        font-size: 12px;
         color: white;
         border-radius: 7px;
     }
@@ -1462,6 +1477,11 @@ footer{
         margin-top: 35px;
         padding: 6px;
     }
+
+    .logo-emmersive{
+        margin-left: 170px;
+    }
+
     /* MAIN */
     main{
         margin: 60px auto;
@@ -1535,13 +1555,13 @@ footer{
     }
 
     .plataform-functions ul{
-        width: 100%;
+        width: 90%;
         margin: auto 30px;
         padding-bottom: 15px;
     }
 
     .plataform-functions li{
-        width: 100%;
+        width: 90%;
         margin: 12px 0 12px 12px;
         font-size: 18px;
     }

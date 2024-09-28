@@ -498,7 +498,7 @@ nav{
     margin: 100px auto 50px auto ;
     display: grid;
     grid-template-columns: 2fr 3fr;
-    grid-template-rows: 100px repeat(11 minmax(100px, 200px));
+    grid-template-rows: 100px repeat(11, 85px);
     grid-template-areas: 
         'rank vision'
         'first runners'
@@ -1285,7 +1285,7 @@ nav{
 
 .team{
     width: 80px;
-    height: 100%;
+    height: 85px;
 }
 
 .first .team-place{
@@ -1316,12 +1316,13 @@ nav{
     position: absolute;
     top: 0;
     right: 0;
-    width: 48%;
+    width: 45%;
     height: 100%;
     background: linear-gradient(90deg, #E1CB00,#ffffff, #e99c0e, #ffffff, #E1CB00);
     background-size: 300%;
     animation: runner-shiny 7s linear infinite;
-    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     filter: opacity(70%);
 }
 
@@ -1330,12 +1331,13 @@ nav{
     position: absolute;
     top: 0;
     right: 0;
-    width: 48%;
+    width: 45%;
     height: 100%;
     background: linear-gradient(90deg, #c9c9c9,#ffffff, #585858, #ffffff, #c9c9c9);
     background-size: 300%;
     animation: runner-shiny 7s linear infinite;
-    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     filter: opacity(70%);
 }
 
@@ -1344,12 +1346,13 @@ nav{
     position: absolute;
     top: 0;
     right: 0;
-    width: 48%;
+    width: 45%;
     height: 100%;
     background: linear-gradient(90deg, #FF5C00,#ffffff, #863100, #ffffff, #FF5C00);
     background-size: 300%;
     animation: runner-shiny 7s linear infinite;
-    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     filter: opacity(70%);
 }
 
@@ -2291,21 +2294,15 @@ footer{
 
     .first .team-place::before{
         width: 48%;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
         filter: opacity(70%);
     }
 
     .second .team-place::before{
         width: 48%;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
     }
 
     .third .team-place::before{
         width: 48%;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
     }
 
 
@@ -3120,20 +3117,23 @@ footer{
     }
 
     .first .team-place::before{
-        width: 53%;
+        width: 52%;
+        border-radius: 0;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
         filter: opacity(70%);
     }
 
     .second .team-place::before{
-        width: 53%;
+        width: 52%;
+        border-radius: 0;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
     }
 
     .third .team-place::before{
-        width: 53%;
+        width: 52%;
+        border-radius: 0;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
     }
@@ -3832,17 +3832,17 @@ footer{
     }
     
     .first .team-place::before{
-        width: 49%;
+        width: 47%;
         height: 100%;
     }
     
     .second .team-place::before{
-        width: 49%;
+        width: 47%;
         height: 100%;
     }
     
     .third .team-place::before{
-        width: 49%;
+        width: 47%;
         height: 100%;
     }
 

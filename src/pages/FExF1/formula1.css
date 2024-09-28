@@ -384,6 +384,9 @@ footer{
        height: 35px;
    }
 
+   .username{
+        font-size: 10px;
+    }  
    /* HEADER BAR */
    .header-bar{
        height: 8px;
