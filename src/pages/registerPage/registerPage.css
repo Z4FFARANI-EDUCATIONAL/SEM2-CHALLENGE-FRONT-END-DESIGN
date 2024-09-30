@@ -1,17 +1,17 @@
-*{
+* {
     padding: 0;
     margin: 0;
     color: white;
 }
 
-html{
+html {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-body{
+body {
     margin: 30px auto;
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@ body{
     position: relative;
 }
 
-.logo{
+.logo {
     width: 250px;
 }
 
@@ -38,8 +38,8 @@ body{
     margin: 0 auto;
 
 }
-
-.input-and-title{
+ 
+.input-and-title {
     width: 80%;
 }
 
@@ -77,7 +77,7 @@ input.senha{
     border: 1px solid #0000FF;
 }
 
-input.nome{
+.nome {
     display: flex;
     flex-direction: column;
     background-color: #0A012E;
@@ -85,10 +85,9 @@ input.nome{
     height: 30px;
     border-radius: 5px;
     border: 1px solid #0000FF;
-
 }
 
-label{
+label {
     font-family: "Michroma", sans-serif;
     font-size: 16px;
 }

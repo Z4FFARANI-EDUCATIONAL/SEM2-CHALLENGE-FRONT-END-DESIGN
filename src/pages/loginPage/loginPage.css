@@ -1,10 +1,10 @@
-*{
+* {
     padding: 0;
     margin: 0;
     color: white;
 }
 
-html{
+html {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,7 +12,7 @@ html{
 }
 
 
-body{
+body {
     margin: 30px auto;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@ body{
     background-repeat: no-repeat;
 }
 
-.logo{
+.logo {
     width: 250px;
 }
 
@@ -37,11 +37,6 @@ body{
     justify-content: space-around;
     align-items: center;
     border-radius: 10px;
-    
-}
-
-.input-and-title{
-    width: 80%px;
 }
 
 h1{
@@ -92,8 +87,6 @@ label{
     height: 75px;
     margin-bottom: 30px;
 }
-
-
 
 .acessar{
     width: 80%;
