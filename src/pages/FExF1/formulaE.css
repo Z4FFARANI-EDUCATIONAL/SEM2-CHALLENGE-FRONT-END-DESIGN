@@ -68,6 +68,7 @@ header{
     position: absolute;
     background-color: transparent;
     z-index: -1;
+    width: 100px;
 } 
 
 .name-blitz{
