@@ -956,9 +956,17 @@ nav{
 }
 
 /* LEFT SIDE */
+.left-side{
+    display: flex;
+    margin-top: 0px;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
 
 .bet-title{
-    margin: 30px 0 10px 0;
+    margin: 5px 0 0px 0;
 }
 
 .bet-title h1{
@@ -1148,7 +1156,7 @@ nav{
 /* RIGHT SIDE */
 .right-side{
     display: flex;
-    margin-top: 30px;
+    margin-top: 0px;
     flex-direction: column;
     justify-content: center;
     width: 50%;
@@ -2379,7 +2387,8 @@ footer{
     .map-name p{
         font-weight: 400;
         font-family: 'Michroma', sans-serif;
-        font-size: 18px;
+        text-align: center;
+        font-size: 12px;
         margin: 0 0 10px;
     }
 
@@ -3928,7 +3937,7 @@ footer{
 
     /* section 4 */
     .section-four{
-        margin-top: 30px;
+        margin-top: 60px;
         max-width: 768px;
     }
 

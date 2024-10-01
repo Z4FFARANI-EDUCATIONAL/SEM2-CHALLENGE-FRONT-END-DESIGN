@@ -293,13 +293,9 @@ nav{
     width: 230px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     position: relative;
 }
 
-.big-blue-btn:hover{
-    filter: brightness(90%);
-}
 
 .blitz-gain{
     position: absolute;
